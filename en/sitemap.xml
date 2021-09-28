@@ -80,6 +80,8 @@
   </url><url>
     <loc>https://ntropy-esa.github.io/biochar-systems/modules/</loc>
   </url><url>
+    <loc>https://ntropy-esa.github.io/biochar-systems/case-studies/6-water-filter/</loc>
+  </url><url>
     <loc>https://ntropy-esa.github.io/biochar-systems/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -153,6 +155,8 @@
                 hreflang="en"
                 href="https://ntropy-esa.github.io/biochar-systems/service/"
                 />
+  </url><url>
+    <loc>https://ntropy-esa.github.io/biochar-systems/case-studies/5-gis-sweden/</loc>
   </url><url>
     <loc>https://ntropy-esa.github.io/biochar-systems/case-studies/1-stockholm/</loc>
   </url><url>
