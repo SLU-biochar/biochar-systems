@@ -93,7 +93,7 @@
                   More <span class="ion-ios-arrow-down"></span>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a href="https://ntropy-esa.github.io/biochar-systems/about/">About</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/biochar-stability/" class="current">Biochar stability</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/contact/">Contact</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/faq/">FAQ</a></li>
+                  <li><a href="https://ntropy-esa.github.io/biochar-systems/about/">About</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/biochar-stability/" class="current">Biochar stability</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/contact/">Contact</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/faq/">FAQ</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/demo-page/">Demo</a></li>
                 </ul>
               </li>
               
@@ -181,7 +181,7 @@ Lab determination of the carbon content.</p>
 <li><a href="https://puro.earth/">puro.earth</a> version x.x.x</li>
 <li><a href="https://verra.org/methodology-for-biochar-utilization-in-soil-and-non-soil-applications-open-for-public-comment/">Verra.org</a></li>
 </ul>
-<h1 id="compare-the-methodologies-with-your-own-biochar-data">Compare the methodologies with your own biochar data:</h1>
+<h2 id="compare-the-methodologies-with-your-own-biochar-data">Compare the methodologies with your own biochar data:</h2>
 <p>What you will need: biochar C content, H, C contents, pyrolysis temperature, biomass type</p>
 
 
@@ -208,6 +208,9 @@ Lab determination of the carbon content.</p>
         <td colspan="4">Your biochar data</td>
     </tr>
     <tr>
+        <td><label for="table_HTT">Pyrolysis temperature (&#176;C)</label> <br/> 
+            <input type="number" id="table_HTT" name="table_HTT" size=4 maxlength="5" min="0" max="1500" placeholder="650" style="text-align:center;" onblur="calculateStabilities()">
+        </td>        
         <td><label for="table_C">Carbon content (%, db)</label> <br/> 
             <input type="number" id="table_C" name="table_C" size=4 maxlength="5" min="0" max="100" placeholder="85.6" style="text-align:center;" onblur="calculateStabilities()">
         </td>
@@ -217,10 +220,6 @@ Lab determination of the carbon content.</p>
         <td><label for="table_O">Oxygen content (%, db)</label> <br/> 
             <input type="number" id="table_O" name="table_O" size=4 maxlength="5" min="0" max="100" placeholder="8.5" style="text-align:center;" onblur="calculateStabilities()">
         </td>
-        <td colspan="2"><label for="table_HTT">Pyrolysis temperature (&#176;C)</label> <br/> 
-            <input type="number" id="table_HTT" name="table_HTT" size=4 maxlength="5" min="0" max="1500" placeholder="650" style="text-align:center;" onblur="calculateStabilities()">
-        </td>
-
     </tr>
 </table>
 
@@ -423,7 +422,9 @@ Lab determination of the carbon content.</p>
         
         
         
-
+        
+        
+        
 
         
         if(! (isNaN(O) || isNaN(C)) ){
@@ -550,6 +551,95 @@ Lab determination of the carbon content.</p>
      Download as Python script 
 </a>
 </p>
+<h2 id="comparative-review-of-biochar-c-trading-platforms">Comparative review of biochar C trading platforms</h2>
+<section class="accordion">
+    <input type="checkbox" name="collapse" id="handle_puro" >
+    <h5 class="handle"> 
+        <label for="handle_puro"> <strong>Puro.Earth</strong> </label>
+    </h5>
+    <div class="content">Inner content that will be <strong>markdownified</strong> and blablabla</div>
+</section>
+<section class="accordion">
+    <input type="checkbox" name="collapse" id="handle_carbonfuture" >
+    <h5 class="handle"> 
+        <label for="handle_carbonfuture"> <strong>Carbon Futures</strong> </label>
+    </h5>
+    <div class="content">Inner content that will be <strong>markdownified</strong> and blablabla</div>
+</section>
+<section class="accordion">
+    <input type="checkbox" name="collapse" id="handle_vera" >
+    <h5 class="handle"> 
+        <label for="handle_vera"> <strong>Vera</strong> </label>
+    </h5>
+    <div class="content"><p>Inner content that will be <strong>markdownified</strong> and blablabla.</p>
+<p>The text is enriched with tooltips. For instance, if you don&rsquo;t know what a 
+<a class='glossary-tooltip' title='A set of worker machines, called nodes, that run containerized applications. Every cluster has at least one worker node.' data-toggle='tooltip' data-placement='top' href='/biochar-systems/tooltip_glossary/?all=true#term-cluster' target='_blank' aria-label='cluster'>cluster</a> is, you should hover the word.</p>
+</div>
+</section>
+<h2 id="demo-tooltip-with-custom-text-or-bibliography">Demo Tooltip with custom text or bibliography</h2>
+<p>The text is enriched with tooltips. For instance, if you don&rsquo;t know what a 
+<a class='glossary-tooltip' title='A set of worker machines, called nodes, that run containerized applications. Every cluster has at least one worker node.' data-toggle='tooltip' data-placement='top' href='/biochar-systems/tooltip_glossary/?all=true#term-cluster' target='_blank' aria-label='cluster'>cluster</a> is, you should hover the word.</p>
+<h2 id="comparision-of-voluntary-biochar-c-sink-credit-systems">Comparision of voluntary biochar C sink credit systems</h2>
+<p>This comparison is limited to how the biochar carbon sink term is defined and estimated by different methodologies. In other words, what assumptions are made on biochar carbon stability during its use phase, whether in soil or non-soil applications. The certification further differ in their purpose, scope of emissions included, etc</p>
+<ul class="nav nav-tabs" id="tab_with_md" role="tablist"><li class="nav-item active"><a data-toggle="tab" class="nav-link active" href="#tab_with_md-0" role="tab" aria-controls="tab_with_md-0" aria-expanded="true">Puro.Earth</a></li>
+	  
+		<li class="nav-item"><a data-toggle="tab" class="nav-link" href="#tab_with_md-1" role="tab" aria-controls="tab_with_md-1">Carbon Futures</a></li>
+		<li class="nav-item"><a data-toggle="tab" class="nav-link" href="#tab_with_md-2" role="tab" aria-controls="tab_with_md-2">Verra</a></li></ul>
+
+<div class="tab-content" id="tab_with_md"><div id="tab_with_md-0" class="tab-pane active" role="tabpanel" aria-labelledby="tab_with_md-0">
+
+<p><p>The document reviewed is:</p>
+<ul>
+<li>Title: Puro.Earth CO_2 Removal Marketplace - General Rules</li>
+<li>Version: 2.0</li>
+<li>Released: 2020-06</li>
+<li>Available at: <a href="https://puro.earth/methodologies/">puro.earth</a></li>
+</ul>
+<p>They state &ldquo;The Long-Term CO2 Removal is achieved by the stability of carbonisated biochar, which is measured with the Oxygen-to-Carbon ratio&rdquo;.</p>
+<p>They have a list of requirements:</p>
+<ul>
+<li>H:C_org below 0.7 (otherwise not considered biochar)</li>
+<li>O:C_org below 0.4 (as O:C_org is an indicator of stability, correlates better than production temperature)</li>
+<li>The &ldquo;stable fixed carbon content&rdquo; shall be over 50% (what do they mean by stable fixed carbon content?)</li>
+<li>refers to EBC for sampling method</li>
+<li>Buffer for C sink based on Spokas&hellip;</li>
+</ul>
+<p>Slightly different from the others&hellip;</p>
+</div>
+  <div id="tab_with_md-1" class="tab-pane" role="tabpanel" aria-labelledby="tab_with_md-1">
+
+<p><p>The document reviewed is:</p>
+<ul>
+<li>Title: Supplier Onboarding Manual - Guidelines for biochar producer and wholesaler</li>
+<li>Version: 0</li>
+<li>Released: 2021-02-28</li>
+<li>Available at: <a href="https://www.carbonfuture.earth/resources">carbonfuture.earth</a></li>
+</ul>
+<p>Basically, they refer to EBI Whitepaper 2020 and the EBC C-sink.</p>
+</div>
+  <div id="tab_with_md-2" class="tab-pane" role="tabpanel" aria-labelledby="tab_with_md-2">
+
+<p><p>The document reviewed is:</p>
+<ul>
+<li>Title: Methodology for biochar utilization in soil and non soil applications</li>
+<li>Version: 1.0</li>
+<li>Released: 2021-08-04</li>
+<li>Available at: <a href="https://verra.org/methodology/methodology-for-biochar-utilization-in-soil-and-non-soil-applications/">Vera.org</a></li>
+</ul>
+<p>In short, the methodology claims to quantify the GHG benefits from improved Waste Handling and Disposal to make biochar, with a baseline that biomass feedstocks would either be left to decay or be combusted. The accounting framework considers CH4, N2O, CO2, across sourcing (actually not, in later stage), production and application stages, for both baseline and project emissions.</p>
+<p>Has a set of text definitions (Chapter 3). Applicability conditions (Chapter 4) (e.g. cannot apply if project leads to a decrease in C stocks either a biomass sourcing stage). Has some additionality criterias (Chapter 7). Chapter 8 covers how to calculate each term form the project &amp; baseline.</p>
+<p>But I am interested only here in the biochar C sink value: how is it defined, and quantified?</p>
+<ul>
+<li>
+<p>if &ldquo;high-tech&rdquo; reactor, they use the IBI method (H:C ratio, and its decay rates), like the EBC C-sink</p>
+</li>
+<li>
+<p>if &ldquo;low-tech&rdquo; reactor, they use the default IPCC values for non-measured temperature</p>
+<p>and more text</p>
+<p>The text could be imported from a separate md file.</p>
+</li>
+</ul>
+</div></div>
 
       </div>
     </div>
@@ -580,6 +670,10 @@ Lab determination of the carbon content.</p>
             <li><a href="https://ntropy-esa.github.io/biochar-systems/evaluate-project/">Evaluate your project</a></li>
             
             <li><a href="https://ntropy-esa.github.io/biochar-systems/contact/">Contact</a></li>
+            
+            <li><a href="https://ntropy-esa.github.io/biochar-systems/tooltip_glossary/">Glossary</a></li>
+            
+            <li><a href="https://ntropy-esa.github.io/biochar-systems/demo-page/">Demo</a></li>
             
           </ul>
         </div>

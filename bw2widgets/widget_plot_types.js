@@ -23,6 +23,9 @@ function write_widget(id_figure, id_parameter, param_data, switch_data, algebrai
 		case 'waterfall':
 			plot_waterfall(id_figure, algebraic_values)
 			break;
+		case 'stackedbar':
+			plot_stackedbar(id_figure, algebraic_values)
+			break;
 		default:
 			console.log("Plot type not recognised");
 	}
@@ -89,7 +92,10 @@ function updateWidget(val, NameOrId, id_figure, algebraic_eq, plot_type, switch_
 	switch(plot_type){
 		case 'waterfall':
 			plot_waterfall(id_figure, algebraic_values);
-			plot_stackedbar(id_figure, algebraic_values);
+			//plot_stackedbar(id_figure, algebraic_values);
+			break;
+		case 'stackedbar':
+			plot_stackedbar(id_figure, algebraic_values)
 			break;
 		default:
 			console.log("Plot type not recognised");
@@ -99,7 +105,12 @@ function updateWidget(val, NameOrId, id_figure, algebraic_eq, plot_type, switch_
 function plot_stackedbar(id_figure, algebraic_values){
 	// https://www.d3-graph-gallery.com/graph/barplot_stacked_highlight.html
 	// https://www.d3-graph-gallery.com/graph/custom_legend.html 
-	
+
+	// diverging stack https://bl.ocks.org/mbostock/b5935342c6d21928111928401e2c8608
+	// https://observablehq.com/@d3/diverging-stacked-bar-chart 
+
+	console.log("algebraic values", algebraic_values);
+
 	// set the dimensions and margins of the graph
 	var margin = {top: 10, right: 30, bottom: 20, left: 50},
 		width = 460 - margin.left - margin.right,
@@ -113,30 +124,88 @@ function plot_stackedbar(id_figure, algebraic_values){
 	  .append("g")
 		.attr("transform",
 			  "translate(" + margin.left + "," + margin.top + ")");
-	
-	// from 'waterfall' processing data
-		function process_data(data){
-			// previously, data format: [ {'name':'', 'value':0}, {'name':'', 'value':0}, ]
-			// currently, data format: { 'categorie_1': [0], 'categorie_2': [0] }
-			var prev_end = 0;
-			var new_data = [];
-			var stages = [];
-			for(d in data){
-				name = d; //data[d].name;
-				value =  data[d][0] // data[d].value;
-				start = prev_end;
-				end = prev_end + value;
-				left = Math.min(start, end);
-				right = Math.max(start, end)
-				this_line = {name: name, value: value, start:start, end: end, left:left, right:right}
-				prev_end += value
-				new_data.push(this_line);
-				stages.push(name)
-			};
-			return [new_data, stages];
+
+	var groups = ['Willow1', 'Will2', "Will3"]; // Name of the product - not contained in data yet...
+	var stages = Object.keys(algebraic_values[0]) ; // the keys of the data
+	var stackedData= d3.stack()
+						.keys(stages) // which keys to consider
+						.offset(d3.stackOffsetDiverging) // strategy for negative/positive values
+						(algebraic_values); 	// apply to the stack generator to the data
+
+	console.log("stacked data", stackedData);
+
+		// Add X axis
+		var x = d3.scaleBand()
+		.domain(algebraic_values.map(function(d) { return d.group; }) ) 
+		.range([0, width])
+		.padding([0.2])
+
+		svg.append("g")
+		.attr("transform", "translate(0," + height + ")")
+		.call(d3.axisBottom(x).tickSizeOuter(0));
+
+		function stackMin(serie) {
+		return d3.min(serie, function(d) { return d[0]; });
 		}
-		var data = process_data(algebraic_values);	
-		console.log(data);
+		
+	function stackMax(serie) {
+	return d3.max(serie, function(d) { return d[1]; });
+	}
+	// Add Y axis
+	var y = d3.scaleLinear()
+	.domain([ 1.2*d3.min(stackedData, stackMin), 1.2*d3.max(stackedData, stackMax) ])
+	.range([ height, 0 ]);
+
+	svg.append("g")
+	.call(d3.axisLeft(y));
+
+	// color palette = one color per subgroup
+	var color = d3.scaleOrdinal()
+	.domain(stages)
+	.range(d3.schemeSet2);
+
+  // What happens when user hover a bar
+  var mouseover = function(d) {
+    // what subgroup are we hovering?
+    var subgroupName = d3.select(this.parentNode).datum().key; // the name of the currently highlighted thing
+	subgroupName = subgroupName.replace(/ /g, '');
+    // var subgroupValue = d.data[subgroupName];
+	// IF subgroupName has a SPACE the class change will not work : str.replace(/ /g, '');
+	console.log("CategoryHighlighted is:", subgroupName);
+    // Reduce opacity of all rect to 0.2
+    d3.selectAll(".myRect").style("opacity", 0.2)
+    // Highlight all rects of this subgroup with opacity 0.8. It is possible to select them since they have a specific class = their name.
+    d3.selectAll("."+subgroupName)
+      .style("opacity", 1)
+    }
+
+  // When user do not hover anymore
+  var mouseleave = function(d) {
+    // Back to normal opacity: 0.8
+    d3.selectAll(".myRect")
+      .style("opacity",0.8)
+    }
+
+  // Show the bars
+  svg.append("g")
+    .selectAll("g")
+    // Enter in the stack data = loop key per key = group per group
+    .data(stackedData)
+    .enter().append("g")
+      .attr("fill", function(d) { return color(d.key); })
+      .attr("class", function(d){ return "myRect " + d.key.replace(/ /g, '') }) // Add a class to each subgroup: their name
+      .selectAll("rect")
+      // enter a second time = loop subgroup per subgroup to add all rectangles
+      .data(function(d) { return d; })
+      .enter().append("rect")
+        .attr("x", function(d) { return x(d.data.group); })
+        .attr("y", function(d) { return y(d[1]); })
+        .attr("height", function(d) { return y(d[0]) - y(d[1]); })
+        .attr("width",x.bandwidth())
+        .attr("stroke", "grey")
+      .on("mouseover", mouseover)
+      .on("mouseleave", mouseleave)
+	
 }
 
 function plot_waterfall(id_figure, algebraic_values){
