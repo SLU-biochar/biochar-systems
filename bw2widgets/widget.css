@@ -1,11 +1,16 @@
 .wrapper {display: flex;  overflow-anchor: none; scroll-behavior: smooth;}
-.left {flex: 0 50%;}
-.right {flex: 1;}
+.left {
+  /*flex: 1;
+  max-height: 60vh;*/
+}
+.right {
+    /*flex: 1;*/
+}
 	
-.listParam {height: 500px;
- max-height: 500px;
- overflow: hidden;
- overflow-y: scroll;
+.listParam {
+  max-height: 55vh;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .accordion > input[type="checkbox"] {
@@ -62,7 +67,6 @@
 
 .accordion .handle label:before {
   font-family: 'fontawesome';
-  content: "\f054";
   display: inline-block;
   margin-right: 10px;
   font-size: .58em;
@@ -71,5 +75,4 @@
 }
 
 .accordion > input[type="checkbox"]:checked ~ .handle label:before {
-  content: "\f078";
 }

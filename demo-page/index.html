@@ -42,6 +42,8 @@
 
 
   
+	<script src="/biochar-systems/bw2widgets/d3.v7.min.js  "  type="text/javascript" charset=utf-8 ></script>
+	<script src="/biochar-systems/bw2widgets/d3-scale-chromatic.v1.min.js  "  type="text/javascript" charset=utf-8 ></script>
 	<script src="/biochar-systems/bw2widgets/widget_demo_2.js  "  type="text/javascript" charset=utf-8 ></script>
 	<script src="/biochar-systems/bw2widgets/widget_plot_types.js  "  type="text/javascript" charset=utf-8 ></script>
 	<script src="/biochar-systems/js/mermaid.min.js  "  type="text/javascript" charset=utf-8 ></script>
@@ -142,10 +144,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <!-- Load d3.js & color palette-->
-<script src="https://d3js.org/d3.v4.js"></script>
-<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-<h2 id="insert-a-bw2widget-via-in-its-own-section">Insert a bw2widget via in its own section</h2>
+        <h2 id="insert-a-bw2widget-via-in-its-own-section">Insert a bw2widget via in its own section</h2>
 <p>Random markdown text before the widget
 <section class="">
     <div class="container">
@@ -153,14 +152,18 @@
             <div class="col-md-12">
                 <div class="block">
                     <h3> Biochar production from willow </h3><br />
-                    <div class='wrapper'>
-                        <div id="figure_X2" class='left'>
-                        
-                        </div>
-                        <div id="parameters_X2" class='right'>
-                        
-                        </div>
-                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <div id="figure_X2" class='col-md-8 left'>
+                
+                </div>
+                <div id="parameters_X2" class='col-md-4 right'>
+                
+                </div>
+        </div>
+
                 </div> 
             </div> 
         </div> 
@@ -184,7 +187,6 @@
 
 
 
-    
     </script>
 
 
@@ -262,30 +264,34 @@ C --&gt;|Two| E[&lt;a href=&quot;&quot;&gt; Result two &lt;/a&gt; ]
 <h2 id="chart-dev">Chart dev</h2>
 <!-- Create a div where the graph will take place -->
 <div id="my_dataviz"></div>
+<div id="my_dataviz_legend"></div>
 <script>
 
-// set the dimensions and margins of the graph
+// set the dimensions and margins of the graph & the lend
 var margin = {top: 10, right: 30, bottom: 20, left: 50},
-    width = 460 - margin.left - margin.right,
+    legend_width = 50,
+    width = 500 - margin.left - margin.right - legend_width,
     height = 400 - margin.top - margin.bottom;
+    legend_height = height;
 
 // append the svg object to the body of the page
 var svg = d3.select("#my_dataviz")
   .append("svg")
-    .attr("width", width + margin.left + margin.right)
+    .attr("width", width + margin.left + margin.right + legend_width)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
 // Parse the Data
-d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_stackedXL.csv", function(data) {
+// behavior change in v4 compared to v5,6,7 >> returns all rows at once in v4; while just first row in v7
+d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_stackedXL.csv").then(function(data) {
 
   // List of subgroups = header of the csv files = soil condition here
-  var subgroups = data.columns.slice(1)
+  var subgroups = data.columns.slice(1);
 
   // List of groups = species here = value of the first column called group -> I show them on the X axis
-  var groups = d3.map(data, function(d){return(d.group)}).keys()
+  var groups = data.map(d => d.group)
 
   // Add X axis
   var x = d3.scaleBand()
@@ -313,52 +319,85 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
     .keys(subgroups)
     (data)
 
-  console.log('data', data);
-
-  // ----------------
-  // Highlight a specific subgroup when hovered
-  // ----------------
-
-  // What happens when user hover a bar
-  var mouseover = function(d) {
-    // what subgroup are we hovering?
-    var subgroupName = d3.select(this.parentNode).datum().key; // This was the tricky part
-    var subgroupValue = d.data[subgroupName];
-    // Reduce opacity of all rect to 0.2
-    d3.selectAll(".myRect").style("opacity", 0.2)
-    // Highlight all rects of this subgroup with opacity 0.8. It is possible to select them since they have a specific class = their name.
-    d3.selectAll("."+subgroupName)
-      .style("opacity", 1)
-    }
-
-  // When user do not hover anymore
-  var mouseleave = function(d) {
-    // Back to normal opacity: 0.8
-    d3.selectAll(".myRect")
-      .style("opacity",0.8)
-    }
+  console.log('StackedData', stackedData);
 
   // Show the bars
-  svg.append("g")
+svg.append("g")
     .selectAll("g")
     // Enter in the stack data = loop key per key = group per group
     .data(stackedData)
-    .enter().append("g")
-      .attr("fill", function(d) { return color(d.key); })
-      .attr("class", function(d){ return "myRect " + d.key }) // Add a class to each subgroup: their name
+    .join("g")
+      .attr("fill", d => color(d.key))
+      .attr("class", d => "myRect " + d.key ) // Add a class to each subgroup: their name
       .selectAll("rect")
       // enter a second time = loop subgroup per subgroup to add all rectangles
-      .data(function(d) { return d; })
-      .enter().append("rect")
-        .attr("x", function(d) { return x(d.data.group); })
-        .attr("y", function(d) { return y(d[1]); })
-        .attr("height", function(d) { return y(d[0]) - y(d[1]); })
+      .data(d => d)
+      .join("rect")
+        .attr("x", d => x(d.data.group))
+        .attr("y", d => y(d[1]))
+        .attr("height", d => y(d[0]) - y(d[1]))
         .attr("width",x.bandwidth())
         .attr("stroke", "grey")
-      .on("mouseover", mouseover)
-      .on("mouseleave", mouseleave)
+        .on("mouseover", function (event,d) { // What happens when user hover a bar
 
-})
+          // what subgroup are we hovering?
+          const subGroupName = d3.select(this.parentNode).datum().key 
+          
+          // Reduce opacity of all rect to 0.2
+           d3.selectAll(".myRect").style("opacity", 0.2)  
+          
+          // Highlight all rects of this subgroup with opacity 1. It is possible to select them since they have a specific class = their name.
+           d3.selectAll("."+subGroupName).style("opacity",1) 
+        })
+        .on("mouseleave", function (event,d) { // When user do not hover anymore
+          
+          // Back to normal opacity: 1
+          d3.selectAll(".myRect")
+          .style("opacity",1) 
+      })
+
+// adding legend in its own div
+// https://observablehq.com/@d3/color-legend (fancy stuff, need extra code)
+
+/* Append in new svg in same div
+var legendHolder = d3.select("#my_dataviz")
+  .append("svg")
+
+*/
+var offset_legend = width-margin.left-margin.right;
+var legendHolder = svg.append('g')
+    .attr("width", legend_width)
+    .attr("height", legend_height + margin.top + margin.bottom)
+  // translate the holder to the right side of the graph
+    .attr('transform', "translate("+ offset_legend + ", 0)")
+// Add one dot in the legend for each name.
+
+var reversedSubgroups = subgroups.reverse();
+
+var legend = legendHolder.selectAll("mydots")
+  .data(reversedSubgroups) // name of categories, in reverse order for stacked legend
+  .enter()
+  .append("circle")
+    .attr("cx", 100)
+    .attr("cy", function(d,i){ return 100 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+    .attr("r", 7)
+    .style("fill", function(d){ return color(d)})
+
+
+// Add one dot in the legend for each name.
+  legend = legendHolder.selectAll("mylabels")
+      .data(reversedSubgroups)
+      .enter()
+      .append("text")
+        .attr("x", 120)
+        .attr("y", function(d,i){ return 100 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+        .style("fill", function(d){ return color(d)})
+        .text(function(d){ return d})
+        .attr("text-anchor", "left")
+        .style("alignment-baseline", "middle")
+
+
+}) // end of data csv callback
 
 </script><blockquote>
 </blockquote>
