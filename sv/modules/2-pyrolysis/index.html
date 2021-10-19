@@ -191,33 +191,30 @@ culpa? Delectus dolorum facere quasi iure explicabo?</p>
                 
                 </div>
         </div>
-
-                </div> 
-            </div> 
-        </div> 
     </div> 
+
     <script>
         
         
-        var context = {};
-        
-        context["parameter_data"] = parameter_data;
-        context["switch_parameter_data"] = switch_parameter_data;
-        context["algebraic_equation_f"] = algebraic_equation_f;
-        write_widget("figure_X1", "parameters_X1", 'parameter_data', 'switch_parameter_data', 'algebraic_equation_f', "");
-    
-
-
-
-
 
         
+  
 
-
-
+        if (typeof context === 'undefined' || context === null){ 
+            var context = {};
+            console.log("tada, context initalised");
+        }
     </script>
-
-
+    <script src="/biochar-systems/.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        context["X1"] = {};    
+        
+        context["X1"]["parameter_data"] = parameter_data;
+        context["X1"]["switch_parameter_data"] = switch_parameter_data;
+        context["X1"]["algebraic_equation_f"] = algebraic_equation_f;
+        console.log("after init", context);
+        write_widget("figure_X1", "parameters_X1", 'parameter_data', 'switch_parameter_data', 'algebraic_equation_f', "");
+    </script>
 </section>
   
  

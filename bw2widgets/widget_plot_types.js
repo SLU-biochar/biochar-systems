@@ -9,7 +9,7 @@ function write_widget(id_figure, id_parameter, param_data, switch_data, algebrai
 	//console.log(param_data);
 	
 	// write parameter sliders
-	var html_txt = '<p>Click on the parameters to change their values. Expand all. Collapse all. </p>'
+	var html_txt = '<p>Click on the parameters to change their values. </p>'
 	html_txt += '<div class="listParam">';
 	html_txt += write_sliders(id_figure, id_parameter, param_data, switch_data, algebraic_eq, plot_type);
 	html_txt += '</div>';
@@ -35,37 +35,39 @@ function write_widget(id_figure, id_parameter, param_data, switch_data, algebrai
 
 function write_sliders(id_figure, id_parameter, param_data, switch_data, algebraic_eq, plot_type){
 	var html_txt = '';
-
+	var widgetName = id_figure.split(/_(.+)/)[1]; // to do, just pass it as argument of the function...
+	console.log(widgetName);
 	// V1: collapsible
 	// CSS3 https://codepen.io/markcaron/pen/RVvmaz (see their styling)
-	html_txt = '';
-	for(i in context[param_data]['name']){
+	
+
+	for(i in context[widgetName][param_data]['name']){
 		
-		var name = ( (context["parameter_data"].hasOwnProperty("prettyName")) ? context[param_data]['prettyName'][i] : context[param_data]['name'][i] ); // bw2 name or prettyName if it exists and is not null 
-		var nameID = context[param_data]['name'][i];
-		var description = ( (context["parameter_data"].hasOwnProperty("description")) ? context[param_data]['description'][i] : '' );
-		var unit = ( (context["parameter_data"].hasOwnProperty("unit")) ? context[param_data]['unit'][i] : '' );
+		var name = ( (context[widgetName]["parameter_data"].hasOwnProperty("prettyName")) ? context[widgetName][param_data]['prettyName'][i] : context[widgetName][param_data]['name'][i] ); // bw2 name or prettyName if it exists and is not null 
+		var nameID = context[widgetName][param_data]['name'][i];
+		var description = ( (context[widgetName]["parameter_data"].hasOwnProperty("description")) ? context[widgetName][param_data]['description'][i] : '' );
+		var unit = ( (context[widgetName]["parameter_data"].hasOwnProperty("unit")) ? context[widgetName][param_data]['unit'][i] : '' );
 
 		html_txt += ' <section class="accordion"> ' ;
-		html_txt += ' <input type="checkbox" name="collapse" id="handle_'+nameID+'" > ';
-		html_txt += ' <h5 class="handle"> <label for="handle_'+nameID+'"> '+name; // prettyName if it exists
+		html_txt += ' <input type="checkbox" name="collapse" id="handle_'+widgetName+'_'+nameID+'" > ';
+		html_txt += ' <h5 class="handle"> <label for="handle_'+widgetName+'_'+nameID+'"> '+name; // prettyName if it exists
 		    
 		html_txt += ' <a class="glossary-tooltip" title="'+description+'" data-toggle="tooltip" data-placement="top" aria-label="'+description+'"> &#x24D8; </a>'; // tooltip description in the info symbolo
 		html_txt += ' </label></h5>'; 
 		html_txt += ' <div class="content">';
 		
-		if(context[param_data]['uncertainty type'][i] == 'switch'){
-			var nbOptions = context[switch_data][nameID]['options'].length
-			html_txt += ' <select name="select_'+nameID+'" onchange="updateWidget(this.value, this.name, \''+id_figure+'\', algebraic_equation_f, \''+plot_type+'\', \''+switch_data+'\');" >' ;
+		if(context[widgetName][param_data]['uncertainty type'][i] == 'switch'){
+			var nbOptions = context[widgetName][switch_data][nameID]['options'].length
+			html_txt += ' <select name="select_'+widgetName+'_'+nameID+'" onchange="updateWidget(this.value, this.name, \''+id_figure+'\', algebraic_equation_f, \''+plot_type+'\', \''+switch_data+'\');" >' ;
 			for(let j=0; j < nbOptions; j++){
-				html_txt += ' <option value='+j+'>'+context[switch_data][nameID]['options'][j]+'</option> ';
+				html_txt += ' <option value='+j+'>'+context[widgetName][switch_data][nameID]['options'][j]+'</option> ';
 			}
 			html_txt += '</select>' ;						
 		}else{
-			// html_txt += '  Minimum: '+ context[param_data]['minimum'][i]+' ';
-			html_txt += ' <input type="range" name="range_'+nameID+'" min="'+context[param_data]['minimum'][i]+'" max="'+context[param_data]['maximum'][i]+'" step = "'+(context[param_data]['maximum'][i] - context[param_data]['minimum'][i])/100+'"  ';
+			// html_txt += '  Minimum: '+ context[widgetName][param_data]['minimum'][i]+' ';
+			html_txt += ' <input type="range" name="range_'+widgetName+'_'+nameID+'" min="'+context[widgetName][param_data]['minimum'][i]+'" max="'+context[widgetName][param_data]['maximum'][i]+'" step = "'+(context[widgetName][param_data]['maximum'][i] - context[widgetName][param_data]['minimum'][i])/100+'"  ';
 			html_txt += ' onchange="updateWidget(this.value, this.name, \''+id_figure+'\', algebraic_equation_f, \''+plot_type+'\', \''+switch_data+'\');" >' ;
-			html_txt += ' <input type="text" id="txt_'+nameID+'" value="'+context[param_data]['amount'][i]+'" maxlength="4" size="4" onchange="updateWidget(this.value, this.id, \''+id_figure+'\', algebraic_equation_f, \''+plot_type+'\', \''+switch_data+'\');" >' ;			
+			html_txt += ' <input type="text" id="txt_'+widgetName+'_'+nameID+'" value="'+context[widgetName][param_data]['amount'][i]+'" maxlength="4" size="4" onchange="updateWidget(this.value, this.id, \''+id_figure+'\', algebraic_equation_f, \''+plot_type+'\', \''+switch_data+'\');" >' ;			
 			html_txt += ' in: <i>' + unit+'</i>';
 		}
 		html_txt += ' </div> </section>';			
@@ -74,34 +76,39 @@ function write_sliders(id_figure, id_parameter, param_data, switch_data, algebra
 }
 
 function updateWidget(val, NameOrId, id_figure, algebraic_eq, plot_type, switch_data){
-	console.log("triggered")
+	console.log("triggered");
+	var widgetName = id_figure.split(/(_)/)[2]; // to do, just pass it as argument of the function...
+	console.log(widgetName);
+
 	document.getElementById(id_figure).innerHTML=''; // reset figure div
 	// update text input area with updated value (if update was made by range slider)
-	paramType = NameOrId.split(/_(.+)/)[0];
+	console.log(NameOrId);
+	paramType = NameOrId.split(/(_)/)[0]; // Naming convention: widgetName: no underscore in it ! 
 	console.log(paramType);
-	paramName = NameOrId.split(/_(.+)/)[1];
-	console.log(context[switch_data]);
+	paramName = NameOrId.split(/^[^_]*_([^_]*)_/)[2]; // last item
+	console.log(paramName);
+	console.log(context[widgetName][switch_data]);
 	// update global variable global, depending on if it is a switch or not
 	if(paramType == 'select'){ // it's a switch param, update multiple values
-		var nbOptions = context[switch_data][paramName]['options'].length
+		var nbOptions = context[widgetName][switch_data][paramName]['options'].length; 
 		for(let j = 0; j<nbOptions; j++){
 			console.log(paramName+'_'+j.toString());
-			console.log(context[switch_data][paramName]['values'][val][j]);
-			window[paramName+'_'+(j+1).toString()]= context[switch_data][paramName]['values'][val][j];
+			console.log(context[widgetName][switch_data][paramName]['values'][val][j]);
+			window[paramName+'_'+(j+1).toString()]= context[widgetName][switch_data][paramName]['values'][val][j];
 		}
 		
 	}else{
-		document.getElementById('txt_'+paramName).value=val;
+		console.log("get id", 'txt_'+widgetName+paramName);
+		document.getElementById('txt_'+widgetName+'_'+paramName).value=val;
 		window[paramName]=val;
 	}
 	// recalculate algebraic equation
-	var algebraic_values = context['algebraic_equation_f'].apply(); // dynamic call to function - to pass as argument to the update function
+	var algebraic_values = context[widgetName]['algebraic_equation_f'].apply(); // dynamic call to function - to pass as argument to the update function
 	
 	// plotting, according to type
 	switch(plot_type){
 		case 'waterfall':
 			plot_waterfall(id_figure, algebraic_values);
-			//plot_stackedbar(id_figure, algebraic_values);
 			break;
 		case 'stackedbar':
 			plot_stackedbar(id_figure, algebraic_values)
@@ -154,10 +161,8 @@ function plot_stackedbar(id_figure, algebraic_values){
 		.attr("transform",
 			  "translate(" + margin.left + "," + margin.top + ")");
 
-	var groups = ['Willow1', 'Will2', "Will3"]; // Name of the product - not contained in data yet...
 	var stages = Object.keys(algebraic_values[0]) ; // the keys of the data
-	stages = stages.slice(1);
-	// stages.pop("group"); // remove the col name "group"
+	stages = stages.filter(function(item) {return item !== 'group' }) // remove the col name "group"
 	console.log("stages", stages);	
 	var stackedData= d3.stack()
 						.keys(stages) // which keys to consider
@@ -323,12 +328,18 @@ function plot_waterfall(id_figure, algebraic_values){
 		function process_data(data){
 			// previously, data format: [ {'name':'', 'value':0}, {'name':'', 'value':0}, ]
 			// currently, data format: { 'categorie_1': [0], 'categorie_2': [0] }
+			// new data format: [ {'group':'willow', categorie_1': 0, 'categorie_2': 0}]
+			
+			data = data[0]; // first element only, it's a waterfall, cannot plot multiple fus
+			delete data.group; // remove the key 'group'
+			console.log("pre-pro data", data);
+
 			var prev_end = 0;
 			var new_data = [];
 			var stages = [];
 			for(d in data){
-				name = d; //data[d].name;
-				value =  data[d][0] // data[d].value;
+				name = d; 
+				value =  data[d]
 				start = prev_end;
 				end = prev_end + value;
 				left = Math.min(start, end);

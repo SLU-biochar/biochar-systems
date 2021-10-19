@@ -44,7 +44,6 @@
   
 	<script src="/biochar-systems/bw2widgets/d3.v7.min.js  "  type="text/javascript" charset=utf-8 ></script>
 	<script src="/biochar-systems/bw2widgets/d3-scale-chromatic.v1.min.js  "  type="text/javascript" charset=utf-8 ></script>
-	<script src="/biochar-systems/bw2widgets/widget_demo_2.js  "  type="text/javascript" charset=utf-8 ></script>
 	<script src="/biochar-systems/bw2widgets/widget_plot_types.js  "  type="text/javascript" charset=utf-8 ></script>
 	<script src="/biochar-systems/js/mermaid.min.js  "  type="text/javascript" charset=utf-8 ></script>
 	<link rel="stylesheet" href="/biochar-systems/bw2widgets/widget.css  " >
@@ -91,7 +90,7 @@
                   Case studies <span class="ion-ios-arrow-down"></span>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a href="https://ntropy-esa.github.io/biochar-systems/case-studies/">All cases</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/case-studies/1-stockholm/">1. Stockholm</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/case-studies/2-lindeborgs/">2. Lindeborgs</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/case-studies/3-helsingborg/">3. Helsingborg</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/case-studies/4-uppsala/">4. Uppsala</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/case-studies/5-gis-sweden/">5. GIS Sweden</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/case-studies/6-water-filter/">6. Water filters</a></li>
+                  <li><a href="https://ntropy-esa.github.io/biochar-systems/case-studies/">All cases</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/case-studies/1-stockholm/">1. Stockholm</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/case-studies/2-lindeborgs/">2. Lindeborgs</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/case-studies/3-helsingborg/">3. Helsingborg</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/case-studies/4-uppsala/">4. Uppsala</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/case-studies/5-gis-sweden/">5. GIS Sweden</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/case-studies/6-water-filter/">6. Water filters</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/case-studies/7-kenya-cookstove/">7. Kenyan cookstove</a></li>
                 </ul>
               </li>
               <li><a href="https://ntropy-esa.github.io/biochar-systems/resources/">Resources</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/evaluate-project/">Evaluate your project</a></li><li class="dropdown"> 
@@ -163,37 +162,82 @@
                 
                 </div>
         </div>
-
-                </div> 
-            </div> 
-        </div> 
     </div> 
+
     <script>
         
         
-        var context = {};
-        
-        context["parameter_data"] = parameter_data;
-        context["switch_parameter_data"] = switch_parameter_data;
-        context["algebraic_equation_f"] = algebraic_equation_f;
-        write_widget("figure_X2", "parameters_X2", 'parameter_data', 'switch_parameter_data', 'algebraic_equation_f', "stackedbar");
-    
-
-
-
-
 
         
+  
 
-
-
+        if (typeof context === 'undefined' || context === null){ 
+            var context = {};
+            console.log("tada, context initalised");
+        }
     </script>
-
-
+    <script src="/biochar-systems/bw2widgets/widget_demo_2.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        context["X2"] = {};    
+        
+        context["X2"]["parameter_data"] = parameter_data;
+        context["X2"]["switch_parameter_data"] = switch_parameter_data;
+        context["X2"]["algebraic_equation_f"] = algebraic_equation_f;
+        console.log("after init", context);
+        write_widget("figure_X2", "parameters_X2", 'parameter_data', 'switch_parameter_data', 'algebraic_equation_f', "stackedbar");
+    </script>
 </section>
   
  
 Random markdown text after the widget</p>
+<h2 id="insert-a-second-bw2widget-via-in-its-own-section">Insert a second bw2widget via in its own section</h2>
+<p>Random markdown text before the widget</p>
+<!-- Shortcode for bw2widget inclusion: widgetName should not have any underscore '_'. plotType available: 'waterfall', 'stackedbar' -->
+<section class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h3> Biochar production from Other </h3><br />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <div id="figure_X3" class='col-md-8 left'>
+                
+                </div>
+                <div id="parameters_X3" class='col-md-4 right'>
+                
+                </div>
+        </div>
+    </div> 
+
+    <script>
+        
+        
+
+        
+  
+
+        if (typeof context === 'undefined' || context === null){ 
+            var context = {};
+            console.log("tada, context initalised");
+        }
+    </script>
+    <script src="/biochar-systems/bw2widgets/widget_demo_22.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        context["X3"] = {};    
+        
+        context["X3"]["parameter_data"] = parameter_data;
+        context["X3"]["switch_parameter_data"] = switch_parameter_data;
+        context["X3"]["algebraic_equation_f"] = algebraic_equation_f;
+        console.log("after init", context);
+        write_widget("figure_X3", "parameters_X3", 'parameter_data', 'switch_parameter_data', 'algebraic_equation_f', "waterfall");
+    </script>
+</section>
+  
+
+<p>Random markdown text after the widget</p>
 <h2 id="another-shortcode-youtube-video">Another shortcode: youtube video</h2>
 
 <div class="col-lg">
