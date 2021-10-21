@@ -8,11 +8,20 @@
     <language>en-en</language>
     <copyright>Elias S. Azzi, Cecilia Sundberg, KTH, SLU</copyright><atom:link href="https://ntropy-esa.github.io/biochar-systems/case-studies/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Biochar water filters</title>
-      <link>https://ntropy-esa.github.io/biochar-systems/case-studies/6-water-filter/</link>
+      <title>Prospective life cycle assessment of large-scale biochar production and use for negative emissions in Stockholm</title>
+      <link>https://ntropy-esa.github.io/biochar-systems/case-studies/1-stockholm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ntropy-esa.github.io/biochar-systems/case-studies/6-water-filter/</guid>
+      <guid>https://ntropy-esa.github.io/biochar-systems/case-studies/1-stockholm/</guid>
+      <description>Reference, Resources, Presentations   Azzi ES, Karltun E, Sundberg C (2019) Prospective life cycle assessment of large-scale biochar production and use for negative emissions in Stockholm. Environmental Science &amp;amp; Technology 53:8466–8476.</description>
+    </item>
+    
+    <item>
+      <title>Lindeborgs</title>
+      <link>https://ntropy-esa.github.io/biochar-systems/case-studies/2-lindeborgs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ntropy-esa.github.io/biochar-systems/case-studies/2-lindeborgs/</guid>
       <description>Behance Website Redesign Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas officiis cumque, harum dicta necessitatibus reprehenderit, delectus molestiae, impedit alias adipisci distinctio voluptas. Tempora modi amet voluptate at provident soluta consequatur.</description>
     </item>
     
@@ -26,20 +35,11 @@
     </item>
     
     <item>
-      <title>Kenyan biochar cookstoves</title>
-      <link>https://ntropy-esa.github.io/biochar-systems/case-studies/7-kenya-cookstove/</link>
+      <title>Uppsala</title>
+      <link>https://ntropy-esa.github.io/biochar-systems/case-studies/4-uppsala/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ntropy-esa.github.io/biochar-systems/case-studies/7-kenya-cookstove/</guid>
-      <description>Behance Website Redesign Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas officiis cumque, harum dicta necessitatibus reprehenderit, delectus molestiae, impedit alias adipisci distinctio voluptas. Tempora modi amet voluptate at provident soluta consequatur.</description>
-    </item>
-    
-    <item>
-      <title>Lindeborgs</title>
-      <link>https://ntropy-esa.github.io/biochar-systems/case-studies/2-lindeborgs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ntropy-esa.github.io/biochar-systems/case-studies/2-lindeborgs/</guid>
+      <guid>https://ntropy-esa.github.io/biochar-systems/case-studies/4-uppsala/</guid>
       <description>Behance Website Redesign Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas officiis cumque, harum dicta necessitatibus reprehenderit, delectus molestiae, impedit alias adipisci distinctio voluptas. Tempora modi amet voluptate at provident soluta consequatur.</description>
     </item>
     
@@ -53,20 +53,20 @@
     </item>
     
     <item>
-      <title>Stockholm</title>
-      <link>https://ntropy-esa.github.io/biochar-systems/case-studies/1-stockholm/</link>
+      <title>Kenyan biochar cookstoves</title>
+      <link>https://ntropy-esa.github.io/biochar-systems/case-studies/7-kenya-cookstove/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ntropy-esa.github.io/biochar-systems/case-studies/1-stockholm/</guid>
-      <description>Research highlights as project details ? or keywords ? doi ? Behance Website Redesign Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas officiis cumque, harum dicta necessitatibus reprehenderit, delectus molestiae, impedit alias adipisci distinctio voluptas.</description>
+      <guid>https://ntropy-esa.github.io/biochar-systems/case-studies/7-kenya-cookstove/</guid>
+      <description>Behance Website Redesign Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas officiis cumque, harum dicta necessitatibus reprehenderit, delectus molestiae, impedit alias adipisci distinctio voluptas. Tempora modi amet voluptate at provident soluta consequatur.</description>
     </item>
     
     <item>
-      <title>Uppsala</title>
-      <link>https://ntropy-esa.github.io/biochar-systems/case-studies/4-uppsala/</link>
+      <title>Biochar water filters</title>
+      <link>https://ntropy-esa.github.io/biochar-systems/case-studies/6-water-filter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ntropy-esa.github.io/biochar-systems/case-studies/4-uppsala/</guid>
+      <guid>https://ntropy-esa.github.io/biochar-systems/case-studies/6-water-filter/</guid>
       <description>Behance Website Redesign Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas officiis cumque, harum dicta necessitatibus reprehenderit, delectus molestiae, impedit alias adipisci distinctio voluptas. Tempora modi amet voluptate at provident soluta consequatur.</description>
     </item>
     

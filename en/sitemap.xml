@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ntropy-esa.github.io/biochar-systems/case-studies/1-stockholm/</loc>
+  </url><url>
+    <loc>https://ntropy-esa.github.io/biochar-systems/case-studies/2-lindeborgs/</loc>
+  </url><url>
+    <loc>https://ntropy-esa.github.io/biochar-systems/case-studies/3-helsingborg/</loc>
+  </url><url>
+    <loc>https://ntropy-esa.github.io/biochar-systems/case-studies/4-uppsala/</loc>
+  </url><url>
+    <loc>https://ntropy-esa.github.io/biochar-systems/case-studies/5-gis-sweden/</loc>
+  </url><url>
+    <loc>https://ntropy-esa.github.io/biochar-systems/case-studies/7-kenya-cookstove/</loc>
+  </url><url>
+    <loc>https://ntropy-esa.github.io/biochar-systems/case-studies/6-water-filter/</loc>
+  </url><url>
     <loc>https://ntropy-esa.github.io/biochar-systems/evaluate-project/</loc>
     <lastmod>2021-09-27T00:00:00+00:00</lastmod>
   </url><url>
@@ -160,8 +174,6 @@
                 href="https://ntropy-esa.github.io/biochar-systems/modules/"
                 />
   </url><url>
-    <loc>https://ntropy-esa.github.io/biochar-systems/case-studies/6-water-filter/</loc>
-  </url><url>
     <loc>https://ntropy-esa.github.io/biochar-systems/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -200,8 +212,6 @@
                 href="https://ntropy-esa.github.io/biochar-systems/tooltip_glossary/"
                 />
   </url><url>
-    <loc>https://ntropy-esa.github.io/biochar-systems/case-studies/3-helsingborg/</loc>
-  </url><url>
     <loc>https://ntropy-esa.github.io/biochar-systems/author/john-doe/</loc>
     <xhtml:link
                 rel="alternate"
@@ -213,10 +223,6 @@
                 hreflang="en"
                 href="https://ntropy-esa.github.io/biochar-systems/author/john-doe/"
                 />
-  </url><url>
-    <loc>https://ntropy-esa.github.io/biochar-systems/case-studies/7-kenya-cookstove/</loc>
-  </url><url>
-    <loc>https://ntropy-esa.github.io/biochar-systems/case-studies/2-lindeborgs/</loc>
   </url><url>
     <loc>https://ntropy-esa.github.io/biochar-systems/author/mark-dinn/</loc>
     <xhtml:link
@@ -256,10 +262,6 @@
                 href="https://ntropy-esa.github.io/biochar-systems/service/"
                 />
   </url><url>
-    <loc>https://ntropy-esa.github.io/biochar-systems/case-studies/5-gis-sweden/</loc>
-  </url><url>
-    <loc>https://ntropy-esa.github.io/biochar-systems/case-studies/1-stockholm/</loc>
-  </url><url>
     <loc>https://ntropy-esa.github.io/biochar-systems/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -271,7 +273,5 @@
                 hreflang="en"
                 href="https://ntropy-esa.github.io/biochar-systems/tags/"
                 />
-  </url><url>
-    <loc>https://ntropy-esa.github.io/biochar-systems/case-studies/4-uppsala/</loc>
   </url>
 </urlset>
