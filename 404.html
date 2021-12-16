@@ -40,7 +40,9 @@
 
 
   
-
+	
+	
+	
 </head>
 <body>
 <!-- preloader start -->
@@ -64,8 +66,10 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/biochar-systems/">
-              <img src="/biochar-systems/img/logo.png" alt="Biochar Systems" width="150px" class="img-responsive">
+              <img src="/biochar-systems/img/logo.png" alt="Biochar Systems" width="50px" align="left" class="img-responsive">
+              <span style="vertical-align:middle">Biochar Systems<br/>Research Group</span>
             </a>
+            
           </div>
           
           <div class="collapse navbar-collapse" id="navigation">
@@ -75,7 +79,7 @@
                   Systems analysis <span class="ion-ios-arrow-down"></span>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a href="https://ntropy-esa.github.io/biochar-systems/modules/">Overview</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/1-biomass/">1. Biomass production</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/2-pyrolysis/">2. Pyrolysis</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/3-co-product-use/">3. Co-product use</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/4-product-manufacturing/">4. Biochar product</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/5-product-use/">5. Biochar product use</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/6-product-eol/">6. Biochar product disposal</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/7-other-materials/">7. Other materials</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/8-ref-bg-systems/">8. Reference system</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/9-carbon-sink/">9. Carbon sink</a></li>
+                  <li><a href="https://ntropy-esa.github.io/biochar-systems/modules/">Overview</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/1-biomass/">1. Biomass production</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/2-pyrolysis/">2. Pyrolysis</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/3-co-product-use/">3. Co-product use</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/4-product-manufacturing/">4. Biochar product</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/5-product-use/">5. Biochar product use</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/6-product-eol/">6. Biochar product disposal</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/7-other-materials/">7. Other materials</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/8-ref-bg-systems/">8. Reference system</a></li>
                 </ul>
               </li>
               <li class="dropdown"> 
@@ -191,46 +195,6 @@
 <script src="/biochar-systems/js/bundled.min.js"></script>
 
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
-<div id="js-cookie-box" class="cookie-box cookie-box-hide">
-  This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-main btn-solid-border">I Accept</span>
-</div>
-<script>
-  (function ($) {
-    const cookieBox = document.getElementById('js-cookie-box');
-    const cookieButton = document.getElementById('js-cookie-button');
-    if (!Cookies.get('cookie-box')) {
-      cookieBox.classList.remove('cookie-box-hide');
-      cookieButton.onclick = function () {
-        Cookies.set('cookie-box', true, {
-          expires:  2 
-        });
-        cookieBox.classList.add('cookie-box-hide');
-      };
-    }
-  })(jQuery);
-</script>
-
-
-<style>
-.cookie-box {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  z-index: 9999;
-  padding: 1rem 2rem;
-  background: rgb(71, 71, 71);
-  transition: all .75s cubic-bezier(.19, 1, .22, 1);
-  color: #fdfdfd;
-}
-
-.cookie-box-hide {
-  display: none;
-}
-</style>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 // responsive SVG : https://medium.com/@louisemoxy/a-simple-way-to-make-d3-js-charts-svgs-responsive-7afb04bc2e4b 
 
-function write_widget(id_figure, id_parameter, param_data, switch_data, algebraic_eq, plot_type){
+function write_widget(id_figure, id_parameter, param_data, switch_data, algebraic_eq, plot_type, ylabel){
 	
 	document.getElementById(id_parameter).innerHTML='';
 	//console.log(param_data);
@@ -26,14 +26,17 @@ function write_widget(id_figure, id_parameter, param_data, switch_data, algebrai
 			plot_waterfall(id_figure, algebraic_values)
 			break;
 		case 'stackedbar':
-			plot_stackedbar(id_figure, algebraic_values)
+			plot_stackedbar(id_figure, ylabel, algebraic_values)
+			break;
+		case 'sankey' :
+			plot_sankey(id_figure, algebraic_values)
 			break;
 		default:
 			console.log("Plot type not recognised");
 	}
 }
 
-function write_sliders(id_figure, id_parameter, param_data, switch_data, algebraic_eq, plot_type){
+function write_sliders(id_figure, id_parameter, param_data, switch_data, algebraic_eq, plot_type, ylabel){
 	var html_txt = '';
 	var widgetName = id_figure.split(/_(.+)/)[1]; // to do, just pass it as argument of the function...
 	console.log(widgetName);
@@ -58,7 +61,7 @@ function write_sliders(id_figure, id_parameter, param_data, switch_data, algebra
 		
 		if(context[widgetName][param_data]['uncertainty type'][i] == 'switch'){
 			var nbOptions = context[widgetName][switch_data][nameID]['options'].length
-			html_txt += ' <select name="select_'+widgetName+'_'+nameID+'" onchange="updateWidget(this.value, this.name, \''+id_figure+'\', algebraic_equation_f, \''+plot_type+'\', \''+switch_data+'\');" >' ;
+			html_txt += ' <select name="select_'+widgetName+'_'+nameID+'" onchange="updateWidget(this.value, this.name, \''+id_figure+'\', algebraic_equation_f, \''+plot_type+'\', \''+switch_data+'\', \''+ylabel+'\');" >' ;
 			for(let j=0; j < nbOptions; j++){
 				html_txt += ' <option value='+j+'>'+context[widgetName][switch_data][nameID]['options'][j]+'</option> ';
 			}
@@ -66,8 +69,8 @@ function write_sliders(id_figure, id_parameter, param_data, switch_data, algebra
 		}else{
 			// html_txt += '  Minimum: '+ context[widgetName][param_data]['minimum'][i]+' ';
 			html_txt += ' <input type="range" name="range_'+widgetName+'_'+nameID+'" min="'+context[widgetName][param_data]['minimum'][i]+'" max="'+context[widgetName][param_data]['maximum'][i]+'" step = "'+(context[widgetName][param_data]['maximum'][i] - context[widgetName][param_data]['minimum'][i])/100+'"  ';
-			html_txt += ' onchange="updateWidget(this.value, this.name, \''+id_figure+'\', algebraic_equation_f, \''+plot_type+'\', \''+switch_data+'\');" >' ;
-			html_txt += ' <input type="text" id="txt_'+widgetName+'_'+nameID+'" value="'+context[widgetName][param_data]['amount'][i]+'" maxlength="4" size="4" onchange="updateWidget(this.value, this.id, \''+id_figure+'\', algebraic_equation_f, \''+plot_type+'\', \''+switch_data+'\');" >' ;			
+			html_txt += ' onchange="updateWidget(this.value, this.name, \''+id_figure+'\', algebraic_equation_f, \''+plot_type+'\', \''+switch_data+'\' , \''+ylabel+'\');" >' ;
+			html_txt += ' <input type="text" id="txt_'+widgetName+'_'+nameID+'" value="'+context[widgetName][param_data]['amount'][i]+'" maxlength="4" size="4" onchange="updateWidget(this.value, this.id, \''+id_figure+'\', algebraic_equation_f, \''+plot_type+'\', \''+switch_data+'\', \''+ylabel+'\');" >' ;			
 			html_txt += ' in: <i>' + unit+'</i>';
 		}
 		html_txt += ' </div> </section>';			
@@ -75,30 +78,30 @@ function write_sliders(id_figure, id_parameter, param_data, switch_data, algebra
 	return html_txt
 }
 
-function updateWidget(val, NameOrId, id_figure, algebraic_eq, plot_type, switch_data){
-	console.log("triggered");
+function updateWidget(val, NameOrId, id_figure, algebraic_eq, plot_type, switch_data, ylabel){
+	//console.log("triggered");
 	var widgetName = id_figure.split(/(_)/)[2]; // to do, just pass it as argument of the function...
-	console.log(widgetName);
+	//console.log(widgetName);
 
 	document.getElementById(id_figure).innerHTML=''; // reset figure div
 	// update text input area with updated value (if update was made by range slider)
-	console.log(NameOrId);
+	//console.log(NameOrId);
 	paramType = NameOrId.split(/(_)/)[0]; // Naming convention: widgetName: no underscore in it ! 
-	console.log(paramType);
+	//console.log(paramType);
 	paramName = NameOrId.split(/^[^_]*_([^_]*)_/)[2]; // last item
-	console.log(paramName);
-	console.log(context[widgetName][switch_data]);
+	//console.log(paramName);
+	//console.log(context[widgetName][switch_data]);
 	// update global variable global, depending on if it is a switch or not
 	if(paramType == 'select'){ // it's a switch param, update multiple values
 		var nbOptions = context[widgetName][switch_data][paramName]['options'].length; 
 		for(let j = 0; j<nbOptions; j++){
-			console.log(paramName+'_'+j.toString());
-			console.log(context[widgetName][switch_data][paramName]['values'][val][j]);
+			//console.log(paramName+'_'+j.toString());
+			//console.log(context[widgetName][switch_data][paramName]['values'][val][j]);
 			window[paramName+'_'+(j+1).toString()]= context[widgetName][switch_data][paramName]['values'][val][j];
 		}
 		
 	}else{
-		console.log("get id", 'txt_'+widgetName+paramName);
+		//console.log("get id", 'txt_'+widgetName+paramName);
 		document.getElementById('txt_'+widgetName+'_'+paramName).value=val;
 		window[paramName]=val;
 	}
@@ -111,8 +114,11 @@ function updateWidget(val, NameOrId, id_figure, algebraic_eq, plot_type, switch_
 			plot_waterfall(id_figure, algebraic_values);
 			break;
 		case 'stackedbar':
-			plot_stackedbar(id_figure, algebraic_values)
+			plot_stackedbar(id_figure, ylabel, algebraic_values)
 			break;
+		case 'sankey' :
+			plot_sankey(id_figure, algebraic_values)
+			break;			
 		default:
 			console.log("Plot type not recognised");
 	}	
@@ -126,17 +132,64 @@ var nb2txt_2c = d3.format(",.2r"),
 	nb2txt_3c = d3.format(",.3r");
 
 /*
-	Plotting functions: stackedbar, waterfall
+	Plotting functions: stackedbar, waterfall, sankey
 */
+function plot_sankey(id_figure, algebraic_values){
+	// main script for inspiration: https://github.com/IndEcol/CircularSankeyApp/blob/master/scripts/circular_sankey_script.js 
+	// line 259 + to adapt to our json data
+	// [ other lib : https://github.com/ricklupton/d3-sankey-diagram
+	// https://ricklupton.github.io/d3-sankey-diagram/ > sounds good alternative... has ciruclar flow as well
+	// restart: look at simple example, and get it to work first ... 
+	// gridified cola https://ialab.it.monash.edu/webcola/examples/dotpowergraph.html
+	// asterios soft https://www.sankeyflowshow.com/intro/sankeydiagrams.html >> svg based, their js: https://www.sankeyflowshow.com/script/sfsGui-1.0.18.min.js 
 
-function plot_stackedbar(id_figure, algebraic_values){
+	// https://www.d3-graph-gallery.com/graph/sankey_basic.html
+	// set the dimensions and margins of the graph
+	// Data
+	var graph = algebraic_values;
+	
+	// Set up SVG
+	var svg = d3.select("#"+id_figure).append("svg")
+					.attr("width", 800)
+					.attr("height", 300)
+	var width = +svg.attr('width');
+	var height = +svg.attr('height');
+	var margin = { top: 10, left: 80, bottom: 10, right: 80 };
+	
+	var i = -1;
+	var layout = d3.sankey()
+					.linkValue(function (d) { return d.value; })
+					.extent([
+					[margin.left, margin.top],
+					[width - margin.left - margin.right, height - margin.top - margin.bottom]]);
+	
+	// Render
+	var color = d3.scaleOrdinal(d3.schemeCategory10);
+	var diagram = d3.sankeyDiagram()
+					.linkMinWidth(function(d) { return 0.1; })
+					.linkColor(function(d) { return color(d.type); });
+	
+	update();
+	d3.interval(update, 1500);
+	
+	function update() {
+		layout(graph);
+		svg
+		.datum(graph)
+		//.transition().duration(500).ease(d3.easeLinear)
+		.call(diagram);
+	}
+
+}
+
+function plot_stackedbar(id_figure, ylabel, algebraic_values){
 	// https://www.d3-graph-gallery.com/graph/barplot_stacked_highlight.html
 	// https://www.d3-graph-gallery.com/graph/custom_legend.html 
 
 	// diverging stack https://bl.ocks.org/mbostock/b5935342c6d21928111928401e2c8608
 	// https://observablehq.com/@d3/diverging-stacked-bar-chart 
 
-	console.log("algebraic values", algebraic_values);
+	//console.log("algebraic values", algebraic_values);
 	
 	// set the dimensions and margins of the graph
 	var margin = {top: 10, right: 30, bottom: 20, left: 50},
@@ -163,13 +216,13 @@ function plot_stackedbar(id_figure, algebraic_values){
 
 	var stages = Object.keys(algebraic_values[0]) ; // the keys of the data
 	stages = stages.filter(function(item) {return item !== 'group' }) // remove the col name "group"
-	console.log("stages", stages);	
+	//console.log("stages", stages);	
 	var stackedData= d3.stack()
 						.keys(stages) // which keys to consider
 						.offset(d3.stackOffsetDiverging) // strategy for negative/positive values
 						(algebraic_values); 	// apply to the stack generator to the data
 
-	console.log("stackedData", stackedData);	
+	//console.log("stackedData", stackedData);	
 	function calcNet(obj) {
 		var sum = 0;
 		for( var el in obj ) {
@@ -178,7 +231,7 @@ function plot_stackedbar(id_figure, algebraic_values){
 		return sum;
 	  }
 	var netValues = algebraic_values.map(x => [x.group, calcNet(x)] );
-	console.log("NetValues", netValues);
+	//console.log("NetValues", netValues);
 
 	// Add X axis
 	var x = d3.scaleBand()
@@ -227,7 +280,7 @@ function plot_stackedbar(id_figure, algebraic_values){
 	subgroupName = subgroupName.replace(/ /g, '');
     // var subgroupValue = d.data[subgroupName];
 	// IF subgroupName has a SPACE the class change will not work : str.replace(/ /g, '');
-	console.log("CategoryHighlighted is:", subgroupName);
+	//console.log("CategoryHighlighted is:", subgroupName);
     // Reduce opacity of all rect to 0.2
     d3.selectAll(".myRect").style("opacity", 0.2)
     // Highlight all rects of this subgroup with opacity 0.8. It is possible to select them since they have a specific class = their name.
@@ -320,7 +373,14 @@ function plot_stackedbar(id_figure, algebraic_values){
 			  .attr("text-anchor", "left")
 			  .style("alignment-baseline", "middle")
 	  
-
+	// label y-axis
+	svg.append('g').append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0 - margin.left)
+      .attr("x",0 - (height / 2))
+      .attr("dy", "1em")
+      .style("text-anchor", "middle")
+      .text(ylabel);   
 }
 
 function plot_waterfall(id_figure, algebraic_values){
@@ -332,7 +392,7 @@ function plot_waterfall(id_figure, algebraic_values){
 			
 			data = data[0]; // first element only, it's a waterfall, cannot plot multiple fus
 			delete data.group; // remove the key 'group'
-			console.log("pre-pro data", data);
+			//console.log("pre-pro data", data);
 
 			var prev_end = 0;
 			var new_data = [];
@@ -398,7 +458,7 @@ function plot_waterfall(id_figure, algebraic_values){
 		}
 		for(i=0; i<segments.length; i++){
 		  setGraphicAttributes(segments[i], i);
-		  console.log("graphic atributes are set for", segments[i].labelX);
+		  //console.log("graphic atributes are set for", segments[i].labelX);
 		}
 
 		function createSvg(parentElement) {
@@ -409,7 +469,7 @@ function plot_waterfall(id_figure, algebraic_values){
 			// setSvgSize
 			//svg.attr("width", chartWidth + yAxisWidth + margin.left + margin.right);
 			//svg.attr("height", xAxisHeight + chartHeight + margin.top + margin.bottom);
-			console.log("width", chartWidth + yAxisWidth + margin.left + margin.right);
+			//console.log("width", chartWidth + yAxisWidth + margin.left + margin.right);
 			var svgWidth = chartWidth + yAxisWidth + margin.left + margin.right,
 				svgHeight = xAxisHeight + chartHeight + margin.top + margin.bottom;
 			svg.attr("viewBox", "0 0 "+svgWidth+" "+svgHeight+"");
@@ -565,7 +625,7 @@ function plot_waterfall(id_figure, algebraic_values){
 			chartGroup = svg.select(".chart-group");
 
 			if (segments && segments.length > 0) {
-				console.log("in the draw if");
+				//console.log("in the draw if");
 				// Draw bars
 				barGroup = chartGroup.selectAll(".bar.g")
 					.data(segments);
@@ -578,15 +638,15 @@ function plot_waterfall(id_figure, algebraic_values){
 					.attr("class", "bar rect")
 					.attr("height", segmentHeight)
 					.attr("x", function (d) {
-						console.log("d.x", d.x);
+						//console.log("d.x", d.x);
 						return d.x;
 					})
 					.attr("y", function (d) {
-						console.log("d.y", d.y);
+						//console.log("d.y", d.y);
 						return d.y;
 					})
 					.attr("width", function (d) {
-						console.log("d.width", d.width);
+						//console.log("d.width", d.width);
 						return d.width > 0 ? d.width : 0.1;
 					})
 					.style("fill", function(d){return d.value>0 ? colour_plus : colour_minus})//color)

@@ -44,10 +44,41 @@
   
 	<script src="/biochar-systems/bw2widgets/d3.v7.min.js  "  type="text/javascript" charset=utf-8 ></script>
 	<script src="/biochar-systems/bw2widgets/d3-scale-chromatic.v1.min.js  "  type="text/javascript" charset=utf-8 ></script>
+	<script src="/biochar-systems/bw2widgets/d3-sankey-diagram.min.js  "  type="text/javascript" charset=utf-8 ></script>
 	<script src="/biochar-systems/bw2widgets/widget_plot_types.js  "  type="text/javascript" charset=utf-8 ></script>
 	<script src="/biochar-systems/js/mermaid.min.js  "  type="text/javascript" charset=utf-8 ></script>
 	<link rel="stylesheet" href="/biochar-systems/bw2widgets/widget.css  " >
+	
+	
+	<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    },
+    chtml: {
+      scale: 1.3
+    },
+    svg: {
+        scale: 1.3
+    }
 
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 <!-- preloader start -->
@@ -71,8 +102,10 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/biochar-systems/">
-              <img src="/biochar-systems/img/logo.png" alt="Biochar Systems" width="150px" class="img-responsive">
+              <img src="/biochar-systems/img/logo.png" alt="Biochar Systems" width="50px" align="left" class="img-responsive">
+              <span style="vertical-align:middle">Biochar Systems<br/>Research Group</span>
             </a>
+            
           </div>
           
           <div class="collapse navbar-collapse" id="navigation">
@@ -82,7 +115,7 @@
                   Systems analysis <span class="ion-ios-arrow-down"></span>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a href="https://ntropy-esa.github.io/biochar-systems/modules/">Overview</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/1-biomass/">1. Biomass production</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/2-pyrolysis/">2. Pyrolysis</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/3-co-product-use/">3. Co-product use</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/4-product-manufacturing/">4. Biochar product</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/5-product-use/">5. Biochar product use</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/6-product-eol/">6. Biochar product disposal</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/7-other-materials/">7. Other materials</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/8-ref-bg-systems/">8. Reference system</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/9-carbon-sink/">9. Carbon sink</a></li>
+                  <li><a href="https://ntropy-esa.github.io/biochar-systems/modules/">Overview</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/1-biomass/">1. Biomass production</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/2-pyrolysis/">2. Pyrolysis</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/3-co-product-use/">3. Co-product use</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/4-product-manufacturing/">4. Biochar product</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/5-product-use/">5. Biochar product use</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/6-product-eol/">6. Biochar product disposal</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/7-other-materials/">7. Other materials</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/8-ref-bg-systems/">8. Reference system</a></li>
                 </ul>
               </li>
               <li class="dropdown"> 
@@ -143,7 +176,103 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h2 id="insert-a-bw2widget-via-in-its-own-section">Insert a bw2widget via in its own section</h2>
+        <!-- Add style to links or they won't appear properly-->
+<style>
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .0;
+}
+.link:hover {
+  stroke-opacity: .5;
+}
+</style>
+<h2 id="expandcss-shortcode">Expandcss shortcode</h2>
+<h2 id="comparative-review-of-biochar-c-trading-platforms">Comparative review of biochar C trading platforms</h2>
+<section class="accordion">
+    <input type="checkbox" name="collapse" id="handle_puro" >
+    <h5 class="handle"> 
+        <label for="handle_puro"> <strong>Puro.Earth</strong> </label>
+    </h5>
+    <div class="content">Inner content that will be <strong>markdownified</strong> and blablabla</div>
+</section>
+<section class="accordion">
+    <input type="checkbox" name="collapse" id="handle_carbonfuture" >
+    <h5 class="handle"> 
+        <label for="handle_carbonfuture"> <strong>Carbon Futures</strong> </label>
+    </h5>
+    <div class="content">Inner content that will be <strong>markdownified</strong> and blablabla</div>
+</section>
+<h2 id="tabs">Tabs</h2>
+<ul class="nav nav-tabs" id="meb_pyrolysis" role="tablist"><li class="nav-item active"><a data-toggle="tab" class="nav-link active" href="#meb_pyrolysis-0" role="tab" aria-controls="meb_pyrolysis-0" aria-expanded="true">Model 1</a></li>
+	  </ul>
+
+<div class="tab-content" id="meb_pyrolysis"><div id="meb_pyrolysis-0" class="tab-pane active" role="tabpanel" aria-labelledby="meb_pyrolysis-0">
+
+<p><p>This model applies to the simple, yet most common, case where pyrolysis oil &amp; gas are directly combusted after pyrolysis to generate heat. It was developped and used in the case studies of this paper.</p>
+</div></div>
+<h2 id="notice-shortcode">Notice shortcode</h2>
+
+
+<div class="notices note" ><p>A notice disclaimer, as a note</p>
+</div>
+
+
+<div class="notices warning" ><p>A notice disclaimer, as a warning</p>
+</div>
+<p>Can take the values: warning, note, info, tip</p>
+<h2 id="insert-scientific-equations-in-latex">Insert scientific equations in Latex</h2>
+<p>$$ Y_{BC} = 0.1261 + 0.5391 e^{-0.004T} + 0.002733L $$</p>
+<p>$ F_C = (1 - \frac{F_{a,bm}}{F_{a,bm} + Y_{BC}} ) * (0.93 - 0.92 e^{-0.0042T}) $</p>
+<h2 id="insert-a-sankey">Insert a sankey</h2>
+<p>Random markdown text before the widget</p>
+<section class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h3> Energy flow for 1 tonne of wet biomass during pyrolysis </h3><br />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <div id="figure_X4" class='col-md-8 left'>
+                
+                </div>
+                <div id="parameters_X4" class='col-md-4 right'>
+                
+                </div>
+        </div>
+    </div> 
+
+    <script>
+        
+        
+
+        
+  
+
+        if (typeof context === 'undefined' || context === null){ 
+            var context = {};
+            console.log("tada, context initalised");
+        }
+    </script>
+    <script src="/biochar-systems/bw2widgets/widget_sankeyEnergy.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        context["X4"] = {};    
+        
+        context["X4"]["parameter_data"] = parameter_data;
+        context["X4"]["switch_parameter_data"] = switch_parameter_data;
+        context["X4"]["algebraic_equation_f"] = algebraic_equation_f;
+        
+        write_widget("figure_X4", "parameters_X4", 'parameter_data', 'switch_parameter_data', 'algebraic_equation_f', "sankey", "");
+    </script>
+</section>
+  
+
+<p>Export as svg/png button. 
+Random markdown text after the widget</p>
+<h2 id="insert-a-bw2widget-via-in-its-own-section">Insert a bw2widget via in its own section</h2>
 <p>Random markdown text before the widget
 <section class="">
     <div class="container">
@@ -183,8 +312,8 @@
         context["X2"]["parameter_data"] = parameter_data;
         context["X2"]["switch_parameter_data"] = switch_parameter_data;
         context["X2"]["algebraic_equation_f"] = algebraic_equation_f;
-        console.log("after init", context);
-        write_widget("figure_X2", "parameters_X2", 'parameter_data', 'switch_parameter_data', 'algebraic_equation_f', "stackedbar");
+        
+        write_widget("figure_X2", "parameters_X2", 'parameter_data', 'switch_parameter_data', 'algebraic_equation_f', "stackedbar", "");
     </script>
 </section>
   
@@ -231,8 +360,8 @@ Random markdown text after the widget</p>
         context["X3"]["parameter_data"] = parameter_data;
         context["X3"]["switch_parameter_data"] = switch_parameter_data;
         context["X3"]["algebraic_equation_f"] = algebraic_equation_f;
-        console.log("after init", context);
-        write_widget("figure_X3", "parameters_X3", 'parameter_data', 'switch_parameter_data', 'algebraic_equation_f', "waterfall");
+        
+        write_widget("figure_X3", "parameters_X3", 'parameter_data', 'switch_parameter_data', 'algebraic_equation_f', "waterfall", "");
     </script>
 </section>
   
@@ -513,46 +642,6 @@ var legend = legendHolder.selectAll("mydots")
 <script src="/biochar-systems/js/bundled.min.js"></script>
 
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
-<div id="js-cookie-box" class="cookie-box cookie-box-hide">
-  This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-main btn-solid-border">I Accept</span>
-</div>
-<script>
-  (function ($) {
-    const cookieBox = document.getElementById('js-cookie-box');
-    const cookieButton = document.getElementById('js-cookie-button');
-    if (!Cookies.get('cookie-box')) {
-      cookieBox.classList.remove('cookie-box-hide');
-      cookieButton.onclick = function () {
-        Cookies.set('cookie-box', true, {
-          expires:  2 
-        });
-        cookieBox.classList.add('cookie-box-hide');
-      };
-    }
-  })(jQuery);
-</script>
-
-
-<style>
-.cookie-box {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  z-index: 9999;
-  padding: 1rem 2rem;
-  background: rgb(71, 71, 71);
-  transition: all .75s cubic-bezier(.19, 1, .22, 1);
-  color: #fdfdfd;
-}
-
-.cookie-box-hide {
-  display: none;
-}
-</style>
 
 </body>
 
