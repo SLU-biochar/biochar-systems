@@ -1,12 +1,28 @@
-Process;Climate impact
-Heat;in gCO2-eq per MJ
-1 MJ district heat, from fuel oil boiler;80
-1 MJ district heat, from natural gas boiler;60
-1 MJ district heat, from forestry woodchips in boiler;44
-Power;in gCO2-eq per kWh
-1 kWh electricity, high-voltage, from;500
-1 kWh electricity, high-voltage, from;200
-Transportation;in gCO2-eq per ton*km
-1 ton*km, in;2
-1 ton*km, in;10
-Sources: text text text text text text text text text text text text text text text text text text ;
+Product;Technology;Value;Unit;Source
+Fuel;Branches and tops woodchips;2,2;gCO2-eq per MJ fuel;Gode et al 2011
+Fuel;Stumps woodchips;2,9;gCO2-eq per MJ fuel;Gode et al 2011
+Fuel;Forest woodchips from thinning;2,6;gCO2-eq per MJ fuel;Gode et al 2011
+Fuel;Bark woodchips;1,6;gCO2-eq per MJ fuel;Gode et al 2011
+Fuel;Pellets;5,2;gCO2-eq per MJ fuel;Gode et al 2011
+Fuel;Wood briquettes;5,8;gCO2-eq per MJ fuel;Gode et al 2011
+Fuel;Willow woochips;7,8;gCO2-eq per MJ fuel;Gode et al 2011
+Transport fuel;Biogas from industrial biowaste;8,3;gCO2-eq per MJ fuel;Gode et al 2011
+Transport fuel;Biogas from household biowaste;11;gCO2-eq per MJ fuel;Gode et al 2011
+Transport fuel;Biogas from sewage sludge;3,1;gCO2-eq per MJ fuel;Gode et al 2011
+Transport fuel;Rape seed methyl esther;18;gCO2-eq per MJ fuel;Gode et al 2011
+Transport fuel;Bensin, 5% ethanol;77;gCO2-eq per MJ fuel;Gode et al 2011
+Transport fuel;Diesel, 5% RME;80;gCO2-eq per MJ fuel;Gode et al 2011
+Electricity;Windpower;3,7;gCO2-eq per kWh electricity;Gode et al 2011
+Electricity;Hydropower;1,3;gCO2-eq per kWh electricity;Gode et al 2011
+Electricity;Nuclear power;1;gCO2-eq per kWh electricity;Gode et al 2011
+Heat;Solar heat collector;13,8;gCO2-eq per MJ heat;Gode et al 2011
+Electricity;Biomass;230;gCO2-eq per kWh electricity;IPCC 2014, via Electricitymap GitHub
+Electricity;Coal;820;gCO2-eq per kWh electricity;IPCC 2014, via Electricitymap GitHub
+Electricity;Gas, combined cycle;490;gCO2-eq per kWh electricity;IPCC 2014, via Electricitymap GitHub
+Electricity;Geothermal;38;gCO2-eq per kWh electricity;IPCC 2014, via Electricitymap GitHub
+Electricity;Hydro;24;gCO2-eq per kWh electricity;IPCC 2014, via Electricitymap GitHub
+Electricity;Nuclear power;12;gCO2-eq per kWh electricity;IPCC 2014, via Electricitymap GitHub
+Electricity;Oil;650;gCO2-eq per kWh electricity;IPCC 2014, via Electricitymap GitHub
+Electricity;Solar PV;45;gCO2-eq per kWh electricity;IPCC 2014, via Electricitymap GitHub
+Electricity;Wind;11;gCO2-eq per kWh electricity;IPCC 2014, via Electricitymap GitHub
+Electricity;Concentrated Solar Power;27;gCO2-eq per kWh electricity;IPCC 2014, via Electricitymap GitHub

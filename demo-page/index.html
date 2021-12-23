@@ -115,7 +115,7 @@
                   Systems analysis <span class="ion-ios-arrow-down"></span>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a href="https://ntropy-esa.github.io/biochar-systems/modules/">Overview</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/1-biomass/">1. Biomass production</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/2-pyrolysis/">2. Pyrolysis</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/3-co-product-use/">3. Co-product use</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/4-product-manufacturing/">4. Biochar product</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/5-product-use/">5. Biochar product use</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/6-product-eol/">6. Biochar product disposal</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/7-other-materials/">7. Other materials</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/8-ref-bg-systems/">8. Reference system</a></li>
+                  <li><a href="https://ntropy-esa.github.io/biochar-systems/modules/">Overview</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/1-biomass/">1. Biomass production</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/2-pyrolysis/">2. Pyrolysis</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/3-co-product-use/">3. Co-product use</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/4-product-manufacturing/">4. Biochar product</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/5-product-use/">5. Biochar product use</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/6-product-eol/">6. Biochar product disposal</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/modules/7-ref-bg-systems/">7. Reference system</a></li>
                 </ul>
               </li>
               <li class="dropdown"> 
@@ -225,21 +225,21 @@
 <p>$$ Y_{BC} = 0.1261 + 0.5391 e^{-0.004T} + 0.002733L $$</p>
 <p>$ F_C = (1 - \frac{F_{a,bm}}{F_{a,bm} + Y_{BC}} ) * (0.93 - 0.92 e^{-0.0042T}) $</p>
 <h2 id="insert-a-sankey">Insert a sankey</h2>
-<p>Random markdown text before the widget</p>
+<p><strong>Sankey diagram</strong>
 <section class="">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="block">
-                    <h3> Energy flow for 1 tonne of wet biomass during pyrolysis </h3><br />
+                    <h3> Scaled to 1 tonne of biochar </h3><br />
                 </div>
             </div>
         </div>
         <div class="row">
-                <div id="figure_X4" class='col-md-8 left'>
+                <div id="figure_X5" class='col-md-8 left'>
                 
                 </div>
-                <div id="parameters_X4" class='col-md-4 right'>
+                <div id="parameters_X5" class='col-md-4 right'>
                 
                 </div>
         </div>
@@ -257,19 +257,19 @@
             console.log("tada, context initalised");
         }
     </script>
-    <script src="/biochar-systems/bw2widgets/widget_sankeyEnergy.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/biochar-systems/bw2widgets/widget_sankey-model1-energy.js" type="text/javascript" charset="utf-8"></script>
     <script>
-        context["X4"] = {};    
+        context["X5"] = {};    
         
-        context["X4"]["parameter_data"] = parameter_data;
-        context["X4"]["switch_parameter_data"] = switch_parameter_data;
-        context["X4"]["algebraic_equation_f"] = algebraic_equation_f;
+        context["X5"]["parameter_data"] = parameter_data;
+        context["X5"]["switch_parameter_data"] = switch_parameter_data;
+        context["X5"]["algebraic_equation_f"] = algebraic_equation_f;
         
-        write_widget("figure_X4", "parameters_X4", 'parameter_data', 'switch_parameter_data', 'algebraic_equation_f', "sankey", "");
+        write_widget("figure_X5", "parameters_X5", 'parameter_data', 'switch_parameter_data', 'algebraic_equation_f', "sankey", "");
     </script>
 </section>
   
-
+</p>
 <p>Export as svg/png button. 
 Random markdown text after the widget</p>
 <h2 id="insert-a-bw2widget-via-in-its-own-section">Insert a bw2widget via in its own section</h2>
