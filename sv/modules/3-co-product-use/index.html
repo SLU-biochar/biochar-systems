@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="se-se"><head>
   <meta charset="utf-8">
-  <title>3 - Pyrolysis co-product use</title>
+  <title>3 - Användning av pyrolysbiprodukter</title>
 
   <!-- Mobile responsive metadata -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="this is meta description">
+  <meta name="description" content=" &lt;p&gt;When biochar is in focus, the co-products are the pyrolysis oil and gases.&lt;/p&gt; &lt;p&gt;In many commercial reactors, today, these products are combusted directly and a fraction of the released heat is used for &lt;mark&gt;sustainaing the pyrolysis&lt;/mark&gt; reaction, &lt;mark&gt;drying&lt;/mark&gt; the incoming biomass, and eventually, any excess heat can be recovered for &lt;mark&gt;space heating&lt;/mark&gt;. In some cases, &lt;mark&gt;steam&lt;/mark&gt; can be produced or a turbine can be added to convert thermal energy to &lt;mark&gt;electricity&lt;/mark&gt;.&lt;/p&gt;
+&lt;p&gt;More advanced reactors can include a post-treatment step to modify the properties of the gases and oil. In these cases, the new chemicals obtained can be stored and later used as liquid fuel or material .&lt;/p&gt;
+&lt;p&gt;For environmental systems analysis, a key question regarding the use of co-products is to identify equivalent products on the markets, i.e. products with similar properties that they can substitute.&lt;/p&gt; ">
   <meta name="author" content="Themefisher">
   <meta name="generator" content="Hugo 0.88.0" />
 
   <!-- Open Graph image and Twitter Card metadata -->
-  <meta property="og:image" content="https://ntropy-esa.github.io/biochar-systems/images/portfolio/work2.jpg" />
-    <meta name="twitter:image" content="https://ntropy-esa.github.io/biochar-systems/images/portfolio/work2.jpg"/>
-        <meta name="twitter:card" content="summary_large_image">
-      <meta property="og:image:width" content="1125">
-      <meta property="og:image:height" content="579">
-      <meta property="og:image:type" content="image/jpeg">
-  <meta name="twitter:title" content="3 - Pyrolysis co-product use"/>
-  <meta name="twitter:description" content="this is meta description"/>
-  <meta property="og:title" content="3 - Pyrolysis co-product use" />
-<meta property="og:description" content="this is meta description" />
+  <meta property="og:image" content="https://ntropy-esa.github.io/biochar-systems/images/logo.png" />
+    <meta property="og:image:width" content="151">
+      <meta property="og:image:height" content="41">
+      <meta property="og:image:type" content="image/png">
+  <meta name="twitter:title" content="3 - Användning av pyrolysbiprodukter"/>
+  <meta name="twitter:description" content=" &lt;p&gt;When biochar is in focus, the co-products are the pyrolysis oil and gases.&lt;/p&gt; &lt;p&gt;In many commercial reactors, today, these products are combusted directly and a fraction of the released heat is used for &lt;mark&gt;sustainaing the pyrolysis&lt;/mark&gt; reaction, &lt;mark&gt;drying&lt;/mark&gt; the incoming biomass, and eventually, any excess heat can be recovered for &lt;mark&gt;space heating&lt;/mark&gt;. In some cases, &lt;mark&gt;steam&lt;/mark&gt; can be produced or a turbine can be added to convert thermal energy to &lt;mark&gt;electricity&lt;/mark&gt;.&lt;/p&gt;
+&lt;p&gt;More advanced reactors can include a post-treatment step to modify the properties of the gases and oil. In these cases, the new chemicals obtained can be stored and later used as liquid fuel or material .&lt;/p&gt;
+&lt;p&gt;For environmental systems analysis, a key question regarding the use of co-products is to identify equivalent products on the markets, i.e. products with similar properties that they can substitute.&lt;/p&gt; "/>
+  <meta property="og:title" content="3 - Användning av pyrolysbiprodukter" />
+<meta property="og:description" content=" &lt;p&gt;When biochar is in focus, the co-products are the pyrolysis oil and gases.&lt;/p&gt; &lt;p&gt;In many commercial reactors, today, these products are combusted directly and a fraction of the released heat is used for &lt;mark&gt;sustainaing the pyrolysis&lt;/mark&gt; reaction, &lt;mark&gt;drying&lt;/mark&gt; the incoming biomass, and eventually, any excess heat can be recovered for &lt;mark&gt;space heating&lt;/mark&gt;. In some cases, &lt;mark&gt;steam&lt;/mark&gt; can be produced or a turbine can be added to convert thermal energy to &lt;mark&gt;electricity&lt;/mark&gt;.&lt;/p&gt;
+&lt;p&gt;More advanced reactors can include a post-treatment step to modify the properties of the gases and oil. In these cases, the new chemicals obtained can be stored and later used as liquid fuel or material .&lt;/p&gt;
+&lt;p&gt;For environmental systems analysis, a key question regarding the use of co-products is to identify equivalent products on the markets, i.e. products with similar properties that they can substitute.&lt;/p&gt; " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ntropy-esa.github.io/biochar-systems/sv/modules/3-co-product-use/" /><meta property="article:section" content="modules" />
 
@@ -44,6 +48,11 @@
 
 
   
+	<script src="/biochar-systems/bw2widgets/d3.v7.min.js  "  type="text/javascript" charset=utf-8 ></script>
+	<script src="/biochar-systems/bw2widgets/d3-scale-chromatic.v1.min.js  "  type="text/javascript" charset=utf-8 ></script>
+	<script src="/biochar-systems/bw2widgets/d3-sankey-diagram.min.js  "  type="text/javascript" charset=utf-8 ></script>
+	<script src="/biochar-systems/bw2widgets/widget_plot_types.js  "  type="text/javascript" charset=utf-8 ></script>
+	<link rel="stylesheet" href="/biochar-systems/bw2widgets/widget.css  " >
 	
 	
 	
@@ -78,20 +87,28 @@
           
           <div class="collapse navbar-collapse" id="navigation">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="https://ntropy-esa.github.io/biochar-systems/sv/">Hem</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/">Systemanalysis</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/about/">À propos</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/">Fallstudier</a></li><li class="dropdown"> 
+              <li><a href="https://ntropy-esa.github.io/biochar-systems/sv/">Hem</a></li><li class="dropdown"> 
+                <a href="https://ntropy-esa.github.io/biochar-systems/" class="dropdown-toggle current-parent" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Systemanalys <span class="ion-ios-arrow-down"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://ntropy-esa.github.io/biochar-systems/sv/modules/">Översikt</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/modules/1-biomass/">1. Biomassa tillförsel</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/modules/2-pyrolysis/">2. Pyrolys</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/modules/3-co-product-use/" class="current">3. Pyrolysbiprodukter</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/modules/4-product-manufacturing/">4. Biokolprodukter</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/modules/5-product-use/">5. Biokolprodukt användning</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/modules/6-product-eol/">6. Avfallshanteringfas</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/modules/7-ref-bg-systems/">7. Referenssystem</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"> 
+                <a href="https://ntropy-esa.github.io/biochar-systems/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Fallstudier <span class="ion-ios-arrow-down"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://ntropy-esa.github.io/biochar-systems/sv/case-studies/">Alla fallstudier</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/case-studies/1-stockholm/">1. Stockholm</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/case-studies/2-lindeborgs/">2. Lindeborgs</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/case-studies/3-helsingborg/">3. Helsingborg</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/case-studies/4-uppsala/">4. Uppsala</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/case-studies/5-gis-sweden/">5. GIS Sweden</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/case-studies/6-water-filter/">6. Water filters</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/case-studies/7-kenya-cookstove/">7. Kenyan cookstove</a></li>
+                </ul>
+              </li>
+              <li><a href="https://ntropy-esa.github.io/biochar-systems/sv/evaluate-project/">Utvärdera ditt projekt</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/resources/">Resurser</a></li><li class="dropdown"> 
                 <a href="https://ntropy-esa.github.io/biochar-systems/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                   Mer <span class="ion-ios-arrow-down"></span>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a href="https://ntropy-esa.github.io/biochar-systems/sv/service/">Service</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/pricing/">Tarification</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/faq/">Questions fréquentes</a></li>
-                </ul>
-              </li>
-              <li><a href="https://ntropy-esa.github.io/biochar-systems/sv/contact/">Contact</a></li><li class="dropdown"> 
-                <a href="https://ntropy-esa.github.io/biochar-systems/" class="dropdown-toggle current-parent" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                  Systems analysis <span class="ion-ios-arrow-down"></span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a href="https://ntropy-esa.github.io/biochar-systems/sv/modules/">Overview</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/modules/1-biomass/">1. Biomass production</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/modules/2-pyrolysis/">2. Pyrolysis</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/modules/3-co-product-use/" class="current">3. Co-product use</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/modules/4-product-manufacturing/">4. Biochar product</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/modules/5-product-use/">5. Biochar product use</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/modules/6-product-eol/">6. Biochar product disposal</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/modules/7-other-materials/">7. Other materials</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/modules/8-ref-bg-systems/">8. Reference system</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/modules/9-carbon-sink/">9. Carbon sink</a></li>
+                  <li><a href="https://ntropy-esa.github.io/biochar-systems/sv/biochar-climate/">Biokol &amp; Klimat</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/faq/">FAQ</a></li><li><a href="https://ntropy-esa.github.io/biochar-systems/sv/about/">Om oss</a></li>
                 </ul>
               </li>
               
@@ -99,7 +116,9 @@
               
               <li>
                 <select id="select-language" onchange="location = this.value;">
-                  <option id="sv" value="/biochar-systems/sv/modules/3-co-product-use/" selected>
+                  <option id="en" value="/biochar-systems/modules/3-co-product-use/">
+                    English
+                  </option><option id="sv" value="/biochar-systems/sv/modules/3-co-product-use/" selected>
                     Swedish
                   </option>
                   
@@ -119,13 +138,20 @@
 
 
 
-<section class="page-title bg-2">
+
+
+<section class="page-title bg-2"style="background-image: url( /biochar-systems/sv/modules/3-co-product-use/pyreg-sbp_hu0d0caad30315ec86153ae296354f7698_191360_500x0_resize_q75_h2_box.webp );">
   <div class="container">
     <div class="row" >
-      <div class="col-md-12">
+      <div class="col-md-5 text-center">
+        <img src="/biochar-systems/sv/modules/3-co-product-use/pyreg-sbp_hu0d0caad30315ec86153ae296354f7698_191360_500x0_resize_q75_h2_box.webp" style="padding: 1em 0" alt="&copy; Stockholm Vatten och Avfall" title="&copy; Stockholm Vatten och Avfall" />
+      </div>
+      <div class="col-md-7">
         <div class="block">
-          <h1>3 - Pyrolysis co-product use</h1>
-          <p style="text-align: left;">this is meta description</p>
+          <h1 style="text-transform:none;">3 - Användning av pyrolysbiprodukter</h1>
+          <p > <p>When biochar is in focus, the co-products are the pyrolysis oil and gases.</p> <p>In many commercial reactors, today, these products are combusted directly and a fraction of the released heat is used for <mark>sustainaing the pyrolysis</mark> reaction, <mark>drying</mark> the incoming biomass, and eventually, any excess heat can be recovered for <mark>space heating</mark>. In some cases, <mark>steam</mark> can be produced or a turbine can be added to convert thermal energy to <mark>electricity</mark>.</p>
+<p>More advanced reactors can include a post-treatment step to modify the properties of the gases and oil. In these cases, the new chemicals obtained can be stored and later used as liquid fuel or material .</p>
+<p>For environmental systems analysis, a key question regarding the use of co-products is to identify equivalent products on the markets, i.e. products with similar properties that they can substitute.</p> </p>
         </div>
       </div>
     </div>
@@ -147,6 +173,342 @@
 
 
 
+    
+    
+    
+
+  <section class="section-sm section-light">
+    <div class="container  ">
+      <div class="row  ">
+            <h2 id="pyrolysis-oil--gas-valorised-as-"><strong>Pyrolysis oil &amp; gas valorised as &hellip;</strong></h2>
+<div class="col-md-4">
+<h3 id="heat--power"><strong>Heat &amp; power</strong></h3>
+<p>Heat and power generation is the most readily available. Power generation is usually only economically interesting for larger plants, due to the costs associated with turbines. The dozen of plants available, in 2021, in Sweden all valorise the pyrolysis gas and oil as heat.</p>
+<p>Generating usable heat from the pyrolysis oil and gas is commonly implemented by adding to the pyrolysis plant, the following components: a gas burner, a combustion chamber, and a heat exchanger. Post-combustion flue gases can also go through an air filtering system before being released at the stack.</p>
+<p>Note that distinctions can be made even within a product category such as &ldquo;heat&rdquo;. Across the case studies, we encountered heat as:</p>
+<ul>
+<li>District heat in Stockholm district heating network</li>
+<li>Space heating for farm premises &amp; greenhouses (Lindeborgs case study)</li>
+<li>Drying of grain or other crop</li>
+<li>Cooking energy (gasifier cookstoves in Kenya)</li>
+</ul>
+</div>
+<div class="col-md-4">
+<h3 id="biofuel"><strong>Biofuel</strong></h3>
+<p>Production of liquid biofuel requires adding a condenser after the pyrolysis chamber. The pyrolysis oil can go through various upgrading processes, to improve its properties as a fuel.</p>
+<p>The remaning non-condensable gases need to be burnt: this requires a gas burner and a combustion chamber. The heat released from the combustion of non-condensable gases will generally be able to support the pyrolysis reaction, with little excess heat available for other processes.</p>
+<p>Worth noting is that the pyrolysis conditions, such as temperature, heating rate and residence time, can be adjusted to promote the production of oil.</p>
+<p>Today, an example of biochar production coupled with biofuel production&hellip;</p>
+<ul>
+<li>Example&hellip; do we have any?</li>
+<li>Upgrade of pyrolysis oil to fuel quality is also suggested as further research in scenarios for straw valorisation in Denmark (Tobbias, 2021)</li>
+</ul>
+</div>
+<div class="col-md-4">
+<h3 id="biochemical--biomaterial"><strong>Biochemical &amp; biomaterial</strong></h3>
+<p>Similar to liquid biofuel production, pyrolysis oil can be condensed and upgraded for use as chemical or material.</p>
+<p>Examples of such pathways are rare today.</p>
+<ul>
+<li>Do we have any example?</li>
+</ul>
+<p>Note to ourselves: often, if biofuel/biochemical/biomaterial is to be produced &gt; can be optimised for that, as main product, and biochar becomes the secondary product, lower quantities (yield) and different properties (unknown trend)</p>
+</div>
+<div class="col-md-12">
+<p>Most biochar certificates (e.g. EBC) require that the biochar co-products to be valorised.</p>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    
+    
+    
+
+  <section class="section-sm section-dark">
+    <div class="container  ">
+      <div class="row  ">
+            <div class="col-md-10 text-left">
+<h2 id="modelling-pyrolysis-co-product-properties-and-usage"><strong>Modelling pyrolysis co-product properties and usage</strong></h2>
+</div>
+<div class="col-md-2">
+</div>
+<div class="col-md-4 text-left">
+<br />
+Predicting the exact composition and the qualities of pyrolysis oil and gases is not straightforward, and often requires actual experimentation or advanced chemistry models (e.g. Aspen).
+<p>However, simpler <mark>mass and energy balances</mark> have been developped for special cases. Here, we present two of these:</p>
+<ul>
+<li>
+<p>Model 1: heat production only</p>
+</li>
+<li>
+<p>Model 2: pyrolysis gas and oil composition</p>
+</li>
+</ul>
+</div>
+<div class="col-md-8 text-left">
+<ul class="nav nav-tabs" id="meb_pyrolysis" role="tablist"><li class="nav-item active"><a data-toggle="tab" class="nav-link active" href="#meb_pyrolysis-0" role="tab" aria-controls="meb_pyrolysis-0" aria-expanded="true">Model 1</a></li>
+	  
+		<li class="nav-item"><a data-toggle="tab" class="nav-link" href="#meb_pyrolysis-1" role="tab" aria-controls="meb_pyrolysis-1">Model 2</a></li></ul>
+
+<div class="tab-content" id="meb_pyrolysis"><div id="meb_pyrolysis-0" class="tab-pane active" role="tabpanel" aria-labelledby="meb_pyrolysis-0">
+
+<p><p>This model applies to the simple, yet most common, case where pyrolysis oil &amp; gas are directly combusted after pyrolysis to generate heat. It was developped and used in the case studies of this research project.</p>
+<p><strong>Description</strong>:</p>
+<p>The model applies to slow pyrolysis of biomass, with direct combustion of pyrolysis gas and oil. It is based on mass and energy balances. It can either represent a pyrolysis reactor sustained by electrical heating or by heat from the flue gases. Biomass drying and excess use as district heat is considered. An electrical efficiency can be assumed as well.</p>
+<p>Disclaimer: the model has many input parameters, some of which are not independent (e.g. biochar yield and biochar energy content are correlated). Thus, the user must make consistent choices of parameter data for realistic results.</p>
+<p><strong>Model inputs</strong>:</p>
+<ul>
+<li>Biomass properties: lower heating value, as received moisture content</li>
+<li>Drying step: target biomass moisture content, specific heat for dryer, electricity consumption of drying fans, assumed fraction of drying heat recovered as district heat</li>
+<li>Pyrolysis step: biochar yield, lower heating value of biochar, electricity input for pyrolysis heating (if electricity heated reactor), boiler heat efficiency, power-to-heat ratio (if a turbine is installed)</li>
+</ul>
+<p><strong>Model outputs</strong>:</p>
+<ul>
+<li>Biochar output</li>
+<li>District heat output</li>
+<li>District heat recovered from drying</li>
+<li>Electricity output</li>
+<li>Drying requirement</li>
+</ul>
+<a href="3-coproduct-use-model-heat-production.xlsx" target="_blank" class="btn btn-default">
+    <span class="inline-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path fill="currentColor" d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"/></svg>
+    </span>
+     Download as Excel 
+</a>
+<a href="3-coproduct-use-model-heat-production.py" target="_blank" class="btn btn-default">
+    <span class="inline-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path fill="currentColor" d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"/></svg>
+    </span>
+     Download as Python script 
+</a>
+</div>
+  <div id="meb_pyrolysis-1" class="tab-pane" role="tabpanel" aria-labelledby="meb_pyrolysis-1">
+
+<p><p>This second model is derived from the research article by <a href="https://pubs.acs.org/doi/10.1021/es500474q">Woolf and colleagues (2014)</a> and further re-used by <a href="https://doi.org/10.1016/j.resconrec.2021.106030">Tisserant and colleagues (2021)</a>. The model allows to calculate the biochar, bio-oil and gas composition from a slow pyrolysis process, based on statistic regression from various experiments.</p>
+<p>In the original article from Woolf (2014), the authors then refine the pyrolysis products via several conversion pathways (e.g. Gas pathways: water-gas shift reaction to produce hydrogen; catalytic methanation of pyrolysis gas. Liquid fuel pathways: catalytic methanol synthesis, Ljungdahl-Wood pathway, Fischer-Tropsch synthesis.).</p>
+<p>Here, only the pyrolysis part is descrbied.</p>
+  <!-- The authors described it as "an  accurate-yet-simple empirical model for predicting yields, product compositions, and energy balances from biomass slow pyrolysis" helping to "quantify the trade-offs between energy and biochar yields in bioenergy–biochar systems". -->
+<p><strong>Description</strong>:</p>
+<ul>
+<li>Model limited to pyrolysis, in particular slow-pyrolysis. It excludes gasification.</li>
+<li>Based on statistic regressions from literature data</li>
+<li>Calculates yields and composition of biochar, pyrolysis gas and oil</li>
+</ul>
+<p><strong>Model inputs</strong>:</p>
+<ul>
+<li>
+<p>Pyrolysis temperature (e.g. 500°C)</p>
+</li>
+<li>
+<p>Biomass lignin, ash, C, H, and O contents</p>
+<!-- 
+for Aspen part, for biomass, biochar and tar (oil+water)
+- Proximate analysis (i.e., composition in moisture content, fixed matter, volatile matter and ash content)
+- Ultimate analysis (i.e., content in C, H, O, N, S, Cl)
+- Sulfate analysis (i.e., content in different forms of sulfur pyritic, sulfate and organic)  
+
+- Biochar yield is determined as function of pyrolysis temperature and feedstock lignin content [cf. Woolf equation]
+- And the yield of CH4, CO, H2 and C2H2 are estimated from regressions based on pyrolysis temperature [cf. Woolf]
+- Then, via elemental mass balance: Tar, CO2 and water yields are determined
+- Then N can volatilize as HCN and NH3 during pyrolysis, S as H2S and Cl as HCl, CH3Cl or KCl >> regression analysis
+
+- Ultimate analysis of biochar and tar, C, H, and O compositions are estimated from pyrolysis temperature and C, H, O content of the feedstock, using regressions from (Woolf et al., 2014). N content of biochar is assumed to be 0.1% (Morales et al., 2015). S and Cl content in biochar are determined from regressions in Figures S1-S3 in the SI. Tar is used to balance N, S and Cl elements.
+  -->
+</li>
+</ul>
+<p><strong>Model outputs</strong>:</p>
+<ul>
+<li>Mass yields of biochar, tar (oil and water) and syngas (as CO, H<sub>2</sub>, CH<sub>4</sub>, C<sub>2</sub>H<sub>x</sub>, and CO<sub>2</sub>)</li>
+<li>Composition of biohcar (C, H, O)</li>
+<li>Composition of tar (C, H, O)</li>
+</ul>
+<a href="3-coproduct-use-model-yields-composition.xlsx" target="_blank" class="btn btn-default">
+    <span class="inline-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path fill="currentColor" d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"/></svg>
+    </span>
+     Download as Excel 
+</a>
+</div></div>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    
+    
+    
+
+  <section class="section-sm section-light">
+    <div class="container  ">
+      <div class="row  ">
+            <div class="col-md-12 text-left">
+<h2 id="systems-analysis-insights"><strong>Systems analysis insights</strong></h2>
+<p>This section describes two concepts commonly encountered when studying biochar systems in various case studies.</p>
+</div>
+<div class="col-md-6 text-left">
+<h3 id="biochar-production-constrained-by-energy-demand"><strong>Biochar production constrained by energy demand</strong></h3>
+<p>Whenever biochar production is integrated to an energy system, the amount of biochar produced is constrained by the energy demand. In other words, the energy demand sets the potential for biochar production. This can have several implications on the biochar production levels, annual dynamics and future trends.</p>
+<ul>
+<li>Annual biochar production levels can be lower than the theoretical production capacity of the installed reactor.</li>
+<li>Biochar production dynamics follow the energy demand, with daily or seasonal variations.</li>
+<li>Future biochar production potential is affected by changes in future energy demand, e.g. lower heating demand in a warming climate.</li>
+</ul>
+<p>An important distinction should be made between small &amp; large energy systems. A small energy system here describes a system where the main energy source is the pyrolysis (e.g. a farm) as opposed to large systems where dozens of plants are connected to supply the load (e.g. Stockholm district heating network):</p>
+<ul>
+<li>Large energy system: introducing pyrolysis can be seen by energy utilities as a way to increase flexibility in the day-to-day operation of units, producing certain commodities at various rates following demand and prices. Also, in large system, pyrolysis plants can operate as base load plants with high operating times (e.g. 80% annual uptime).</li>
+<li>Small energy system: there is less flexibility, as the pyrolysis may be the main source of energy, and its maximum production capacity is thereby often larger than the average annual load [unclear]</li>
+</ul>
+<p><strong>Case: a pioneer biochar project at Lindeborg&rsquo;s farm</strong></p>
+<p>At the Lindeborg farm, back in 2017, a pyrolysis plant was installed for heating of premises and co-producing biochar. As back-up heating, the farm can rely on electrical heaters and a smaller air-to-water heat pump.</p>
+<p>The farm heating demand varies daily with the weather. Over the service life of the pyrolysis unit (ca 25 years), heat demand will also be affected by changing climate patterns &amp; possible developments at the farm (new buildings, greenhouses, grain drying).</p>
+<p>Here, we estimated an average annual biochar production of 7 tonnes in current climate &amp; heat demand conditions, while the pyrolysis plant had a maximum capacity of 25 tonnes per year (if operated continuously). This is typical for the dimensioning of small-scale heating systems where the heat load (in kW) shows high seasonal variations.</p>
+<p>Alongside with our <a href="https://ntropy-esa.github.io/biochar-systems/sv/case-studies/2-lindeborgs/">Lindeborgs case</a>, we provided code to dimension a pyrolysis plant for farm heating in a given climate, so as to maximise pyrolysis uptime and biochar production. The <a href="https://github.com/ntropy-esa/P2_farm_biochar/blob/03a4692f352ae175c615b5b4e7c3db7e19967829/ex1_Lindeborg/3_bonus_dimensioning%20analysis.ipynb">code is available here</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-fig-optimal-sizing-of-pyrolysis-plant-in-nyköpings-climate">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="lindeborg-sizing-optimisation.jpg" alt="*Fig. Optimal sizing of pyrolysis plant in Nyköping&#39;s climate*" loading="lazy" data-zoomable width="100%" /></div>
+  </div><figcaption>
+      <em>Fig. Optimal sizing of pyrolysis plant in Nyköping&rsquo;s climate</em>
+    </figcaption></figure>
+</div>
+<div class="col-md-5 text-left">
+<h3 id="a-relative-energy-penalty"><strong>A relative energy penalty</strong></h3>
+<p>Pyrolysis is sometimes defined as a partial combustion of the biomass. In other words, during pyrolysis a large part of the chemical energy contained in the biomass remains in the biochar. But during combustion, all the biomass energy is released. Therefore, pyrolysis systems generate less energy than combustion. This is the concept of energy penalty relative to conventional bioenergy technologies.</p>
+<p><strong>Case: garden waste in urban context</strong></p>
+<p>In several cities in Sweden, including Stockholm and Helsingborg, a fraction of the urban garden waste and industrial wood waste is valorised via incineration with energy recovery. Landfilling is forbidden by law 2001:1063.</p>
+<p>In that context, diverting woody waste biomass from combustion plants to pyrolysis plants to produce biochar reduces the overall energy produced. If energy demand remains constant, additional fuel will be used. This additional fuel could well be non-waste biomass, i.e. primary biomass sourced from forests, and the overall biomass consumption would increase.</p>
+<p>However, as noted in the <a href="https://ntropy-esa.github.io/biochar-systems/sv/case-studies/1-stockholm/">Stockholm case</a>, a newer plant may be more energy efficient than older units, partly mitigating the increase in biomass use.</p>
+<p>The point is that, at the <em>system</em> level, there is little difference between: a) diverting woody waste from combustion to pyrolysis, and b) sourcing primary biomass for pyrolysis, in the context of woody waste already valorised via combustion.</p>
+
+
+<div class="notices note" ><p>Read more about biochar energy penalty &amp; trade-off optimisation in the work of <a href="https://pubs.acs.org/doi/10.1021/es500474q">Woolf and colleagues (2014)</a> or in our <a href="https://ntropy-esa.github.io/biochar-systems/sv/case-studies/1-stockholm/">Stockholm case</a>.</p>
+</div>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    
+    
+    
+
+  <section class="section-sm section-dark">
+    <div class="container  ">
+      <div class="row  ">
+            <div class="col-md-9">
+<h2 id="alternative-production-in-lca"><strong>Alternative production in LCA</strong></h2>
+<p>In 
+<a class='glossary-tooltip' title='Life cycle assessment (LCA) is a research methodology to analyse the potential environmental impacts arising from a product or system throughout its life cycle.' data-toggle='tooltip' data-placement='top' href='/biochar-systems/sv/tooltip_glossary/?all=true#term-lca' target='_blank' aria-label='LCA'>LCA</a>, several techniques can be applied to compare the environmental impacts of systems that produce different amounts of useful products. One of these techniques consists in expanding the boundaries of the studied system by defining an alternative mean of production for the useful co-products. In that way, whenever there is a difference in amount of products delivered, substitutions or system expansions are used to equalise productions and restore comparability.</p>
+<p>Overall, this approach requires to identify equivalent products, also called substitute products (including cases of perfect/imperfect substitutes).</p>
+<p>This technique is further elaborated in the module on <a href="https://ntropy-esa.github.io/biochar-systems/sv/modules/7-ref-bg-systems/">reference and background system</a>. The main recommendation is to select several alternative products, whenever possible, because they often lead to strong variation in the results. Rather than being interpreted as uncertainty, one can see see variations induced by choice of substitution as the fact that environmental performance depends on the overall context.</p>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    
+    
+    
+
+  <section class="section-sm section-light">
+    <div class="container  ">
+      <div class="row  ">
+            <div class="col-md-12">
+<h3 id="the-climate-impact-of-some-common-energy-products">The climate impact of some common energy products</h3>
+</div>
+<div class="col-md-5">
+<p>In comparative assessments of biochar technologies, choice of alternative energy sources is a main source of variability of climate impacts. Therefore, we compile here some orders of magnitude of climate emission factors for energy services.</p>
+<ul>
+<li>Heat (kg CO<sub>2</sub>-eq per MJ heat)</li>
+<li>Power (kg CO<sub>2</sub>-eq per kWh electricity)</li>
+<li>Transportation (kg CO<sub>2</sub>-eq per ton*km)</li>
+<li>Biofuel (kg CO<sub>2</sub>-eq per MJ fuel)</li>
+</ul>
+</div>
+<div class="col-md-7">
+<p>
+
+<a href="coproduct-substitutes-EF.csv" target="_blank" class="btn btn-default">
+    <span class="inline-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path fill="currentColor" d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"/></svg>
+    </span>
+     Download as CSV 
+</a>
+
+<br />
+<br />
+Sources:</p>
+<ul>
+<li><a href="https://energiforskmedia.blob.core.windows.net/media/17907/miljoefaktaboken-2011-vaermeforskrapport-1183.pdf">Gode et al. (2011)</a></li>
+</ul>
+<p>Other relevant sources:</p>
+<ul>
+<li><a href="http://www.ipcc-nggip.iges.or.jp/EFDB/main.php">IPCC EFDB</a></li>
+<li><a href="https://github.com/electricityMap/electricitymap-contrib/blob/master/config/co2eq_parameters.json">electricitymap&rsquo;s GitHub repository</a></li>
+<li><a href="https://ecoinvent.org/">ecoinvent</a></li>
+</ul>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    
+    
+    
+
+  <section class="section-sm section-dark">
+    <div class="container  ">
+      <div class="row  ">
+            <div class="col-md-12 text-left">
+<h2 id="resources">Resources</h2>
+<p>To explore the topic further, we recommend the following references:</p>
+<ul>
+<li><a href="https://pubs.acs.org/doi/10.1021/es500474q">Woolf et al. (2014)</a> Biofuels from Pyrolysis in Perspective: Trade-offs between Energy Yields and Soil-Carbon Additions</li>
+<li><a href="https://energiforskmedia.blob.core.windows.net/media/17907/miljoefaktaboken-2011-vaermeforskrapport-1183.pdf">Gode et al. (2011)</a></li>
+<li><a href="http://www.ipcc-nggip.iges.or.jp/EFDB/main.php">IPCC EFDB</a></li>
+<li><a href="https://github.com/electricityMap/electricitymap-contrib/blob/master/config/co2eq_parameters.json">electricitymap&rsquo;s GitHub repository</a></li>
+<li><a href="https://ecoinvent.org/">ecoinvent</a> (license required)</li>
+<li><a href="https://doi.org/10.1111/jiec.12519">Vadenbo et al. (2016)</a> Let’s be clear(er) about substitution (expert)</li>
+<li><a href="https://doi.org/10.1007/s11367-015-1015-3">Steubing et al. (2016)</a> Streamlining Scenario Analysis and Optimization of Key Choices in Value Chains Using a Modular LCA Approach</li>
+</ul>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 
 <footer class="footer">
   <div class="container">
@@ -155,23 +517,25 @@
         <div class="footer-menu">
           <ul>
             
-            <li><a href="https://ntropy-esa.github.io/biochar-systems/sv/about/">À propos</a></li>
+            <li><a href="https://ntropy-esa.github.io/biochar-systems/sv/about/">Om oss</a></li>
             
-            <li><a href="https://ntropy-esa.github.io/biochar-systems/sv/modules/">Systems analysis</a></li>
+            <li><a href="https://ntropy-esa.github.io/biochar-systems/sv/modules/">Systemanalys</a></li>
             
-            <li><a href="https://ntropy-esa.github.io/biochar-systems/sv/service/">Service</a></li>
+            <li><a href="https://ntropy-esa.github.io/biochar-systems/sv/case-studies/">Fallstudier</a></li>
             
-            <li><a href="https://ntropy-esa.github.io/biochar-systems/sv/pricing/">Tarification</a></li>
+            <li><a href="https://ntropy-esa.github.io/biochar-systems/sv/biochar-climate/">Biokol &amp; Klimat</a></li>
             
-            <li><a href="https://ntropy-esa.github.io/biochar-systems/sv/faq/">Questions fréquentes</a></li>
+            <li><a href="https://ntropy-esa.github.io/biochar-systems/sv/resources/">Resurser</a></li>
             
-            <li><a href="https://ntropy-esa.github.io/biochar-systems/sv/contact/">Contact</a></li>
+            <li><a href="https://ntropy-esa.github.io/biochar-systems/sv/evaluate-project/">Utvärdera ditt projekt</a></li>
+            
+            <li><a href="https://ntropy-esa.github.io/biochar-systems/sv/faq/">FAQ</a></li>
             
             <li><a href="https://ntropy-esa.github.io/biochar-systems/sv/tooltip_glossary/">Glossary</a></li>
             
           </ul>
         </div>
-        <p class="copyright">Elias S. Azzi, Cecilia Sundberg, KTH, SLU</p>
+        <p class="copyright">© Elias S. Azzi, Cecilia Sundberg, KTH, SLU</p>
       </div>
     </div>
   </div>

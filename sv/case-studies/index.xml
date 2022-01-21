@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Biokol fallstudier on Biokolsystem</title>
+    <link>https://ntropy-esa.github.io/biochar-systems/sv/case-studies/</link>
+    <description>Recent content in Biokol fallstudier on Biokolsystem</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>se-se</language>
+    <copyright>&amp;#169; Elias S. Azzi, Cecilia Sundberg, KTH, SLU</copyright><atom:link href="https://ntropy-esa.github.io/biochar-systems/sv/case-studies/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stockholm - Prospektiv livscykelanalys av storskalig biokolproduktion och användning på mjölkgårdar</title>
+      <link>https://ntropy-esa.github.io/biochar-systems/sv/case-studies/1-stockholm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ntropy-esa.github.io/biochar-systems/sv/case-studies/1-stockholm/</guid>
+      <description>Resurser Referens Azzi ES, Karltun E, Sundberg C (2019) Prospective life cycle assessment of large-scale biochar production and use for negative emissions in Stockholm. Environmental Science &amp;amp; Technology 53:8466–8476. DOI: 10.</description>
+    </item>
+    
+    <item>
+      <title>Lindeborgs - Biokolproduktionspotential, variation och miljöprestanda på gårdsnivå </title>
+      <link>https://ntropy-esa.github.io/biochar-systems/sv/case-studies/2-lindeborgs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ntropy-esa.github.io/biochar-systems/sv/case-studies/2-lindeborgs/</guid>
+      <description>Resurser Referens Azzi ES, Karltun E, Sundberg C (2021) Small-scale biochar production on Swedish farms: A model for estimating potential, variability, and environmental performance. Journal of Cleaner Production 280:124873. DOI: 10.</description>
+    </item>
+    
+    <item>
+      <title>Helsingborg - Biokol framställt av träavfall för marksanering</title>
+      <link>https://ntropy-esa.github.io/biochar-systems/sv/case-studies/3-helsingborg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ntropy-esa.github.io/biochar-systems/sv/case-studies/3-helsingborg/</guid>
+      <description>Resurser Referens Papageorgiou A, Azzi ES, Enell A, Sundberg C (2021) Biochar produced from wood waste for soil remediation in Sweden: carbon sequestration and other environmental impacts. Science of the Total Environment 145953.</description>
+    </item>
+    
+    <item>
+      <title>Uppsala - Biokol i stadsmiljö</title>
+      <link>https://ntropy-esa.github.io/biochar-systems/sv/case-studies/4-uppsala/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ntropy-esa.github.io/biochar-systems/sv/case-studies/4-uppsala/</guid>
+      <description>Resurser Referens Azzi ES, Karltun E, Sundberg C (2021) Life cycle assessment of urban uses of biochar and case study in Uppsala, Sweden. DOI: submitted to journal
+Download citation as RIS  Download as pre-print PDF Presentations The work was presented at a conference and several workshops, for different target audiences.</description>
+    </item>
+    
+    <item>
+      <title>Rumslig och multikriterierekommendation för biokolanvändning på åkermark i Sverige</title>
+      <link>https://ntropy-esa.github.io/biochar-systems/sv/case-studies/5-gis-sweden/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ntropy-esa.github.io/biochar-systems/sv/case-studies/5-gis-sweden/</guid>
+      <description>Page under construction Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas officiis cumque, harum dicta necessitatibus reprehenderit, delectus molestiae, impedit alias adipisci distinctio voluptas. Tempora modi amet voluptate at provident soluta consequatur.</description>
+    </item>
+    
+    <item>
+      <title>Biokol spisar i Kenya</title>
+      <link>https://ntropy-esa.github.io/biochar-systems/sv/case-studies/7-kenya-cookstove/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ntropy-esa.github.io/biochar-systems/sv/case-studies/7-kenya-cookstove/</guid>
+      <description>Resurser Utvalda referenser Gitau, K. J.; Sundberg, C.; Mendum, R.; Mutune, J.; Njenga, M. Use of Biochar-Producing Gasifier Cookstove Improves Energy Use Efficiency and Indoor Air Quality in Rural Households. Energies.</description>
+    </item>
+    
+    <item>
+      <title>Vatten filter med biokol</title>
+      <link>https://ntropy-esa.github.io/biochar-systems/sv/case-studies/6-water-filter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ntropy-esa.github.io/biochar-systems/sv/case-studies/6-water-filter/</guid>
+      <description>Page under construction Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas officiis cumque, harum dicta necessitatibus reprehenderit, delectus molestiae, impedit alias adipisci distinctio voluptas. Tempora modi amet voluptate at provident soluta consequatur.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Biochar systems analysis on Biokolsystem</title>
+    <title>Biokolsystemsanalys on Biokolsystem</title>
     <link>https://ntropy-esa.github.io/biochar-systems/sv/modules/</link>
-    <description>Recent content in Biochar systems analysis on Biokolsystem</description>
+    <description>Recent content in Biokolsystemsanalys on Biokolsystem</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>se-se</language>
-    <copyright>Elias S. Azzi, Cecilia Sundberg, KTH, SLU</copyright><atom:link href="https://ntropy-esa.github.io/biochar-systems/sv/modules/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;#169; Elias S. Azzi, Cecilia Sundberg, KTH, SLU</copyright><atom:link href="https://ntropy-esa.github.io/biochar-systems/sv/modules/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>1 - Biomass production</title>
+      <title>1 - Biomassa tillförsel</title>
       <link>https://ntropy-esa.github.io/biochar-systems/sv/modules/1-biomass/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ntropy-esa.github.io/biochar-systems/sv/modules/1-biomass/</guid>
-      <description>Level 0 Any kind biomass can be pyrolysed. However, different biomass lead to biochar and co-products with different properties, suited for different applications. Different biomass are also available in different amounts, and their production can require different amonunts of resources, and has differentiated environmental impacts.</description>
+      <description></description>
     </item>
     
     <item>
-      <title>2 - Pyrolysis</title>
+      <title>2 - Pyrolys</title>
       <link>https://ntropy-esa.github.io/biochar-systems/sv/modules/2-pyrolysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ntropy-esa.github.io/biochar-systems/sv/modules/2-pyrolysis/</guid>
-      <description>Behance Website Redesign Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas officiis cumque, harum dicta necessitatibus reprehenderit, delectus molestiae, impedit alias adipisci distinctio voluptas. Tempora modi amet voluptate at provident soluta consequatur.</description>
+      <description></description>
     </item>
     
     <item>
-      <title>3 - Pyrolysis co-product use</title>
+      <title>3 - Användning av pyrolysbiprodukter</title>
       <link>https://ntropy-esa.github.io/biochar-systems/sv/modules/3-co-product-use/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -35,7 +35,7 @@
     </item>
     
     <item>
-      <title>4 - Biochar product manufacturing</title>
+      <title>4 - Tillverkning av biokolprodukter</title>
       <link>https://ntropy-esa.github.io/biochar-systems/sv/modules/4-product-manufacturing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -44,7 +44,7 @@
     </item>
     
     <item>
-      <title>5 - Biochar product use</title>
+      <title>5 - Användning av biokolprodukter</title>
       <link>https://ntropy-esa.github.io/biochar-systems/sv/modules/5-product-use/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -53,7 +53,7 @@
     </item>
     
     <item>
-      <title>6 - Biochar product disposal</title>
+      <title>6 - Avfallshantering av biokolprodukter</title>
       <link>https://ntropy-esa.github.io/biochar-systems/sv/modules/6-product-eol/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -62,29 +62,20 @@
     </item>
     
     <item>
-      <title>7 - Supply of other materials</title>
-      <link>https://ntropy-esa.github.io/biochar-systems/sv/modules/7-other-materials/</link>
+      <title>7 - Referens- och bakgrundssystem</title>
+      <link>https://ntropy-esa.github.io/biochar-systems/sv/modules/7-ref-bg-systems/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ntropy-esa.github.io/biochar-systems/sv/modules/7-other-materials/</guid>
+      <guid>https://ntropy-esa.github.io/biochar-systems/sv/modules/7-ref-bg-systems/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>8 - Reference and background systems</title>
-      <link>https://ntropy-esa.github.io/biochar-systems/sv/modules/8-ref-bg-systems/</link>
+      <title>8 - Tillförsel av annat material</title>
+      <link>https://ntropy-esa.github.io/biochar-systems/sv/modules/8-other-materials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ntropy-esa.github.io/biochar-systems/sv/modules/8-ref-bg-systems/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>9 - Biochar carbon sequestration</title>
-      <link>https://ntropy-esa.github.io/biochar-systems/sv/modules/9-carbon-sink/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ntropy-esa.github.io/biochar-systems/sv/modules/9-carbon-sink/</guid>
+      <guid>https://ntropy-esa.github.io/biochar-systems/sv/modules/8-other-materials/</guid>
       <description></description>
     </item>
     

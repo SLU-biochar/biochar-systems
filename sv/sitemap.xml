@@ -2,8 +2,105 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ntropy-esa.github.io/biochar-systems/sv/case-studies/1-stockholm/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ntropy-esa.github.io/biochar-systems/case-studies/1-stockholm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv"
+                href="https://ntropy-esa.github.io/biochar-systems/sv/case-studies/1-stockholm/"
+                />
+  </url><url>
+    <loc>https://ntropy-esa.github.io/biochar-systems/sv/case-studies/2-lindeborgs/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ntropy-esa.github.io/biochar-systems/case-studies/2-lindeborgs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv"
+                href="https://ntropy-esa.github.io/biochar-systems/sv/case-studies/2-lindeborgs/"
+                />
+  </url><url>
+    <loc>https://ntropy-esa.github.io/biochar-systems/sv/case-studies/3-helsingborg/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ntropy-esa.github.io/biochar-systems/case-studies/3-helsingborg/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv"
+                href="https://ntropy-esa.github.io/biochar-systems/sv/case-studies/3-helsingborg/"
+                />
+  </url><url>
+    <loc>https://ntropy-esa.github.io/biochar-systems/sv/case-studies/4-uppsala/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ntropy-esa.github.io/biochar-systems/case-studies/4-uppsala/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv"
+                href="https://ntropy-esa.github.io/biochar-systems/sv/case-studies/4-uppsala/"
+                />
+  </url><url>
+    <loc>https://ntropy-esa.github.io/biochar-systems/sv/case-studies/5-gis-sweden/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ntropy-esa.github.io/biochar-systems/case-studies/5-gis-sweden/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv"
+                href="https://ntropy-esa.github.io/biochar-systems/sv/case-studies/5-gis-sweden/"
+                />
+  </url><url>
+    <loc>https://ntropy-esa.github.io/biochar-systems/sv/case-studies/7-kenya-cookstove/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ntropy-esa.github.io/biochar-systems/case-studies/7-kenya-cookstove/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv"
+                href="https://ntropy-esa.github.io/biochar-systems/sv/case-studies/7-kenya-cookstove/"
+                />
+  </url><url>
+    <loc>https://ntropy-esa.github.io/biochar-systems/sv/case-studies/6-water-filter/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ntropy-esa.github.io/biochar-systems/case-studies/6-water-filter/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv"
+                href="https://ntropy-esa.github.io/biochar-systems/sv/case-studies/6-water-filter/"
+                />
+  </url><url>
+    <loc>https://ntropy-esa.github.io/biochar-systems/sv/biochar-climate/</loc>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ntropy-esa.github.io/biochar-systems/biochar-climate/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv"
+                href="https://ntropy-esa.github.io/biochar-systems/sv/biochar-climate/"
+                />
+  </url><url>
     <loc>https://ntropy-esa.github.io/biochar-systems/sv/faq/</loc>
-    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -13,6 +110,19 @@
                 rel="alternate"
                 hreflang="sv"
                 href="https://ntropy-esa.github.io/biochar-systems/sv/faq/"
+                />
+  </url><url>
+    <loc>https://ntropy-esa.github.io/biochar-systems/sv/evaluate-project/</loc>
+    <lastmod>2021-10-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ntropy-esa.github.io/biochar-systems/evaluate-project/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv"
+                href="https://ntropy-esa.github.io/biochar-systems/sv/evaluate-project/"
                 />
   </url><url>
     <loc>https://ntropy-esa.github.io/biochar-systems/sv/</loc>
@@ -40,45 +150,111 @@
                 />
   </url><url>
     <loc>https://ntropy-esa.github.io/biochar-systems/sv/modules/1-biomass/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ntropy-esa.github.io/biochar-systems/modules/1-biomass/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv"
+                href="https://ntropy-esa.github.io/biochar-systems/sv/modules/1-biomass/"
+                />
   </url><url>
     <loc>https://ntropy-esa.github.io/biochar-systems/sv/modules/2-pyrolysis/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ntropy-esa.github.io/biochar-systems/modules/2-pyrolysis/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv"
+                href="https://ntropy-esa.github.io/biochar-systems/sv/modules/2-pyrolysis/"
+                />
   </url><url>
     <loc>https://ntropy-esa.github.io/biochar-systems/sv/modules/3-co-product-use/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ntropy-esa.github.io/biochar-systems/modules/3-co-product-use/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv"
+                href="https://ntropy-esa.github.io/biochar-systems/sv/modules/3-co-product-use/"
+                />
   </url><url>
     <loc>https://ntropy-esa.github.io/biochar-systems/sv/modules/4-product-manufacturing/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ntropy-esa.github.io/biochar-systems/modules/4-product-manufacturing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv"
+                href="https://ntropy-esa.github.io/biochar-systems/sv/modules/4-product-manufacturing/"
+                />
   </url><url>
     <loc>https://ntropy-esa.github.io/biochar-systems/sv/modules/5-product-use/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ntropy-esa.github.io/biochar-systems/modules/5-product-use/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv"
+                href="https://ntropy-esa.github.io/biochar-systems/sv/modules/5-product-use/"
+                />
   </url><url>
     <loc>https://ntropy-esa.github.io/biochar-systems/sv/modules/6-product-eol/</loc>
-  </url><url>
-    <loc>https://ntropy-esa.github.io/biochar-systems/sv/modules/7-other-materials/</loc>
-  </url><url>
-    <loc>https://ntropy-esa.github.io/biochar-systems/sv/modules/8-ref-bg-systems/</loc>
-  </url><url>
-    <loc>https://ntropy-esa.github.io/biochar-systems/sv/modules/9-carbon-sink/</loc>
-  </url><url>
-    <loc>https://ntropy-esa.github.io/biochar-systems/sv/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ntropy-esa.github.io/biochar-systems/about/"
+                href="https://ntropy-esa.github.io/biochar-systems/modules/6-product-eol/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv"
-                href="https://ntropy-esa.github.io/biochar-systems/sv/about/"
+                href="https://ntropy-esa.github.io/biochar-systems/sv/modules/6-product-eol/"
                 />
   </url><url>
-    <loc>https://ntropy-esa.github.io/biochar-systems/sv/author/</loc>
+    <loc>https://ntropy-esa.github.io/biochar-systems/sv/modules/7-ref-bg-systems/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ntropy-esa.github.io/biochar-systems/author/"
+                href="https://ntropy-esa.github.io/biochar-systems/modules/7-ref-bg-systems/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv"
-                href="https://ntropy-esa.github.io/biochar-systems/sv/author/"
+                href="https://ntropy-esa.github.io/biochar-systems/sv/modules/7-ref-bg-systems/"
+                />
+  </url><url>
+    <loc>https://ntropy-esa.github.io/biochar-systems/sv/modules/8-other-materials/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ntropy-esa.github.io/biochar-systems/modules/8-other-materials/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv"
+                href="https://ntropy-esa.github.io/biochar-systems/sv/modules/8-other-materials/"
+                />
+  </url><url>
+    <loc>https://ntropy-esa.github.io/biochar-systems/sv/case-studies/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ntropy-esa.github.io/biochar-systems/case-studies/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv"
+                href="https://ntropy-esa.github.io/biochar-systems/sv/case-studies/"
                 />
   </url><url>
     <loc>https://ntropy-esa.github.io/biochar-systems/sv/modules/</loc>
@@ -105,18 +281,6 @@
                 href="https://ntropy-esa.github.io/biochar-systems/sv/categories/"
                 />
   </url><url>
-    <loc>https://ntropy-esa.github.io/biochar-systems/sv/contact/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ntropy-esa.github.io/biochar-systems/contact/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="sv"
-                href="https://ntropy-esa.github.io/biochar-systems/sv/contact/"
-                />
-  </url><url>
     <loc>https://ntropy-esa.github.io/biochar-systems/sv/tooltip_glossary/</loc>
     <xhtml:link
                 rel="alternate"
@@ -129,28 +293,16 @@
                 href="https://ntropy-esa.github.io/biochar-systems/sv/tooltip_glossary/"
                 />
   </url><url>
-    <loc>https://ntropy-esa.github.io/biochar-systems/sv/author/john-doe/</loc>
+    <loc>https://ntropy-esa.github.io/biochar-systems/sv/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ntropy-esa.github.io/biochar-systems/author/john-doe/"
+                href="https://ntropy-esa.github.io/biochar-systems/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv"
-                href="https://ntropy-esa.github.io/biochar-systems/sv/author/john-doe/"
-                />
-  </url><url>
-    <loc>https://ntropy-esa.github.io/biochar-systems/sv/author/mark-dinn/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ntropy-esa.github.io/biochar-systems/author/mark-dinn/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="sv"
-                href="https://ntropy-esa.github.io/biochar-systems/sv/author/mark-dinn/"
+                href="https://ntropy-esa.github.io/biochar-systems/sv/about/"
                 />
   </url><url>
     <loc>https://ntropy-esa.github.io/biochar-systems/sv/pricing/</loc>
@@ -163,6 +315,18 @@
                 rel="alternate"
                 hreflang="sv"
                 href="https://ntropy-esa.github.io/biochar-systems/sv/pricing/"
+                />
+  </url><url>
+    <loc>https://ntropy-esa.github.io/biochar-systems/sv/resources/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ntropy-esa.github.io/biochar-systems/resources/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv"
+                href="https://ntropy-esa.github.io/biochar-systems/sv/resources/"
                 />
   </url><url>
     <loc>https://ntropy-esa.github.io/biochar-systems/sv/service/</loc>
