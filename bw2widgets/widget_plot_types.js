@@ -11,7 +11,7 @@ function write_widget(id_figure, id_parameter, param_data, switch_data, algebrai
 	// write parameter sliders
 	var html_txt = '<p>Click on the parameters to change their values. </p>'
 	html_txt += '<div class="listParam">';
-	html_txt += write_sliders(id_figure, id_parameter, param_data, switch_data, algebraic_eq, plot_type);
+	html_txt += write_sliders(id_figure, id_parameter, param_data, switch_data, algebraic_eq, plot_type, ylabel);
 	html_txt += '</div>';
 	document.getElementById(id_parameter).innerHTML= html_txt ;
 	
@@ -43,14 +43,13 @@ function write_sliders(id_figure, id_parameter, param_data, switch_data, algebra
 	// V1: collapsible
 	// CSS3 https://codepen.io/markcaron/pen/RVvmaz (see their styling)
 	
-
 	for(i in context[widgetName][param_data]['name']){
 		
 		var name = ( (context[widgetName]["parameter_data"].hasOwnProperty("prettyName")) ? context[widgetName][param_data]['prettyName'][i] : context[widgetName][param_data]['name'][i] ); // bw2 name or prettyName if it exists and is not null 
 		var nameID = context[widgetName][param_data]['name'][i];
 		var description = ( (context[widgetName]["parameter_data"].hasOwnProperty("description")) ? context[widgetName][param_data]['description'][i] : '' );
 		var unit = ( (context[widgetName]["parameter_data"].hasOwnProperty("unit")) ? context[widgetName][param_data]['unit'][i] : '' );
-
+		
 		html_txt += ' <section class="accordion"> ' ;
 		html_txt += ' <input type="checkbox" name="collapse" id="handle_'+widgetName+'_'+nameID+'" > ';
 		html_txt += ' <h5 class="handle"> <label for="handle_'+widgetName+'_'+nameID+'"> '+name; // prettyName if it exists
@@ -61,27 +60,35 @@ function write_sliders(id_figure, id_parameter, param_data, switch_data, algebra
 		
 		if(context[widgetName][param_data]['uncertainty type'][i] == 'switch'){
 			var nbOptions = context[widgetName][switch_data][nameID]['options'].length
-			html_txt += ' <select name="select_'+widgetName+'_'+nameID+'" onchange="updateWidget(this.value, this.name, \''+id_figure+'\', algebraic_equation_f, \''+plot_type+'\', \''+switch_data+'\', \''+ylabel+'\');" >' ;
+			html_txt += ' <select name="select_'+widgetName+'_'+nameID+'" onchange="updateWidget(this.value, this.name, \''+id_figure+'\', algebraic_equation_f, \''+plot_type+'\', \''+switch_data+'\', \''+ylabel+'\', \''+param_data+'\', \''+i+'\');" >' ;
 			for(let j=0; j < nbOptions; j++){
 				html_txt += ' <option value='+j+'>'+context[widgetName][switch_data][nameID]['options'][j]+'</option> ';
 			}
 			html_txt += '</select>' ;						
 		}else{
-			// html_txt += '  Minimum: '+ context[widgetName][param_data]['minimum'][i]+' ';
-			html_txt += ' <input type="range" name="range_'+widgetName+'_'+nameID+'" min="'+context[widgetName][param_data]['minimum'][i]+'" max="'+context[widgetName][param_data]['maximum'][i]+'" step = "'+(context[widgetName][param_data]['maximum'][i] - context[widgetName][param_data]['minimum'][i])/100+'"  ';
-			html_txt += ' onchange="updateWidget(this.value, this.name, \''+id_figure+'\', algebraic_equation_f, \''+plot_type+'\', \''+switch_data+'\' , \''+ylabel+'\');" >' ;
-			html_txt += ' <input type="text" id="txt_'+widgetName+'_'+nameID+'" value="'+context[widgetName][param_data]['amount'][i]+'" maxlength="4" size="4" onchange="updateWidget(this.value, this.id, \''+id_figure+'\', algebraic_equation_f, \''+plot_type+'\', \''+switch_data+'\', \''+ylabel+'\');" >' ;			
-			html_txt += ' in: <i>' + unit+'</i>';
+			// if unit is % display the value x100, for user friendlyness but not change the background calculations
+			if(unit == '%'){
+				html_txt += ' <input type="range" name="range_'+widgetName+'_'+nameID+'" min="'+context[widgetName][param_data]['minimum'][i]+'" max="'+context[widgetName][param_data]['maximum'][i]+'" step = "'+(context[widgetName][param_data]['maximum'][i] - context[widgetName][param_data]['minimum'][i])/100+'"  ';
+				html_txt += ' onchange="updateWidget(this.value, this.name, \''+id_figure+'\', algebraic_equation_f, \''+plot_type+'\', \''+switch_data+'\' , \''+ylabel+'\', \''+param_data+'\', \''+i+'\');" >' ;
+				html_txt += ' <input type="text" id="txt_'+widgetName+'_'+nameID+'" value="'+context[widgetName][param_data]['amount'][i]*100+'" maxlength="4" size="4" onchange="updateWidget(this.value, this.id, \''+id_figure+'\', algebraic_equation_f, \''+plot_type+'\', \''+switch_data+'\', \''+ylabel+'\', \''+param_data+'\', \''+i+'\');" >' ;			
+				html_txt += ' in: <i>' + unit+'</i>';
+			}
+			else{
+				// html_txt += '  Minimum: '+ context[widgetName][param_data]['minimum'][i]+' ';
+				html_txt += ' <input type="range" name="range_'+widgetName+'_'+nameID+'" min="'+context[widgetName][param_data]['minimum'][i]+'" max="'+context[widgetName][param_data]['maximum'][i]+'" step = "'+(context[widgetName][param_data]['maximum'][i] - context[widgetName][param_data]['minimum'][i])/100+'"  ';
+				html_txt += ' onchange="updateWidget(this.value, this.name, \''+id_figure+'\', algebraic_equation_f, \''+plot_type+'\', \''+switch_data+'\' , \''+ylabel+'\', \''+param_data+'\', \''+i+'\');" >' ;
+				html_txt += ' <input type="text" id="txt_'+widgetName+'_'+nameID+'" value="'+context[widgetName][param_data]['amount'][i]+'" maxlength="4" size="4" onchange="updateWidget(this.value, this.id, \''+id_figure+'\', algebraic_equation_f, \''+plot_type+'\', \''+switch_data+'\', \''+ylabel+'\', \''+param_data+'\', \''+i+'\');" >' ;			
+				html_txt += ' in: <i>' + unit+'</i>';
+			}
 		}
 		html_txt += ' </div> </section>';			
 	}
 	return html_txt
 }
 
-function updateWidget(val, NameOrId, id_figure, algebraic_eq, plot_type, switch_data, ylabel){
+function updateWidget(val, NameOrId, id_figure, algebraic_eq, plot_type, switch_data, ylabel, param_data, idParam){
 	//console.log("triggered");
 	var widgetName = id_figure.split(/(_)/)[2]; // to do, just pass it as argument of the function...
-	//console.log(widgetName);
 
 	document.getElementById(id_figure).innerHTML=''; // reset figure div
 	// update text input area with updated value (if update was made by range slider)
@@ -92,6 +99,7 @@ function updateWidget(val, NameOrId, id_figure, algebraic_eq, plot_type, switch_
 	//console.log(paramName);
 	//console.log(context[widgetName][switch_data]);
 	// update global variable global, depending on if it is a switch or not
+
 	if(paramType == 'select'){ // it's a switch param, update multiple values
 		var nbOptions = context[widgetName][switch_data][paramName]['options'].length; 
 		for(let j = 0; j<nbOptions; j++){
@@ -102,8 +110,24 @@ function updateWidget(val, NameOrId, id_figure, algebraic_eq, plot_type, switch_
 		
 	}else{
 		//console.log("get id", 'txt_'+widgetName+paramName);
-		document.getElementById('txt_'+widgetName+'_'+paramName).value=val;
-		window[paramName]=val;
+		console.log(widgetName);
+		console.log(param_data);
+		var unit = context[widgetName][param_data]['unit'][idParam];
+		console.log("unit is", unit);
+		if(unit == '%'){ // handling of % display
+			if(val>=1){
+				document.getElementById('txt_'+widgetName+'_'+paramName).value=val;
+				window[paramName]=val/100;
+			}else{
+				document.getElementById('txt_'+widgetName+'_'+paramName).value=val*100;
+				window[paramName]=val;
+			}
+
+		}else{
+			document.getElementById('txt_'+widgetName+'_'+paramName).value=val;
+			window[paramName]=val;
+		}
+
 	}
 	// recalculate algebraic equation
 	var algebraic_values = context[widgetName]['algebraic_equation_f'].apply(); // dynamic call to function - to pass as argument to the update function
@@ -372,7 +396,6 @@ function plot_stackedbar(id_figure, ylabel, algebraic_values){
 			  .text(function(d){ return d})
 			  .attr("text-anchor", "left")
 			  .style("alignment-baseline", "middle")
-	  
 	// label y-axis
 	svg.append('g').append("text")
       .attr("transform", "rotate(-90)")
