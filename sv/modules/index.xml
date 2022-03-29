@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Biokolsystemsanalys on Biokolsystem</title>
+    <title>Biokolssystemanalys on Biokolsystem</title>
     <link>https://SLU-biochar.github.io/biochar-systems/sv/modules/</link>
-    <description>Recent content in Biokolsystemsanalys on Biokolsystem</description>
+    <description>Recent content in Biokolssystemanalys on Biokolsystem</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>se-se</language>
     <copyright>&amp;#169; Elias S. Azzi, Cecilia Sundberg, KTH, SLU</copyright><atom:link href="https://SLU-biochar.github.io/biochar-systems/sv/modules/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>1 - Biomassa tillförsel</title>
+      <title>1 - Tillförsel av biomassa</title>
       <link>https://SLU-biochar.github.io/biochar-systems/sv/modules/1-biomass/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -35,7 +35,7 @@
     </item>
     
     <item>
-      <title>4 - Tillverkning av biokolprodukter</title>
+      <title>4 - Tillverkning av biokolsprodukter</title>
       <link>https://SLU-biochar.github.io/biochar-systems/sv/modules/4-product-manufacturing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -44,7 +44,7 @@
     </item>
     
     <item>
-      <title>5 - Användning av biokolprodukter</title>
+      <title>5 - Användning av biokolsprodukter</title>
       <link>https://SLU-biochar.github.io/biochar-systems/sv/modules/5-product-use/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

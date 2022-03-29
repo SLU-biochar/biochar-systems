@@ -281,18 +281,6 @@
                 href="https://SLU-biochar.github.io/biochar-systems/sv/categories/"
                 />
   </url><url>
-    <loc>https://SLU-biochar.github.io/biochar-systems/sv/tooltip_glossary/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://SLU-biochar.github.io/biochar-systems/tooltip_glossary/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="sv"
-                href="https://SLU-biochar.github.io/biochar-systems/sv/tooltip_glossary/"
-                />
-  </url><url>
     <loc>https://SLU-biochar.github.io/biochar-systems/sv/about/</loc>
     <xhtml:link
                 rel="alternate"
@@ -303,6 +291,18 @@
                 rel="alternate"
                 hreflang="sv"
                 href="https://SLU-biochar.github.io/biochar-systems/sv/about/"
+                />
+  </url><url>
+    <loc>https://SLU-biochar.github.io/biochar-systems/sv/tooltip_glossary/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://SLU-biochar.github.io/biochar-systems/tooltip_glossary/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv"
+                href="https://SLU-biochar.github.io/biochar-systems/sv/tooltip_glossary/"
                 />
   </url><url>
     <loc>https://SLU-biochar.github.io/biochar-systems/sv/pricing/</loc>
