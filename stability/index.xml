@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research Project / Biochar Stability on Biochar Systems</title>
+    <link>https://biochar.systems/stability/</link>
+    <description>Recent content in Research Project / Biochar Stability on Biochar Systems</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-en</language>
+    <copyright>&amp;#169; Elias S. Azzi, Cecilia Sundberg, KTH, SLU</copyright><atom:link href="https://biochar.systems/stability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://biochar.systems/stability/stability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://biochar.systems/stability/stability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Biochar Stability Dashboard</title>
+      <link>https://biochar.systems/stability/app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://biochar.systems/stability/app/</guid>
+      <description>Dashboard under construction
+Biochar incubation data and the associated metadata The two graphs below present the actual biochar incubation data, for all observations in the data set, both as cumulative biochar carbon loss (decay, in %) and as daily decay rates (% biochar C loss per day).</description>
+    </item>
+    
+  </channel>
+</rss>

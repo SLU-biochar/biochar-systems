@@ -149,6 +149,8 @@
                 href="https://biochar.systems/message_sent/"
                 />
   </url><url>
+    <loc>https://biochar.systems/stability/stability/</loc>
+  </url><url>
     <loc>https://biochar.systems/modules/1-biomass/</loc>
     <xhtml:link
                 rel="alternate"
@@ -270,6 +272,8 @@
                 hreflang="en"
                 href="https://biochar.systems/case-studies/"
                 />
+  </url><url>
+    <loc>https://biochar.systems/stability/app/</loc>
   </url><url>
     <loc>https://biochar.systems/modules/</loc>
     <xhtml:link
