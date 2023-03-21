@@ -586,11 +586,11 @@
 <p><br /></p>
 </div>
 <div class="col-md-6 text-left">
-<p>In our <a href="https://biochar.systems/case-studies/4-uppsala/">Uppsala case study</a> (paper under publication), we presented cradle-to-gate emission factors for biochar products with different properties (carbon content, bulk densities), pyrolysis reactors (E: electricity-heated, S: syngas-heated, M: mobile-syngas heated), and different biomass (WP: wood pellet, GW: garden waste, LR: logging residues).</p>
-<p>The figures below present the climate change impact, from biochar production &amp; the initial carbon sink. Some parameter values can be changed to see how results are affected.</p>
+<p>In our <a href="https://biochar.systems/case-studies/4-uppsala/">Uppsala case study</a>, we presented cradle-to-gate emission factors for biochar products with different properties (carbon content, bulk densities), pyrolysis reactors (E: electricity-heated, S: syngas-heated, M: mobile-syngas heated), and different biomass (WP: wood pellet, GW: garden waste, LR: logging residues).</p>
+<p>The figures below present the climate change impact, from biochar production and the initial carbon sink (i.e. the amount of carbon contained in the biochar, without any assumption regarding its long-term stability). Some parameter values can be changed to see how results are affected.</p>
 
 
-<div class="notices warning" ><p>The values presented are not to be used as LCA data for product footprinting without further analysis &amp; verification of our underlying modelling assumptions.</p>
+<div class="notices warning" ><p>The values presented are not to be used as LCA data for product footprinting without further analysis &amp; verification of our underlying modelling assumptions, which are numerous.</p>
 </div>
 </div>
 <div class="col-md-6 text-left">
@@ -598,7 +598,7 @@
 <ul>
 <li>Biochar C-sink: initial amount of C sequestred (100% stability assumed here)</li>
 <li>Reactor: manufacturing and disposal of reactor</li>
-<li>RLBU: reference land or biomass use</li>
+<li>RLBU: reference land or biomass use (what would have happened to the biomass, if not used for biochar)</li>
 <li>Transport: all transport from biomass supply to biochar handling</li>
 <li>Pyrolysis: energy inputs for pyrolysis &amp; direct air emissions</li>
 <li>Biomass production: energy, machinery, fertilser use</li>
@@ -645,7 +645,7 @@
         context["BSCtonne"]["switch_parameter_data"] = switch_parameter_data;
         context["BSCtonne"]["algebraic_equation_f"] = algebraic_equation_f;
         
-        write_widget("figure_BSCtonne", "parameters_BSCtonne", 'parameter_data', 'switch_parameter_data', 'algebraic_equation_f', "stackedbar", "kg CO₂-eq per kg biochar");
+        write_widget("figure_BSCtonne", "parameters_BSCtonne", 'parameter_data', 'switch_parameter_data', 'algebraic_equation_f', "stackedbar", "tonne CO₂-eq per tonne biochar");
     </script>
 </section>
   
@@ -690,7 +690,7 @@
         context["BSCvol"]["switch_parameter_data"] = switch_parameter_data;
         context["BSCvol"]["algebraic_equation_f"] = algebraic_equation_f;
         
-        write_widget("figure_BSCvol", "parameters_BSCvol", 'parameter_data', 'switch_parameter_data', 'algebraic_equation_f', "stackedbar", "kg CO₂-eq per m³ biochar");
+        write_widget("figure_BSCvol", "parameters_BSCvol", 'parameter_data', 'switch_parameter_data', 'algebraic_equation_f', "stackedbar", "tonne CO₂-eq per m³ biochar");
     </script>
 </section>
   
