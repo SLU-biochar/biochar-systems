@@ -26,5 +26,15 @@
 Biochar incubation data and the associated metadata The two graphs below present the actual biochar incubation data, for all observations in the data set, both as cumulative biochar carbon loss (decay, in %) and as daily decay rates (% biochar C loss per day).</description>
     </item>
     
+    <item>
+      <title>Guidelines for estimation of biochar durability</title>
+      <link>https://biochar.systems/stability/guidelines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://biochar.systems/stability/guidelines/</guid>
+      <description>Page contents under preparation for report publication
+</description>
+    </item>
+    
   </channel>
 </rss>
