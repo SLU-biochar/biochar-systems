@@ -2,382 +2,419 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/case-studies/1-stockholm/</loc>
+    <loc>https://biochar.systems/case-studies/1-stockholm/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/case-studies/1-stockholm/"
+                href="https://biochar.systems/sv/case-studies/1-stockholm/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/case-studies/1-stockholm/"
+                href="https://biochar.systems/case-studies/1-stockholm/"
                 />
   </url><url>
-    <loc>http://localhost:1313/case-studies/2-lindeborgs/</loc>
+    <loc>https://biochar.systems/case-studies/2-lindeborgs/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/case-studies/2-lindeborgs/"
+                href="https://biochar.systems/sv/case-studies/2-lindeborgs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/case-studies/2-lindeborgs/"
+                href="https://biochar.systems/case-studies/2-lindeborgs/"
                 />
   </url><url>
-    <loc>http://localhost:1313/case-studies/3-helsingborg/</loc>
+    <loc>https://biochar.systems/case-studies/3-helsingborg/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/case-studies/3-helsingborg/"
+                href="https://biochar.systems/sv/case-studies/3-helsingborg/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/case-studies/3-helsingborg/"
+                href="https://biochar.systems/case-studies/3-helsingborg/"
                 />
   </url><url>
-    <loc>http://localhost:1313/case-studies/4-uppsala/</loc>
+    <loc>https://biochar.systems/case-studies/4-uppsala/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/case-studies/4-uppsala/"
+                href="https://biochar.systems/sv/case-studies/4-uppsala/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/case-studies/4-uppsala/"
+                href="https://biochar.systems/case-studies/4-uppsala/"
                 />
   </url><url>
-    <loc>http://localhost:1313/case-studies/5-gis-sweden/</loc>
+    <loc>https://biochar.systems/case-studies/5-gis-sweden/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/case-studies/5-gis-sweden/"
+                href="https://biochar.systems/sv/case-studies/5-gis-sweden/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/case-studies/5-gis-sweden/"
+                href="https://biochar.systems/case-studies/5-gis-sweden/"
                 />
   </url><url>
-    <loc>http://localhost:1313/case-studies/kenya-cookstove/</loc>
+    <loc>https://biochar.systems/case-studies/kenya-cookstove/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/case-studies/kenya-biokol/"
+                href="https://biochar.systems/sv/case-studies/kenya-biokol/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/case-studies/kenya-cookstove/"
+                href="https://biochar.systems/case-studies/kenya-cookstove/"
                 />
   </url><url>
-    <loc>http://localhost:1313/case-studies/6-water-filter-kenya/</loc>
+    <loc>https://biochar.systems/case-studies/6-water-filter-kenya/</loc>
   </url><url>
-    <loc>http://localhost:1313/case-studies/6-water-filter-sweden/</loc>
+    <loc>https://biochar.systems/case-studies/6-water-filter-sweden/</loc>
   </url><url>
-    <loc>http://localhost:1313/case-studies/8-bioenergy-cdr/</loc>
+    <loc>https://biochar.systems/case-studies/8-bioenergy-cdr/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/case-studies/8-bioenergy-cdr/"
+                href="https://biochar.systems/sv/case-studies/8-bioenergy-cdr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/case-studies/8-bioenergy-cdr/"
+                href="https://biochar.systems/case-studies/8-bioenergy-cdr/"
                 />
   </url><url>
-    <loc>http://localhost:1313/case-studies/9-global-biochar-potential/</loc>
+    <loc>https://biochar.systems/case-studies/9-global-biochar-potential/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://biochar.systems/</loc>
     <lastmod>2022-01-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/"
+                href="https://biochar.systems/sv/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/"
+                href="https://biochar.systems/"
                 />
   </url><url>
-    <loc>http://localhost:1313/evaluate-project/</loc>
+    <loc>https://biochar.systems/evaluate-project/</loc>
     <lastmod>2022-01-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/evaluate-project/"
+                href="https://biochar.systems/sv/evaluate-project/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/evaluate-project/"
+                href="https://biochar.systems/evaluate-project/"
                 />
   </url><url>
-    <loc>http://localhost:1313/biochar-climate/</loc>
+    <loc>https://biochar.systems/biochar-climate/</loc>
     <lastmod>2022-01-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/biochar-climate/"
+                href="https://biochar.systems/sv/biochar-climate/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/biochar-climate/"
+                href="https://biochar.systems/biochar-climate/"
                 />
   </url><url>
-    <loc>http://localhost:1313/faq/</loc>
+    <loc>https://biochar.systems/biochar-stability/</loc>
     <lastmod>2022-01-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/faq/"
+                href="https://biochar.systems/sv/biochar-stability/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/faq/"
+                href="https://biochar.systems/biochar-stability/"
                 />
   </url><url>
-    <loc>http://localhost:1313/message_sent/</loc>
+    <loc>https://biochar.systems/faq/</loc>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/message_sent/"
+                href="https://biochar.systems/sv/faq/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/message_sent/"
+                href="https://biochar.systems/faq/"
                 />
   </url><url>
-    <loc>http://localhost:1313/stability/stability/</loc>
-  </url><url>
-    <loc>http://localhost:1313/stability/template/</loc>
-  </url><url>
-    <loc>http://localhost:1313/modules/1-biomass/</loc>
+    <loc>https://biochar.systems/message_sent/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/modules/1-biomass/"
+                href="https://biochar.systems/sv/message_sent/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/modules/1-biomass/"
+                href="https://biochar.systems/message_sent/"
                 />
   </url><url>
-    <loc>http://localhost:1313/modules/2-pyrolysis/</loc>
+    <loc>https://biochar.systems/stability/stability/</loc>
+  </url><url>
+    <loc>https://biochar.systems/stability/template/</loc>
+  </url><url>
+    <loc>https://biochar.systems/modules/1-biomass/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/modules/2-pyrolysis/"
+                href="https://biochar.systems/sv/modules/1-biomass/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/modules/2-pyrolysis/"
+                href="https://biochar.systems/modules/1-biomass/"
                 />
   </url><url>
-    <loc>http://localhost:1313/modules/3-co-product-use/</loc>
+    <loc>https://biochar.systems/modules/2-pyrolysis/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/modules/3-co-product-use/"
+                href="https://biochar.systems/sv/modules/2-pyrolysis/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/modules/3-co-product-use/"
+                href="https://biochar.systems/modules/2-pyrolysis/"
                 />
   </url><url>
-    <loc>http://localhost:1313/modules/4-product-manufacturing/</loc>
+    <loc>https://biochar.systems/modules/3-co-product-use/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/modules/4-product-manufacturing/"
+                href="https://biochar.systems/sv/modules/3-co-product-use/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/modules/4-product-manufacturing/"
+                href="https://biochar.systems/modules/3-co-product-use/"
                 />
   </url><url>
-    <loc>http://localhost:1313/modules/5-product-use/</loc>
+    <loc>https://biochar.systems/modules/4-product-manufacturing/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/modules/5-product-use/"
+                href="https://biochar.systems/sv/modules/4-product-manufacturing/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/modules/5-product-use/"
+                href="https://biochar.systems/modules/4-product-manufacturing/"
                 />
   </url><url>
-    <loc>http://localhost:1313/modules/6-product-eol/</loc>
+    <loc>https://biochar.systems/modules/5-product-use/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/modules/6-product-eol/"
+                href="https://biochar.systems/sv/modules/5-product-use/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/modules/6-product-eol/"
+                href="https://biochar.systems/modules/5-product-use/"
                 />
   </url><url>
-    <loc>http://localhost:1313/modules/7-ref-bg-systems/</loc>
+    <loc>https://biochar.systems/modules/6-product-eol/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/modules/7-ref-bg-systems/"
+                href="https://biochar.systems/sv/modules/6-product-eol/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/modules/7-ref-bg-systems/"
+                href="https://biochar.systems/modules/6-product-eol/"
                 />
   </url><url>
-    <loc>http://localhost:1313/modules/8-other-materials/</loc>
+    <loc>https://biochar.systems/modules/7-ref-bg-systems/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/modules/8-other-materials/"
+                href="https://biochar.systems/sv/modules/7-ref-bg-systems/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/modules/8-other-materials/"
+                href="https://biochar.systems/modules/7-ref-bg-systems/"
                 />
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://biochar.systems/modules/8-other-materials/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/about/"
+                href="https://biochar.systems/sv/modules/8-other-materials/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/about/"
+                href="https://biochar.systems/modules/8-other-materials/"
                 />
   </url><url>
-    <loc>http://localhost:1313/author/</loc>
-  </url><url>
-    <loc>http://localhost:1313/case-studies/</loc>
+    <loc>https://biochar.systems/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/case-studies/"
+                href="https://biochar.systems/sv/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/case-studies/"
+                href="https://biochar.systems/about/"
                 />
   </url><url>
-    <loc>http://localhost:1313/stability/app/</loc>
+    <loc>https://biochar.systems/author/</loc>
   </url><url>
-    <loc>http://localhost:1313/modules/</loc>
+    <loc>https://biochar.systems/case-studies/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/modules/"
+                href="https://biochar.systems/sv/case-studies/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/modules/"
+                href="https://biochar.systems/case-studies/"
                 />
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://biochar.systems/stability/app/</loc>
+  </url><url>
+    <loc>https://biochar.systems/modules/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/categories/"
+                href="https://biochar.systems/sv/modules/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/categories/"
+                href="https://biochar.systems/modules/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tooltip_glossary/</loc>
+    <loc>https://biochar.systems/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/tooltip_glossary/"
+                href="https://biochar.systems/sv/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/tooltip_glossary/"
+                href="https://biochar.systems/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/stability/guidelines/</loc>
-  </url><url>
-    <loc>http://localhost:1313/author/john-doe/</loc>
-  </url><url>
-    <loc>http://localhost:1313/author/mark-dinn/</loc>
-  </url><url>
-    <loc>http://localhost:1313/durability-statement/</loc>
-  </url><url>
-    <loc>http://localhost:1313/pricing/</loc>
+    <loc>https://biochar.systems/demo-page/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/pricing/"
+                href="https://biochar.systems/sv/demo-page/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/pricing/"
+                href="https://biochar.systems/demo-page/"
                 />
   </url><url>
-    <loc>http://localhost:1313/stability/</loc>
-  </url><url>
-    <loc>http://localhost:1313/resources/</loc>
+    <loc>https://biochar.systems/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/resources/"
+                href="https://biochar.systems/sv/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/resources/"
+                href="https://biochar.systems/contact/"
                 />
   </url><url>
-    <loc>http://localhost:1313/service/</loc>
+    <loc>https://biochar.systems/tooltip_glossary/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/service/"
+                href="https://biochar.systems/sv/tooltip_glossary/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/service/"
+                href="https://biochar.systems/tooltip_glossary/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://biochar.systems/stability/guidelines/</loc>
+  </url><url>
+    <loc>https://biochar.systems/author/john-doe/</loc>
+  </url><url>
+    <loc>https://biochar.systems/author/mark-dinn/</loc>
+  </url><url>
+    <loc>https://biochar.systems/durability-statement/</loc>
+  </url><url>
+    <loc>https://biochar.systems/pricing/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="se-se"
-                href="http://localhost:1313/sv/tags/"
+                href="https://biochar.systems/sv/pricing/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-en"
-                href="http://localhost:1313/tags/"
+                href="https://biochar.systems/pricing/"
                 />
   </url><url>
-    <loc>http://localhost:1313/vinnova-project/</loc>
+    <loc>https://biochar.systems/stability/</loc>
+  </url><url>
+    <loc>https://biochar.systems/resources/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="se-se"
+                href="https://biochar.systems/sv/resources/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-en"
+                href="https://biochar.systems/resources/"
+                />
+  </url><url>
+    <loc>https://biochar.systems/service/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="se-se"
+                href="https://biochar.systems/sv/service/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-en"
+                href="https://biochar.systems/service/"
+                />
+  </url><url>
+    <loc>https://biochar.systems/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="se-se"
+                href="https://biochar.systems/sv/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-en"
+                href="https://biochar.systems/tags/"
+                />
+  </url><url>
+    <loc>https://biochar.systems/vinnova-project/</loc>
   </url>
 </urlset>

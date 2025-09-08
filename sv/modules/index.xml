@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Biokolssystemanalys on Biokolsystem</title>
-    <link>http://localhost:1313/sv/modules/</link>
+    <link>https://biochar.systems/sv/modules/</link>
     <description>Recent content in Biokolssystemanalys on Biokolsystem</description>
     <generator>Hugo</generator>
     <language>se-se</language>
     <copyright>&amp;#169; Elias S. Azzi, Cecilia Sundberg, KTH, SLU</copyright>
-    <atom:link href="http://localhost:1313/sv/modules/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://biochar.systems/sv/modules/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1 - Tillförsel av biomassa</title>
-      <link>http://localhost:1313/sv/modules/1-biomass/</link>
+      <link>https://biochar.systems/sv/modules/1-biomass/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/sv/modules/1-biomass/</guid>
+      <guid>https://biochar.systems/sv/modules/1-biomass/</guid>
       <description></description>
     </item>
     <item>
       <title>2 - Pyrolys</title>
-      <link>http://localhost:1313/sv/modules/2-pyrolysis/</link>
+      <link>https://biochar.systems/sv/modules/2-pyrolysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/sv/modules/2-pyrolysis/</guid>
+      <guid>https://biochar.systems/sv/modules/2-pyrolysis/</guid>
       <description></description>
     </item>
     <item>
       <title>3 - Användning av pyrolysbiprodukter</title>
-      <link>http://localhost:1313/sv/modules/3-co-product-use/</link>
+      <link>https://biochar.systems/sv/modules/3-co-product-use/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/sv/modules/3-co-product-use/</guid>
+      <guid>https://biochar.systems/sv/modules/3-co-product-use/</guid>
       <description></description>
     </item>
     <item>
       <title>4 - Tillverkning av biokolsprodukter</title>
-      <link>http://localhost:1313/sv/modules/4-product-manufacturing/</link>
+      <link>https://biochar.systems/sv/modules/4-product-manufacturing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/sv/modules/4-product-manufacturing/</guid>
+      <guid>https://biochar.systems/sv/modules/4-product-manufacturing/</guid>
       <description></description>
     </item>
     <item>
       <title>5 - Användning av biokolsprodukter</title>
-      <link>http://localhost:1313/sv/modules/5-product-use/</link>
+      <link>https://biochar.systems/sv/modules/5-product-use/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/sv/modules/5-product-use/</guid>
+      <guid>https://biochar.systems/sv/modules/5-product-use/</guid>
       <description></description>
     </item>
     <item>
       <title>6 - Avfallshantering av biokolprodukter</title>
-      <link>http://localhost:1313/sv/modules/6-product-eol/</link>
+      <link>https://biochar.systems/sv/modules/6-product-eol/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/sv/modules/6-product-eol/</guid>
+      <guid>https://biochar.systems/sv/modules/6-product-eol/</guid>
       <description></description>
     </item>
     <item>
       <title>7 - Referens- och bakgrundssystem</title>
-      <link>http://localhost:1313/sv/modules/7-ref-bg-systems/</link>
+      <link>https://biochar.systems/sv/modules/7-ref-bg-systems/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/sv/modules/7-ref-bg-systems/</guid>
+      <guid>https://biochar.systems/sv/modules/7-ref-bg-systems/</guid>
       <description></description>
     </item>
     <item>
       <title>8 - Tillförsel av annat material</title>
-      <link>http://localhost:1313/sv/modules/8-other-materials/</link>
+      <link>https://biochar.systems/sv/modules/8-other-materials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/sv/modules/8-other-materials/</guid>
+      <guid>https://biochar.systems/sv/modules/8-other-materials/</guid>
       <description></description>
     </item>
   </channel>

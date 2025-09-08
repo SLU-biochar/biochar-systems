@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Biokolsystem</title>
-    <link>http://localhost:1313/sv/tags/</link>
+    <link>https://biochar.systems/sv/tags/</link>
     <description>Recent content in Tags on Biokolsystem</description>
     <generator>Hugo</generator>
     <language>se-se</language>
     <copyright>&amp;#169; Elias S. Azzi, Cecilia Sundberg, KTH, SLU</copyright>
-    <atom:link href="http://localhost:1313/sv/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://biochar.systems/sv/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
