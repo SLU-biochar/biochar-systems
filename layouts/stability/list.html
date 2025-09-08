@@ -1,0 +1,95 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ $data := index site.Data site.Language.Lang }}
+
+<!-- Flowchart Plot Start -->
+<!-- SVG with clickable link https://medium.com/@gianpaul.r/adding-clickable-links-to-an-svg-image-file-f254e0f6b71a  -->
+{{ with .Params.flowchart }}
+{{ if .enable }}
+<section class="about section">
+  <div class="container">
+    <p> {{ .pretext | markdownify }} </p>
+    <div class="row center-block">
+          <embed class="img-responsive center-block" width="80%" src="{{ .image | relURL }}">
+    </div>
+    <p> {{ .posttext | markdownify }} </p>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- Flowchart Plot End -->
+
+<!-- Markdown content of the _index.md -->
+{{ if .Content }}
+<section class="">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="project-content mt-50">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- Portfolio Start -->
+{{ if .Params.portfolio.enable }}
+<section class="portfolio-work">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div class="portfolio-menu">
+            <div class="btn-group btn-group-toggle justify-content-center" data-toggle="buttons">
+              <label class="btn btn-sm btn-primary active">
+                <input type="radio" name="shuffle-filter" value="all" checked="checked">{{ i18n "all" }}
+              </label>
+              {{ $categories := slice -}}
+              {{ range .Data.Pages -}}
+              {{ $categories = $categories | append .Params.category -}}
+              {{ end -}}
+              {{ range ( $categories | uniq ) -}}
+              <label class="btn btn-sm btn-primary">
+                <input type="radio" name="shuffle-filter" value="{{ . | urlize }}">{{ . }}
+              </label>
+              {{- end }}
+            </div>
+          </div>
+          <div class="row shuffle-wrapper">
+            {{ range .Data.Pages -}}
+            {{ $cats := .Params.category -}}
+            {{ if not (reflect.IsSlice $cats) }}{{ $cats = slice ($cats) }}{{ end -}}
+            {{ $cats = apply $cats "urlize" "." | jsonify -}}
+            <div class="col-md-4 portfolio-item shuffle-item" data-groups="{{ $cats }}">
+              {{ if isset .Params "title_image" -}}
+                {{ $image := .Page.Resources.GetMatch .Params.title_image }}
+                {{ $image := $image.Resize "200x webp" }}
+              <img src="{{ $image.RelPermalink  }}" alt="{{ .Title }}">
+              {{ else }}
+              <img src="{{ `/img/empty_module.jpg` | relURL}}" alt="{{ .Title }}">
+              {{- end }}
+              <div class="portfolio-hover">
+                <div class="portfolio-content">
+                  <a href="{{ .RelPermalink }}"><i class="icon ion-search"></i></a>
+                  <a class="h3" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                  <p>{{ if .Params.portfolio.meta_text }} {{ .Params.description }} {{ end }}</p>
+                </div>
+              </div>
+            </div>
+            {{- end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- Portfolio End -->
+
+
+{{ end }}
+

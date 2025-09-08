@@ -2,84 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Biokol fallstudier on Biokolsystem</title>
-    <link>https://biochar.systems/sv/case-studies/</link>
+    <link>http://localhost:1313/sv/case-studies/</link>
     <description>Recent content in Biokol fallstudier on Biokolsystem</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>se-se</language>
-    <copyright>&amp;#169; Elias S. Azzi, Cecilia Sundberg, KTH, SLU</copyright><atom:link href="https://biochar.systems/sv/case-studies/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;#169; Elias S. Azzi, Cecilia Sundberg, KTH, SLU</copyright>
+    <atom:link href="http://localhost:1313/sv/case-studies/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Stockholm - Prospektiv livscykelanalys av storskalig biokolsproduktion och användning på mjölkgårdar</title>
-      <link>https://biochar.systems/sv/case-studies/1-stockholm/</link>
+      <link>http://localhost:1313/sv/case-studies/1-stockholm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://biochar.systems/sv/case-studies/1-stockholm/</guid>
-      <description>Resurser Referens Azzi ES, Karltun E, Sundberg C (2019) Prospective life cycle assessment of large-scale biochar production and use for negative emissions in Stockholm. Environmental Science &amp;amp; Technology 53:8466–8476. DOI: 10.</description>
+      <guid>http://localhost:1313/sv/case-studies/1-stockholm/</guid>
+      <description>&lt;h2 id=&#34;resurser&#34;&gt;&lt;strong&gt;Resurser&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;div class=&#34;row&#34;&gt;&#xD;&#xA;  &lt;div class=&#34;col-md-4&#34;&gt;&#xD;&#xA;&lt;h3 id=&#34;referens&#34;&gt;Referens&lt;/h3&gt;&#xA;&lt;p&gt;Azzi ES, Karltun E, Sundberg C (2019) Prospective life cycle assessment of large-scale biochar production and use for negative emissions in Stockholm. Environmental Science &amp;amp; Technology 53:8466–8476. DOI: &lt;a href=&#34;https://pubs.acs.org/doi/10.1021/acs.est.9b01615&#34;&gt;10.1021/acs.est.9b01615&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xD;&#xA;&#xD;&#xA;&lt;a href=&#34;../azzi2019.ris&#34; target=&#34;_blank&#34; class=&#34;btn btn-default&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;inline-svg&#34; &gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z&#34;/&gt;&lt;/svg&gt;&#xD;&#xA;    &lt;/span&gt;&#xD;&#xA;     Download citation as RIS &#xD;&#xA;&lt;/a&gt;&#xD;&#xA;&#xA;&lt;br/&gt;&lt;br/&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;a href=&#34;../2019-06-18_EnvSciTech_Prospective%20LCA%20large%20scale%20biochar_prePrint.pdf&#34; target=&#34;_blank&#34; class=&#34;btn btn-default&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;inline-svg&#34; &gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z&#34;/&gt;&lt;/svg&gt;&#xD;&#xA;    &lt;/span&gt;&#xD;&#xA;     Download pre-print as PDF &#xD;&#xA;&lt;/a&gt;&#xD;&#xA;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Lindeborgs - Biokolproduktionspotential, variation och miljöprestanda på gårdsnivå </title>
-      <link>https://biochar.systems/sv/case-studies/2-lindeborgs/</link>
+      <link>http://localhost:1313/sv/case-studies/2-lindeborgs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://biochar.systems/sv/case-studies/2-lindeborgs/</guid>
-      <description>Resurser Referens Azzi ES, Karltun E, Sundberg C (2021) Small-scale biochar production on Swedish farms: A model for estimating potential, variability, and environmental performance. Journal of Cleaner Production 280:124873. DOI: 10.</description>
+      <guid>http://localhost:1313/sv/case-studies/2-lindeborgs/</guid>
+      <description>&lt;h2 id=&#34;resurser&#34;&gt;&lt;strong&gt;Resurser&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;div class=&#34;row&#34;&gt;&#xD;&#xA;  &lt;div class=&#34;col-md-4&#34;&gt;&#xD;&#xA;&lt;h3 id=&#34;referens&#34;&gt;Referens&lt;/h3&gt;&#xA;&lt;p&gt;Azzi ES, Karltun E, Sundberg C (2021) Small-scale biochar production on Swedish farms: A model for estimating potential, variability, and environmental performance. Journal of Cleaner Production 280:124873. DOI: &lt;a href=&#34;https://doi.org/10.1016/j.jclepro.2020.124873&#34;&gt;10.1016/j.jclepro.2020.124873&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xD;&#xA;&#xD;&#xA;&lt;a href=&#34;../azzi2021_LIN.ris&#34; target=&#34;_blank&#34; class=&#34;btn btn-default&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;inline-svg&#34; &gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z&#34;/&gt;&lt;/svg&gt;&#xD;&#xA;    &lt;/span&gt;&#xD;&#xA;     Download citation as RIS &#xD;&#xA;&lt;/a&gt;&#xD;&#xA;&#xA;&lt;br/&gt;&lt;br/&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;a href=&#34;https://www.sciencedirect.com/science/article/pii/S0959652620349179/pdfft?isDTMRedir=true&amp;amp;download=true&#34; target=&#34;_blank&#34; class=&#34;btn btn-default&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;inline-svg&#34; &gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z&#34;/&gt;&lt;/svg&gt;&#xD;&#xA;    &lt;/span&gt;&#xD;&#xA;     Download as PDF &#xD;&#xA;&lt;/a&gt;&#xD;&#xA;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Helsingborg - Biokol framställt av träavfall för marksanering</title>
-      <link>https://biochar.systems/sv/case-studies/3-helsingborg/</link>
+      <link>http://localhost:1313/sv/case-studies/3-helsingborg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://biochar.systems/sv/case-studies/3-helsingborg/</guid>
-      <description>Resurser Referens Papageorgiou A, Azzi ES, Enell A, Sundberg C (2021) Biochar produced from wood waste for soil remediation in Sweden: carbon sequestration and other environmental impacts. Science of the Total Environment 145953.</description>
+      <guid>http://localhost:1313/sv/case-studies/3-helsingborg/</guid>
+      <description>&lt;h2 id=&#34;resurser&#34;&gt;&lt;strong&gt;Resurser&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;div class=&#34;row&#34;&gt;&#xD;&#xA;  &lt;div class=&#34;col-md-4&#34;&gt;&#xD;&#xA;&lt;h3 id=&#34;referens&#34;&gt;Referens&lt;/h3&gt;&#xA;&lt;p&gt;Papageorgiou A, Azzi ES, Enell A, Sundberg C (2021) Biochar produced from wood waste for soil remediation in Sweden: carbon sequestration and other environmental impacts. Science of the Total Environment 145953. DOI: &lt;a href=&#34;https://doi.org/10.1016/j.scitotenv.2021.145953&#34;&gt;10.1016/j.scitotenv.2021.145953&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xD;&#xA;&#xD;&#xA;&lt;a href=&#34;../papageorgiou2021_HELS.ris&#34; target=&#34;_blank&#34; class=&#34;btn btn-default&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;inline-svg&#34; &gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z&#34;/&gt;&lt;/svg&gt;&#xD;&#xA;    &lt;/span&gt;&#xD;&#xA;     Download citation as RIS &#xD;&#xA;&lt;/a&gt;&#xD;&#xA;&#xA;&lt;br/&gt;&lt;br/&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;a href=&#34;https://www.sciencedirect.com/science/article/pii/S0048969721010202/pdfft?isDTMRedir=true&amp;amp;download=true&#34; target=&#34;_blank&#34; class=&#34;btn btn-default&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;inline-svg&#34; &gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z&#34;/&gt;&lt;/svg&gt;&#xD;&#xA;    &lt;/span&gt;&#xD;&#xA;     Ladda ned som PDF &#xD;&#xA;&lt;/a&gt;&#xD;&#xA;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Uppsala - Biokol i stadsmiljö</title>
-      <link>https://biochar.systems/sv/case-studies/4-uppsala/</link>
+      <link>http://localhost:1313/sv/case-studies/4-uppsala/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://biochar.systems/sv/case-studies/4-uppsala/</guid>
-      <description>Resurser Referens Azzi ES, Karltun E, Sundberg C (2021) Life cycle assessment of urban uses of biochar and case study in Uppsala, Sweden. DOI: submitted to journal
-Download citation as RIS  Download as pre-print PDF Presentationer Studien har presenterats vid en konferens och ett flertal workshops, för olika målgrupper.</description>
+      <guid>http://localhost:1313/sv/case-studies/4-uppsala/</guid>
+      <description>&lt;h2 id=&#34;resurser&#34;&gt;&lt;strong&gt;Resurser&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;div class=&#34;row&#34;&gt;&#xD;&#xA;  &lt;div class=&#34;col-md-4&#34;&gt;&#xD;&#xA;&lt;h3 id=&#34;referens&#34;&gt;Referens&lt;/h3&gt;&#xA;&lt;p&gt;Azzi ES, Karltun E, Sundberg C (2021) Life cycle assessment of urban uses of biochar and case study in Uppsala, Sweden. DOI: &lt;a href=&#34;&#34;&gt;submitted to journal&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xD;&#xA;&#xD;&#xA;&lt;a href=&#34;&#34; target=&#34;_blank&#34; class=&#34;btn btn-default&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;inline-svg&#34; &gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z&#34;/&gt;&lt;/svg&gt;&#xD;&#xA;    &lt;/span&gt;&#xD;&#xA;     Download citation as RIS &#xD;&#xA;&lt;/a&gt;&#xD;&#xA;&#xA;&lt;br/&gt;&lt;br/&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;a href=&#34;../P4_Azzi_202x_Uppsala_prePrint.pdf&#34; target=&#34;_blank&#34; class=&#34;btn btn-default&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;inline-svg&#34; &gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z&#34;/&gt;&lt;/svg&gt;&#xD;&#xA;    &lt;/span&gt;&#xD;&#xA;     Download as pre-print PDF &#xD;&#xA;&lt;/a&gt;&#xD;&#xA;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Rumslig och multikriterierekommendation för biokolanvändning på åkermark i Sverige</title>
-      <link>https://biochar.systems/sv/case-studies/5-gis-sweden/</link>
+      <link>http://localhost:1313/sv/case-studies/5-gis-sweden/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://biochar.systems/sv/case-studies/5-gis-sweden/</guid>
-      <description>Page under construction Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas officiis cumque, harum dicta necessitatibus reprehenderit, delectus molestiae, impedit alias adipisci distinctio voluptas. Tempora modi amet voluptate at provident soluta consequatur.</description>
+      <guid>http://localhost:1313/sv/case-studies/5-gis-sweden/</guid>
+      <description>&lt;h2 id=&#34;page-under-construction&#34;&gt;Page under construction&lt;/h2&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas officiis cumque, harum dicta necessitatibus&#xA;reprehenderit, delectus molestiae, impedit alias adipisci distinctio voluptas. Tempora modi amet voluptate&#xA;at provident soluta consequatur.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Biokolsspisar i Kenya</title>
-      <link>https://biochar.systems/sv/case-studies/kenya-biokol/</link>
+      <link>http://localhost:1313/sv/case-studies/kenya-biokol/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://biochar.systems/sv/case-studies/kenya-biokol/</guid>
-      <description>Resurser Utvalda referenser Gitau, K. J.; Sundberg, C.; Mendum, R.; Mutune, J.; Njenga, M. Use of Biochar-Producing Gasifier Cookstove Improves Energy Use Efficiency and Indoor Air Quality in Rural Households. Energies.</description>
+      <guid>http://localhost:1313/sv/case-studies/kenya-biokol/</guid>
+      <description>&lt;h2 id=&#34;resurser&#34;&gt;&lt;strong&gt;Resurser&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;div class=&#34;row&#34;&gt;&#xD;&#xA;  &lt;div class=&#34;col-md-4&#34;&gt;&#xD;&#xA;&lt;h3 id=&#34;utvalda-referenser&#34;&gt;Utvalda referenser&lt;/h3&gt;&#xA;&lt;p&gt;Gitau, K. J.; Sundberg, C.; Mendum, R.; Mutune, J.; Njenga, M. Use of Biochar-Producing Gasifier Cookstove Improves Energy Use Efficiency and Indoor Air Quality in Rural Households. Energies. 2019 &lt;a href=&#34;https://doi.org/10.3390/en12224285&#34;&gt;https://doi.org/10.3390/en12224285&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Gitau, K. J.; Mutune, J.; Sundberg, C.; Mendum, R.; Njenga, M. Factors Influencing the Adoption of Biochar-Producing Gasifier Cookstoves by Households in Rural Kenya. Energy Sustain. Dev. 2019, 52, 63–71 &lt;a href=&#34;https://doi.org/10.1016/J.ESD.2019.07.006&#34;&gt;https://doi.org/10.1016/J.ESD.2019.07.006&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;En komplett lista av referenser finns längre ned på sidan.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Bioenergi med eller utan koldioxidinfångning?</title>
-      <link>https://biochar.systems/sv/case-studies/8-bioenergy-cdr/</link>
+      <link>http://localhost:1313/sv/case-studies/8-bioenergy-cdr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://biochar.systems/sv/case-studies/8-bioenergy-cdr/</guid>
-      <description>Vill du läsa mer? Abstract Purpose
-Bioenergy with carbon dioxide removal (CDR) is increasingly proposed as an efficient way to mitigate climate change. This study examined the circumstances and methodological choices in which two CDR bioenergy systems were preferable to a reference bioenergy system from a climate change mitigation perspective.</description>
+      <guid>http://localhost:1313/sv/case-studies/8-bioenergy-cdr/</guid>
+      <description>&lt;h2 id=&#34;vill-du-läsa-mer&#34;&gt;&lt;strong&gt;Vill du läsa mer?&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;div class=&#34;row&#34;&gt;&#xD;&#xA;  &lt;div class=&#34;col-md-10&#34;&gt;&#xD;&#xA;&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;&#xA;&lt;p&gt;&lt;b&gt;Purpose&lt;/b&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bioenergy with carbon dioxide removal (CDR) is increasingly proposed as an efficient way to mitigate climate change. This study examined the circumstances and methodological choices in which two CDR bioenergy systems were preferable to a reference bioenergy system from a climate change mitigation perspective. The CDR systems were also compared.&lt;/p&gt;&#xA;&lt;p&gt;&lt;b&gt;Methods&lt;/b&gt;&lt;/p&gt;&#xA;&lt;p&gt;Three systems were modelled: two CDR systems (Biochar, bioenergy with carbon capture and storage (BECCS)), with a combined heat and power (CHP) system as reference. A parameterised life cycle inventory (LCI) model was developed and computed for all systems and four different functional units (FUs), resulting in different distributions of climate impacts. Contribution analysis was performed, followed by pair-wise comparison of all scenarios to establish their ranking. First-order Sobol indices were computed to assess the contribution of each parameter to total variance. When ranking of scenarios was strongly dependent on parameter values, decision tree analysis was applied.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Biokolsfilter för vattenrening</title>
-      <link>https://biochar.systems/sv/case-studies/6-water-filter/</link>
+      <link>http://localhost:1313/sv/case-studies/6-water-filter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://biochar.systems/sv/case-studies/6-water-filter/</guid>
-      <description>Pågående forskningsprojekt Detta projekt är fortfarande pågående, resultat kommer presenteras här när projektet är slutfört. Kontakt: lisa.zakrisson@slu.se</description>
+      <guid>http://localhost:1313/sv/case-studies/6-water-filter/</guid>
+      <description>&lt;h2 id=&#34;pågående-forskningsprojekt&#34;&gt;Pågående forskningsprojekt&lt;/h2&gt;&#xA;&lt;p&gt;Detta projekt är fortfarande pågående, resultat kommer presenteras här när projektet är slutfört. Kontakt: &lt;a href=&#34;mailto:lisa.zakrisson@slu.se&#34;&gt;lisa.zakrisson@slu.se&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

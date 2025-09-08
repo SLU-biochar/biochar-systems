@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ $data := index site.Data site.Language.Lang }}
+
+
+<!-- Include .Content from the index.md / page itself (app.md) page-->
+{{ if .Content }}
+  {{ .Content }}
+{{ end }}
+<!-- End of Include .Content from the index.md page-->
+
+{{ end }}

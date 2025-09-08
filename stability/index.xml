@@ -2,38 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Research Project / Biochar Stability on Biochar Systems</title>
-    <link>https://biochar.systems/stability/</link>
+    <link>http://localhost:1313/stability/</link>
     <description>Recent content in Research Project / Biochar Stability on Biochar Systems</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-en</language>
-    <copyright>&amp;#169; Elias S. Azzi, Cecilia Sundberg, KTH, SLU</copyright><atom:link href="https://biochar.systems/stability/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;#169; Elias S. Azzi, Cecilia Sundberg, KTH, SLU</copyright>
+    <atom:link href="http://localhost:1313/stability/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://biochar.systems/stability/stability/</link>
+      <link>http://localhost:1313/stability/stability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://biochar.systems/stability/stability/</guid>
+      <guid>http://localhost:1313/stability/stability/</guid>
       <description></description>
     </item>
-    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/stability/template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/stability/template/</guid>
+      <description>&lt;html&gt;&#xD;&#xA;&lt;head&gt;&#xD;&#xA;    &lt;meta charset=&#34;utf-8&#34; /&gt;&#xD;&#xA;    &#xD;&#xA;    &#xD;&#xA;    &lt;!-- semantic-ui --&gt;&#xD;&#xA;    &lt;link rel=&#34;stylesheet&#34; type=&#34;text/css&#34; href=&#34;css-js/semantic.min.css&#34;&gt;&#xD;&#xA;    &lt;script src=&#34;css-js/jquery-3.1.1.min.js&#34;&gt; &lt;/script&gt;&#xD;&#xA;    &lt;script src=&#34;css-js/semantic.min.js&#34;&gt;&lt;/script&gt;&#xD;&#xA;    &#xD;&#xA;    &lt;!-- plotly --&gt;&#xD;&#xA;    &lt;script src=&#34;css-js/plotly.min.js&#34;&gt;&lt;/script&gt;&#xD;&#xA;    &#xD;&#xA;    &lt;!-- bokeh --&gt;&#xD;&#xA;    &lt;script src=&#34;https://cdn.bokeh.org/bokeh/release/bokeh-2.4.3.min.js&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;&#xD;&#xA;    &lt;script src=&#34;https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.3.min.js&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;&#xD;&#xA;    &lt;script src=&#34;https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.3.min.js&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;&#xD;&#xA;    &lt;script src=&#34;https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.4.3.min.js&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;&#xD;&#xA;    &lt;script src=&#34;https://cdn.bokeh.org/bokeh/release/bokeh-mathjax-2.4.3.min.js&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;&#xD;&#xA;&lt;/head&gt;&#xD;&#xA;&lt;body&gt;&#xD;&#xA;    &lt;div class=&#34;ui container&#34;&gt; &lt;!-- ui raised very padded text container segment --&gt;&#xD;&#xA;&#xD;&#xA;        &lt;div&gt;&#xD;&#xA;            &lt;h1 class=&#34;ui header&#34;&gt;&lt;i class=&#34;angle double right icon&#34;&gt;&lt;/i&gt; Biochar Stability Validator&lt;/h1&gt;&#xD;&#xA;            &lt;h2 class=&#34;ui header&#34;&gt;&lt;i class=&#34;angle double right icon&#34;&gt;&lt;/i&gt; Interactive flowchart to visualise biochar incubation data and validate stability indicators.&lt;/h2&gt;&#xD;&#xA;            &lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. &lt;/p&gt;</description>
+    </item>
     <item>
       <title>Biochar Stability Dashboard</title>
-      <link>https://biochar.systems/stability/app/</link>
+      <link>http://localhost:1313/stability/app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://biochar.systems/stability/app/</guid>
-      <description>Dashboard under construction
-Biochar incubation data and the associated metadata The two graphs below present the actual biochar incubation data, for all observations in the data set, both as cumulative biochar carbon loss (decay, in %) and as daily decay rates (% biochar C loss per day).</description>
+      <guid>http://localhost:1313/stability/app/</guid>
+      <description>&lt;div class=&#34;col-md-12&#34;&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;notices warning&#34; &gt;&lt;p&gt;Dashboard under construction&lt;/p&gt;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;!-- MAIN DASHBOARD --&gt;&#xD;&#xA;&lt;section class=&#34;&#34;&gt;&#xD;&#xA;  &lt;div class=&#34;container-fluid&#34;&gt;&#xD;&#xA;&lt;div class=&#34;row&#34;&gt;&#xD;&#xA;  &lt;div class=&#34;col-md-6 col-md-push-1&#34;&gt;&#xD;&#xA;&lt;h2 id=&#34;biochar-incubation-data-and-the-associated-metadata&#34;&gt;&lt;strong&gt;Biochar incubation data and the associated metadata&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;The two graphs below present the actual biochar incubation data, for all observations in the data set, both as cumulative biochar carbon loss (decay, in %) and as daily decay rates (% biochar C loss per day). The linked table provides some information about the experimental conditions (what we call metadata).&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Figures are interactive: hover on the lines, click on the lines, select rows from the table, to highlight specific curves.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Guidelines for estimation of biochar durability</title>
-      <link>https://biochar.systems/stability/guidelines/</link>
+      <link>http://localhost:1313/stability/guidelines/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://biochar.systems/stability/guidelines/</guid>
-      <description>Report context The preparation of this report was initiated in Autumn 2022, as part of research project on biochar persistence funded by the Swedish Energy Agency. More information about the project is available on this website.</description>
+      <guid>http://localhost:1313/stability/guidelines/</guid>
+      <description>&lt;div class=&#34;row&#34;&gt;&#xD;&#xA;&lt;div class=&#34;col-md-7&#34;&gt;&#xD;&#xA;&lt;h1 id=&#34;report-context&#34;&gt;Report context&lt;/h1&gt;&#xA;&lt;p&gt;The preparation of this report was initiated in Autumn 2022, as part of research project on biochar persistence funded by the Swedish Energy Agency. &lt;em&gt;More information about the project is &lt;a href=&#34;http://localhost:1313/stability/&#34;&gt;available on this website&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;This report provides a snapshot of the state of the knowledge as of 2023, with a focus on incubation-derived estimates of biochar persistence, among other approaches.&lt;/p&gt;&#xA;&lt;p&gt;As biochar durability research is rapidly evolving, this report will be updated in 2025 to provide a more comprehensive understanding of biochar persistence, attempting to unify the various approaches to modelling &amp;amp; understanding biochar persistence.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

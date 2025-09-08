@@ -1,0 +1,35 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ $data := index site.Data site.Language.Lang }}
+
+<!-- Glossary -->
+<section class="glossary">
+  <div class="container">
+    <div class="row">
+
+      {{ partial "glossary-terms.html" . }}
+      {{ $glossary_items := $.Scratch.Get "glossary_items" }}
+      {{ with $glossary_items }}
+      {{ $glossary_terms := sort . "Title" "asc" }}
+      <ul>
+        {{ range $glossary_terms }}
+        {{ $term_identifier := (printf "term-%s" .Params.id) }}
+        
+        <li class="" data-show-count="0">
+          <div id="{{ $term_identifier }}" class="term-anchor"></div>
+          <div>
+            <div class="term-name"><b>{{ .Title }}</b></div>
+            <span class="preview-text">{{ .Summary }} </span>
+          </div>
+        </li>
+        {{ end }}
+      </ul>
+      {{ end }}
+
+    </div>
+  </div>
+</section>
+
+{{ end }}

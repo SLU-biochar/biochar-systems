@@ -1,0 +1,195 @@
+// Put custom SCSS rules in this file
+// Documentation: https://sass-lang.com/documentation
+
+
+//SCSS rules for section-dark and section-light theme in layouts of module pages
+.section-light {
+  background-color: white;
+}
+.section-light h1, .section-light h2, .section-light h3, .section-light p .section-light div, .section-light a:not(.btn-default){
+  color: rgb(10, 6, 6);
+  //font-style:oblique;
+}
+.section-light a:not(.btn-default):hover{
+  color: rgb(82, 73, 73);
+  text-decoration: underline;
+}
+
+.section-dark {
+  background-color: #4d4c52 //#474453 // grey-purple #474453 ; grey rgba(69, 78, 78, 0.795);
+}
+.section-dark h1, .section-dark h2, .section-dark h3, .section-dark p, .section-dark div, .section-dark a:not(.btn-default){
+  color: white;
+}
+
+.section-dark a:not(.btn-default){
+  color: rgb(224, 224, 224);
+  font-style:oblique;
+}
+.section-dark a:not(.btn-default):hover{
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+// SCSS rules for SHORTCODE fontawesome.html
+.inline-svg {
+    display: inline-block;
+    height: 1.15rem;
+    width: 1.15rem;
+    top: 0.15rem;
+    position: relative;
+  }
+
+// SCSS rules for SHORTCODE expand-css.html /section class = accordion with checkbox inside
+/*  Functionality 
+Try to fix transition vertical jump with https://codepen.io/bilal-pf/pen/eYZrPGW 
+in the short code*/ 
+section.accordion {
+  position: relative; 
+}
+.accordion > input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;
+}
+.accordion .content {
+  max-height: 0 px;
+  overflow-y: hidden;
+  transition:max-height 0.5s;
+  -webkit-transition:max-height 0.5s;
+}
+.accordion > input[type="checkbox"]:checked ~ .content {
+  height: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.accordion label {
+  display: block;
+}
+/*  Styling */
+.accordion {
+  margin-bottom: 0.5em;
+}
+.accordion > input[type="checkbox"]:checked ~ .content {
+  padding: 5px;
+  border: 1px solid #e8e8e8;
+  border-top: 0;
+  border-right: 0;
+}
+.accordion .handle {
+  margin: 0;
+  font-size: 1.125em;
+  line-height: 1.0em;
+}
+.accordion label {
+  color: #333;
+  cursor: pointer;
+  font-weight: normal;
+  padding: 5px;
+  // background: #e8e8e8;
+}
+.accordion label:hover,
+.accordion label:focus {
+  // background: #d8d8d8;
+}
+.accordion .handle label:before { // https://yoksel.github.io/url-encoder/
+  font-family: 'fontawesome';
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3Cpath d='M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z'/%3E%3C/svg%3E");
+  display: inline-block;
+  margin-right: 10px;
+  font-size: .58em;
+  line-height: 1.556em;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  height: 1.556em;
+  width: 1.556em;
+}
+.accordion > input[type="checkbox"]:checked ~ .handle label:before {
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  height: 1.556em;
+  width: 1.556em;
+}
+// END OF SCSS rules for SHORTCODE expand-css.html
+
+// SCSS rules for SHORTCODE tooltip_glossary.html
+.glossary-tooltip {
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  color: black;
+  text-decoration: none !important;
+}
+
+// SCSS rules for MATHJAX equations
+code.has-jax {
+  -webkit-font-smoothing: antialiased;
+  background: inherit !important;
+  border: none !important;
+  font-size: 200% !important;
+}
+
+// SCSS rules for SHORTCODE notice.html
+div.notices {
+  margin: 2rem 0;
+  position: relative;
+}
+div.notices a:not(.btn-default){
+  color: rgb(0, 0, 0);
+}
+div.notices a:not(.btn-default):hover{
+  color: rgb(129, 128, 128);
+}
+
+div.notices p{
+  padding: 15px;
+  display: block;
+  font-size: 1.5rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  color: #666;
+}
+div.notices p:first-child:before {
+  position: absolute;
+  top: 2px;
+  color: #fff;
+  font-family: "roboto, sans-serif";
+  font-weight: 1000;
+  content: "\f06a";//"\f06a";
+  left: 10px;
+}
+div.notices p:first-child:after {
+  position: absolute;
+  top: 2px;
+  color: #fff;
+  left: 2rem;
+}
+div.notices.info p {
+  border-top: 30px solid #F0B37E;
+  background: #FFF2DB;
+}
+div.notices.info p:first-child:after {
+  content: 'Info';
+}
+div.notices.warning p {
+  border-top: 30px solid rgba(217, 83, 79, 0.8);
+  background: #FAE2E2;
+}
+div.notices.warning p:first-child:after {
+  content: 'Warning';
+}
+div.notices.note p {
+  border-top: 30px solid #6AB0DE;
+  background: #E7F2FA;
+}
+div.notices.note p:first-child:after {
+  content: 'Note';
+}
+div.notices.tip p {
+  border-top: 30px solid rgba(92, 184, 92, 0.8);
+  background: #E6F9E6;
+}
+div.notices.tip p:first-child:after {
+  content: 'Tip';
+}
+

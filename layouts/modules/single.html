@@ -1,0 +1,106 @@
+{{ define "main" }}
+
+<!-- Page title -->
+{{ if .Params.title_image }}
+{{ $image := .Page.Resources.GetMatch .Params.title_image }}
+{{ $image := $image.Resize "500x webp" }}
+<section class="page-title bg-2"style="background-image: url( {{ $image.RelPermalink  }} );">
+  <div class="container">
+    <div class="row" >
+      <div class="col-md-5 text-center">
+        <img src="{{ $image.RelPermalink  }}" style="padding: 1em 0" alt="&copy; {{.Params.title_image_credit | plainify }}" title="&copy; {{.Params.title_image_credit | plainify }}" />
+      </div>
+      <div class="col-md-7">
+        <div class="block">
+          <h1 style="text-transform:none;">{{ .Title }}</h1>
+          <p >{{ .Params.description | markdownify | safeHTML }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ else }}
+<section class="page-title bg-2">
+  <div class="container">
+    <div class="row" >
+      <div class="col-md-12">
+        <div class="block">
+          <h1>{{ .Title }}</h1>
+          <p style="text-align: left;">{{ .Params.description | markdownify | safeHTML }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ $data := index site.Data site.Language.Lang }}
+
+<!-- ProjectDetails -->
+{{ with .Params.details }}
+{{ if .enable }}
+<section class="portfolio-single-page section-sm">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-8">
+        {{ with .Params.image }}
+        <img class="img-responsive w-100" src="{{ . | relURL }}" alt="">
+        {{ end }}
+      </div>
+
+      <div class="col-md-4">
+        <div class="project-details">
+          <h4>Project Details</h4>
+          <ul>
+            {{ range .Params.information }}
+            <li><span>{{ .label }} :</span> <strong>{{ .info | markdownify }}</strong></li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- End of ProjectDetails -->
+
+<!-- Include .Content from the index.md page-->
+{{ if .Content }}
+<section class="">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="project-content mt-50">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- End of Include .Content from the index.md page-->
+
+<!--Include .Content from the resource pages named section-*.md -->
+{{ $sections := .Resources.Match "section-*.md" }}
+{{ range $sections }}
+
+    {{ $sectionClass := .Params.styling.sectionClass | default " "}}
+    {{ $containerClass := .Params.styling.containerClass | default " "}}
+    {{ $rowClass := .Params.styling.rowClass | default " "}}
+
+  <section class="{{ $sectionClass }}">
+    <div class="container {{ $containerClass }}">
+      <div class="row {{ $rowClass }}">
+            {{ .Content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
+<!-- End of Include .Content from the resource pages named section-*.md -->
+
+{{ end }}

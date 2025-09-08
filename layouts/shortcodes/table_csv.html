@@ -1,0 +1,37 @@
+{{/* DISCLAIMER: Not working perfectly! In local: works. When pushing to remote: the CSV file that will be used during
+    website generation is the one at the remove adress shortcode called from a page which has resources $csv.Permalink rather than local
+    ... Alternative is to build it with javascript rather than markdown 
+    or skip the shortcode, and insert manually some markdown table in the text */}}
+
+
+{{ $file := .Get `file` }}
+{{ $sep :=  .Get `sep` }}
+
+{{/* Attempt 1: shortcode called from a page which has resources */}}
+{{ $csv := .Page.Resources.GetMatch $file }}
+{{ if in .Page.Name "section-" }}
+    {{/* Attempt 2: shortcode called from a resource page of a page with resources > hack: .Parent. */}}
+    {{ $csv = .Page.Parent.Resources.GetMatch $file }} {{/* NOTE: it is =, not .= */}}
+{{ end }}
+
+{{ $dataFile := getCSV $sep $csv.Permalink }}
+
+<!-- your table building logic here -->
+{{$csv.RelPermalink}}<br>
+{{$csv.Permalink}}
+<table class="table">
+    {{ range $i, $r := (first 1 $dataFile) }} 
+    <thead><tr>
+       {{ range $j, $s := $r}}
+        <th >{{ humanize $s }}</th>
+       {{ end }}
+    </tr></thead>
+    {{ end }}
+    {{ range $i, $r := (after 1 $dataFile) }}
+       <tr>
+       {{ range $j, $s := $r}}
+          <td> {{ $s }} </td>
+       {{ end }} 
+       </tr> 
+    {{ end }}      
+</table>
