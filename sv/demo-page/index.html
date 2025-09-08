@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="se-se"><head>
+  <meta charset="utf-8">
+  <title>Demo page</title>
+
+  <!-- Mobile responsive metadata -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Where to exemplify the use of plugins, shortcodes, etc, for memory. Page set as draft: does not render for live website.">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Hugo 0.147.5">
+
+  <!-- Open Graph image and Twitter Card metadata -->
+  <meta property="og:image" content="https://biochar.systems/images/logo.png" />
+    <meta property="og:image:width" content="151">
+      <meta property="og:image:height" content="41">
+      <meta property="og:image:type" content="image/png">
+  <meta name="twitter:title" content="Demo page"/>
+  <meta name="twitter:description" content="Where to exemplify the use of plugins, shortcodes, etc, for memory. Page set as draft: does not render for live website."/>
+  <meta name="twitter:site" content="@yourhandle"/><meta property="og:url" content="https://biochar.systems/sv/demo-page/">
+  <meta property="og:site_name" content="Biokolsystem">
+  <meta property="og:title" content="Demo page">
+  <meta property="og:description" content="Where to exemplify the use of plugins, shortcodes, etc, for memory. Page set as draft: does not render for live website.">
+  <meta property="og:locale" content="se_se">
+  <meta property="og:type" content="article">
+
+  
+
+  <!-- Plugins -->
+  <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css" media='screen'>
+  <link rel="stylesheet" href="/plugins/ionicons/css/ionicons.min.css" >
+  <link rel="stylesheet" href="/plugins/magnific-popup/magnific-popup.min.css" >
+  <link rel="stylesheet" href="/plugins/slick/slick.css" >
+  
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="/scss/bundled.min.css" media="screen">
+
+  <link href="https://fonts.cdnfonts.com/css/dengxian" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+<link rel="icon" href="/img/favicon.png" type="image/x-icon">
+
+
+  
+	<script src="/bw2widgets/d3.v7.min.js  "  type="text/javascript" charset=utf-8 ></script>
+	<script src="/bw2widgets/d3-scale-chromatic.v1.min.js  "  type="text/javascript" charset=utf-8 ></script>
+	<script src="/bw2widgets/d3-sankey-diagram.min.js  "  type="text/javascript" charset=utf-8 ></script>
+	<script src="/bw2widgets/widget_plot_types.js  "  type="text/javascript" charset=utf-8 ></script>
+	<script src="/js/mermaid.min.js  "  type="text/javascript" charset=utf-8 ></script>
+	<link rel="stylesheet" href="/bw2widgets/widget.css  " >
+	
+	
+	<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    },
+    chtml: {
+      scale: 1.3
+    },
+    svg: {
+        scale: 1.3
+    }
+
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+
+
+<header class="navigation">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        
+        <nav class="navbar">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/sv/">
+              <img src="/img/logo.png" alt="Biokolsystem" width="65px" align="left" class="img-responsive" style="margin-top: -1rem;">
+              <span style="vertical-align:middle">Biochar Systems<br/>Research Group</span>
+            </a>
+            
+          </div>
+          
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="https://biochar.systems/sv/">Hem</a></li><li class="dropdown"> 
+                <a href="https://biochar.systems/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Systemanalys <span class="ion-ios-arrow-down"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://biochar.systems/sv/modules/">Översikt</a></li><li><a href="https://biochar.systems/sv/modules/1-biomass/">1. Tillförsel av biomassa</a></li><li><a href="https://biochar.systems/sv/modules/2-pyrolysis/">2. Pyrolys</a></li><li><a href="https://biochar.systems/sv/modules/3-co-product-use/">3. Pyrolysbiprodukter</a></li><li><a href="https://biochar.systems/sv/modules/4-product-manufacturing/">4. Biokolsprodukter</a></li><li><a href="https://biochar.systems/sv/modules/5-product-use/">5. Användning av biokolsprodukter</a></li><li><a href="https://biochar.systems/sv/modules/6-product-eol/">6. Avfallshanteringfas</a></li><li><a href="https://biochar.systems/sv/modules/7-ref-bg-systems/">7. Referenssystem</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"> 
+                <a href="https://biochar.systems/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Fallstudier <span class="ion-ios-arrow-down"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://biochar.systems/sv/case-studies/">Alla fallstudier</a></li><li><a href="https://biochar.systems/sv/case-studies/1-stockholm/">1. Stockholm</a></li><li><a href="https://biochar.systems/sv/case-studies/2-lindeborgs/">2. Lindeborgs</a></li><li><a href="https://biochar.systems/sv/case-studies/3-helsingborg/">3. Helsingborg</a></li><li><a href="https://biochar.systems/sv/case-studies/4-uppsala/">4. Uppsala</a></li><li><a href="https://biochar.systems/sv/case-studies/5-gis-sweden/">5. GIS Sweden</a></li><li><a href="https://biochar.systems/sv/case-studies/6-water-filter/">6. Biokolsfilter</a></li><li><a href="https://biochar.systems/sv/case-studies/kenya-biokol/">7. Kenya</a></li><li><a href="https://biochar.systems/sv/case-studies/8-bioenergy-cdr/">8. CO2-infångning</a></li>
+                </ul>
+              </li>
+              <li><a href="https://biochar.systems/sv/evaluate-project/">Utvärdera ditt projekt</a></li><li><a href="https://biochar.systems/sv/resources/">Resurser</a></li><li class="dropdown"> 
+                <a href="https://biochar.systems/" class="dropdown-toggle current-parent" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Mer <span class="ion-ios-arrow-down"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://biochar.systems/sv/biochar-climate/">Biokol och klimat</a></li><li><a href="https://biochar.systems/sv/faq/">FAQ</a></li><li><a href="https://biochar.systems/sv/about/">Om oss</a></li><li><a href="https://biochar.systems/sv/demo-page/" class="current">Demo</a></li>
+                </ul>
+              </li>
+              
+
+              
+              <li>
+                <select id="select-language" onchange="location = this.value;">
+                  <option id="en" value="/demo-page/">
+                    English
+                  </option><option id="sv" value="/sv/demo-page/" selected>
+                    Swedish
+                  </option>
+                  
+                </select>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
+        
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+<section class="page-title bg-2" style="background-image: url('/images/feature-bg.jpg');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Demo page</h1>
+          <p>Where to exemplify the use of plugins, shortcodes, etc, for memory. Page set as draft: does not render for live website.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- Add style to links or they won't appear properly-->
+<style>
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .0;
+}
+.link:hover {
+  stroke-opacity: .5;
+}
+</style>
+<h2 id="expandcss-shortcode">Expandcss shortcode</h2>
+<h2 id="comparative-review-of-biochar-c-trading-platforms">Comparative review of biochar C trading platforms</h2>
+<section class="accordion">
+    <input type="checkbox" name="collapse" id="handle_puro"  >
+    <h5 class="handle"> 
+        <label for="handle_puro"> <strong>Puro.Earth</strong> </label>
+    </h5>
+    <div class="content">Inner content that will be <strong>markdownified</strong> and blablabla</div>
+</section>
+<section class="accordion">
+    <input type="checkbox" name="collapse" id="handle_carbonfuture"  >
+    <h5 class="handle"> 
+        <label for="handle_carbonfuture"> <strong>Carbon Futures</strong> </label>
+    </h5>
+    <div class="content">Inner content that will be <strong>markdownified</strong> and blablabla</div>
+</section>
+<h2 id="tabs">Tabs</h2>
+<ul class="nav nav-tabs" id="meb_pyrolysis" role="tablist"><li class="nav-item active"><a data-toggle="tab" class="nav-link active" href="#meb_pyrolysis-0" role="tab" aria-controls="meb_pyrolysis-0" aria-expanded="true">Model 1</a></li>
+	  </ul>
+
+<div class="tab-content" id="meb_pyrolysis"><div id="meb_pyrolysis-0" class="tab-pane active" role="tabpanel" aria-labelledby="meb_pyrolysis-0">
+
+<p><p>This model applies to the simple, yet most common, case where pyrolysis oil &amp; gas are directly combusted after pyrolysis to generate heat. It was developped and used in the case studies of this paper.</p>
+</div></div>
+<h2 id="notice-shortcode">Notice shortcode</h2>
+
+
+<div class="notices note" ><p>A notice disclaimer, as a note</p>
+</div>
+
+
+<div class="notices warning" ><p>A notice disclaimer, as a warning</p>
+</div>
+<p>Can take the values: warning, note, info, tip</p>
+<h2 id="insert-scientific-equations-in-latex">Insert scientific equations in Latex</h2>
+<p>$$ Y_{BC} = 0.1261 + 0.5391 e^{-0.004T} + 0.002733L $$</p>
+<p>$ F_C = (1 - \frac{F_{a,bm}}{F_{a,bm} + Y_{BC}} ) * (0.93 - 0.92 e^{-0.0042T}) $</p>
+<h2 id="insert-a-sankey">Insert a sankey</h2>
+<p><strong>Sankey diagram</strong>
+<section class="">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="block">
+                      <h3> Scaled to 1 tonne of biochar </h3><br />
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+                  <div id="figure_X5" class='col-md-8 left'>
+                  
+                  </div>
+                  <div id="parameters_X5" class='col-md-4 right'>
+                  
+                  </div>
+          </div>
+      </div> 
+  
+      <script>
+          
+          
+  
+          
+    
+  
+          if (typeof context === 'undefined' || context === null){ 
+              var context = {};
+              console.log("tada, context initalised");
+          }
+      </script>
+      <script src="/bw2widgets/widget_sankey-model1-energy.js" type="text/javascript" charset="utf-8"></script>
+      <script>
+          context["X5"] = {};    
+          
+          context["X5"]["parameter_data"] = parameter_data;
+          context["X5"]["switch_parameter_data"] = switch_parameter_data;
+          context["X5"]["algebraic_equation_f"] = algebraic_equation_f;
+          
+          write_widget("figure_X5", "parameters_X5", 'parameter_data', 'switch_parameter_data', 'algebraic_equation_f', "sankey", "");
+      </script>
+  </section>
+    
+</p>
+<p>Export as svg/png button.
+Random markdown text after the widget</p>
+<h2 id="insert-a-bw2widget-via-in-its-own-section">Insert a bw2widget via in its own section</h2>
+<p>Random markdown text before the widget
+<section class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h3> Biochar production from willow </h3><br />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <div id="figure_X2" class='col-md-8 left'>
+                
+                </div>
+                <div id="parameters_X2" class='col-md-4 right'>
+                
+                </div>
+        </div>
+    </div> 
+
+    <script>
+        
+        
+
+        
+  
+
+        if (typeof context === 'undefined' || context === null){ 
+            var context = {};
+            console.log("tada, context initalised");
+        }
+    </script>
+    <script src="/bw2widgets/widget_demo_2.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        context["X2"] = {};    
+        
+        context["X2"]["parameter_data"] = parameter_data;
+        context["X2"]["switch_parameter_data"] = switch_parameter_data;
+        context["X2"]["algebraic_equation_f"] = algebraic_equation_f;
+        
+        write_widget("figure_X2", "parameters_X2", 'parameter_data', 'switch_parameter_data', 'algebraic_equation_f', "stackedbar", "");
+    </script>
+</section>
+  
+
+Random markdown text after the widget</p>
+<h2 id="insert-a-second-bw2widget-via-in-its-own-section">Insert a second bw2widget via in its own section</h2>
+<p>Random markdown text before the widget</p>
+<!-- Shortcode for bw2widget inclusion: widgetName should not have any underscore '_'. plotType available: 'waterfall', 'stackedbar' -->
+<section class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h3> Biochar production from Other </h3><br />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <div id="figure_X3" class='col-md-8 left'>
+                
+                </div>
+                <div id="parameters_X3" class='col-md-4 right'>
+                
+                </div>
+        </div>
+    </div> 
+
+    <script>
+        
+        
+
+        
+  
+
+        if (typeof context === 'undefined' || context === null){ 
+            var context = {};
+            console.log("tada, context initalised");
+        }
+    </script>
+    <script src="/bw2widgets/widget_demo_22.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        context["X3"] = {};    
+        
+        context["X3"]["parameter_data"] = parameter_data;
+        context["X3"]["switch_parameter_data"] = switch_parameter_data;
+        context["X3"]["algebraic_equation_f"] = algebraic_equation_f;
+        
+        write_widget("figure_X3", "parameters_X3", 'parameter_data', 'switch_parameter_data', 'algebraic_equation_f', "waterfall", "");
+    </script>
+</section>
+  
+
+<p>Random markdown text after the widget</p>
+<h2 id="another-shortcode-youtube-video">Another shortcode: youtube video</h2>
+<div class="col-lg">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/PfIGIUWJnkw?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" title="2nd Green Carbon webinar"></iframe>
+    </div>
+
+<h2 id="another-shortcode-reference-to-another-page">Another shortcode: reference to another page</h2>
+<p>This is a link to the <a href="https://biochar.systems/sv/modules/">Overview</a></p>
+<h2 id="another-shortcode-highlight-python-code">Another shortcode: highlight python code</h2>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> brightway2 <span style="color:#66d9ef">as</span> bw2
+</span></span><span style="display:flex;"><span>bw2<span style="color:#f92672">.</span>projects<span style="color:#f92672">.</span>set_current(<span style="color:#e6db74">&#34;MyProject&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Check https://gohugo.io/content-management/syntax-highlighting/ for other styling</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="a-figure-image-with-caption">A figure: image with caption</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-fig-esmeralda">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="../esmeralda.jpg" alt="Fig. Esmeralda" loading="lazy" data-zoomable width="20%" /></div>
+  </div><figcaption>
+      Fig. Esmeralda
+    </figcaption></figure>
+<h2 id="tooltip-with-glossary">Tooltip with glossary</h2>
+<p><a href="https://kubernetes.io/docs/contribute/style/hugo-shortcodes/#glossary">https://kubernetes.io/docs/contribute/style/hugo-shortcodes/#glossary</a>
+<a href="https://github.com/kubernetes/website/tree/main/layouts/shortcodes">https://github.com/kubernetes/website/tree/main/layouts/shortcodes</a></p>
+<p>Par exemple, le snippet suivant est rendu à 
+<a class='glossary-tooltip' title='Life cycle assessment (LCA) is a research methodology to analyse the potential environmental impacts arising from a product or system throughout its life cycle.' data-toggle='tooltip' data-placement='top' href='/sv/tooltip_glossary/?all=true#term-LCA' target='_blank' aria-label='LCA'>LCA</a> avec une infobulle. But this 
+<a class='glossary-tooltip' title='It is just a local explanation.' data-toggle='tooltip' data-placement='top' aria-label='tooltip'>tooltip</a> is now just an explanation without entry in the glossary</p>
+<h2 id="flowcharts">Flowcharts</h2>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
+<p>
+<div class="mermaid" align="left">
+graph LR;
+    A(Biomass production) -->|biomass| B(Pyrolysis)
+    B -->|oil and tars| C(Co-product use)
+    B -->|biochar| D(Biochar product manufacturing)
+    E(Supply of other materials) -->|other materials| D
+    D -->|biochar product| F(Biochar product use)
+    F -->|biochar product waste| G(Biochar product end-of-life)
+</div>
+<a href="https://mermaid-js.github.io/mermaid/#/">https://mermaid-js.github.io/mermaid/#/</a>
+<a href="https://mermaid-js.github.io/mermaid/#/flowchart?id=styling-and-classes">https://mermaid-js.github.io/mermaid/#/flowchart?id=styling-and-classes</a>
+<a href="https://github.com/kubernetes/website/blob/main/layouts/shortcodes/mermaid.html">https://github.com/kubernetes/website/blob/main/layouts/shortcodes/mermaid.html</a></p>
+<pre><code>C --&gt;|One| D[ https://biochar.systems/sv/modules/ ]
+C --&gt;|Two| E[&lt;a href=&quot;&quot;&gt; Result two &lt;/a&gt; ]
+</code></pre>
+<p><a href="https://it.knightnet.org.uk/kb/hugo/embed-diagram/">https://it.knightnet.org.uk/kb/hugo/embed-diagram/</a></p>
+<h2 id="chart-dev">Chart dev</h2>
+<!-- Create a div where the graph will take place -->
+<div id="my_dataviz"></div>
+<div id="my_dataviz_legend"></div>
+<script>
+
+// set the dimensions and margins of the graph & the lend
+var margin = {top: 10, right: 30, bottom: 20, left: 50},
+    legend_width = 50,
+    width = 500 - margin.left - margin.right - legend_width,
+    height = 400 - margin.top - margin.bottom;
+    legend_height = height;
+
+// append the svg object to the body of the page
+var svg = d3.select("#my_dataviz")
+  .append("svg")
+    .attr("width", width + margin.left + margin.right + legend_width)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+
+// Parse the Data
+// behavior change in v4 compared to v5,6,7 >> returns all rows at once in v4; while just first row in v7
+d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_stackedXL.csv").then(function(data) {
+
+  // List of subgroups = header of the csv files = soil condition here
+  var subgroups = data.columns.slice(1);
+
+  // List of groups = species here = value of the first column called group -> I show them on the X axis
+  var groups = data.map(d => d.group)
+
+  // Add X axis
+  var x = d3.scaleBand()
+      .domain(groups)
+      .range([0, width])
+      .padding([0.2])
+  svg.append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x).tickSizeOuter(0));
+
+  // Add Y axis
+  var y = d3.scaleLinear()
+    .domain([0, 120])
+    .range([ height, 0 ]);
+  svg.append("g")
+    .call(d3.axisLeft(y));
+
+  // color palette = one color per subgroup
+  var color = d3.scaleOrdinal()
+    .domain(subgroups)
+    .range(d3.schemeSet2);
+
+  //stack the data? --> stack per subgroup
+  var stackedData = d3.stack()
+    .keys(subgroups)
+    (data)
+
+  console.log('StackedData', stackedData);
+
+  // Show the bars
+svg.append("g")
+    .selectAll("g")
+    // Enter in the stack data = loop key per key = group per group
+    .data(stackedData)
+    .join("g")
+      .attr("fill", d => color(d.key))
+      .attr("class", d => "myRect " + d.key ) // Add a class to each subgroup: their name
+      .selectAll("rect")
+      // enter a second time = loop subgroup per subgroup to add all rectangles
+      .data(d => d)
+      .join("rect")
+        .attr("x", d => x(d.data.group))
+        .attr("y", d => y(d[1]))
+        .attr("height", d => y(d[0]) - y(d[1]))
+        .attr("width",x.bandwidth())
+        .attr("stroke", "grey")
+        .on("mouseover", function (event,d) { // What happens when user hover a bar
+
+          // what subgroup are we hovering?
+          const subGroupName = d3.select(this.parentNode).datum().key 
+          
+          // Reduce opacity of all rect to 0.2
+           d3.selectAll(".myRect").style("opacity", 0.2)  
+          
+          // Highlight all rects of this subgroup with opacity 1. It is possible to select them since they have a specific class = their name.
+           d3.selectAll("."+subGroupName).style("opacity",1) 
+        })
+        .on("mouseleave", function (event,d) { // When user do not hover anymore
+          
+          // Back to normal opacity: 1
+          d3.selectAll(".myRect")
+          .style("opacity",1) 
+      })
+
+// adding legend in its own div
+// https://observablehq.com/@d3/color-legend (fancy stuff, need extra code)
+
+/* Append in new svg in same div
+var legendHolder = d3.select("#my_dataviz")
+  .append("svg")
+
+*/
+var offset_legend = width-margin.left-margin.right;
+var legendHolder = svg.append('g')
+    .attr("width", legend_width)
+    .attr("height", legend_height + margin.top + margin.bottom)
+  // translate the holder to the right side of the graph
+    .attr('transform', "translate("+ offset_legend + ", 0)")
+// Add one dot in the legend for each name.
+
+var reversedSubgroups = subgroups.reverse();
+
+var legend = legendHolder.selectAll("mydots")
+  .data(reversedSubgroups) // name of categories, in reverse order for stacked legend
+  .enter()
+  .append("circle")
+    .attr("cx", 100)
+    .attr("cy", function(d,i){ return 100 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+    .attr("r", 7)
+    .style("fill", function(d){ return color(d)})
+
+
+// Add one dot in the legend for each name.
+  legend = legendHolder.selectAll("mylabels")
+      .data(reversedSubgroups)
+      .enter()
+      .append("text")
+        .attr("x", 120)
+        .attr("y", function(d,i){ return 100 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+        .style("fill", function(d){ return color(d)})
+        .text(function(d){ return d})
+        .attr("text-anchor", "left")
+        .style("alignment-baseline", "middle")
+
+
+}) // end of data csv callback
+
+</script>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-menu">
+          <ul>
+            
+            <li><a href="https://biochar.systems/sv/about/">Om oss</a></li>
+            
+            <li><a href="https://biochar.systems/sv/modules/">Systemanalys</a></li>
+            
+            <li><a href="https://biochar.systems/sv/case-studies/">Fallstudier</a></li>
+            
+            <li><a href="https://biochar.systems/sv/biochar-climate/">Biokol och klimat</a></li>
+            
+            <li><a href="https://biochar.systems/sv/resources/">Resurser</a></li>
+            
+            <li><a href="https://biochar.systems/sv/evaluate-project/">Utvärdera ditt projekt</a></li>
+            
+            <li><a href="https://biochar.systems/sv/faq/">FAQ</a></li>
+            
+            <li><a href="https://biochar.systems/sv/tooltip_glossary/">Ordlista</a></li>
+            
+          </ul>
+        </div>
+        
+        <style>
+  .partners-bar {
+    padding: 1rem 0;
+    border-top: 1px solid #e5e7eb;
+    background: #fafafa;
+    text-align: center;
+    --logo-h: 60px;  
+  }
+
+   
+  .partners-bar__wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .partners-bar__item { display: flex; align-items: center; justify-content: center; }
+  .partners-bar__item img {
+    max-height: var(--logo-h);
+    width: auto;
+    max-width: 100%;
+  }
+
+   
+  .partners-bar__item.is-slu img { max-height: calc(var(--logo-h) * 1.25); }
+
+  @media (max-width: 640px){
+    .partners-bar { --logo-h: 44px; }
+    .partners-bar__wrap {
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    }
+  }
+</style>
+
+<section class="partners-bar">
+  <div class="partners-bar__wrap">
+    
+  </div>
+</section>
+
+        <p class="copyright"></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+<script src="/plugins/jquery/jquery.min.js" ></script>
+
+<script src="/plugins/bootstrap/js/bootstrap.min.js" ></script>
+
+<script src="/plugins/slick/slick.min.js" ></script>
+
+<script src="/plugins/magnific-popup/magnific-popup.min.js" ></script>
+
+<script src="/plugins/shuffle/shuffle.min.js" ></script>
+
+<script src="/plugins/google-map/gmap.js" defer></script>
+
+
+
+
+<script src="/js/bundled.min.js"></script>
+
+
+
+</body>
+
+</html>

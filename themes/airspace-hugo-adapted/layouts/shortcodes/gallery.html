@@ -1,0 +1,49 @@
+{{/* Gallery Shortcode adapted from Wowchemy by ESA. */}}
+{{/* Load gallery images from headless-bundle. */}}
+
+{{/* Get album folder or default to `media/albums/gallery/`. */}}
+{{ $album := .Get `album` }}
+{{ $headlessBundle := .Site.GetPage $album }}
+{{ $images := $headlessBundle.Resources.Match "images/*" }}
+
+{{/* Gallery options 
+  https://gohugo.io/content-management/image-processing/#resize
+  */}}
+{{ $sort_order := .Get `order` | default "asc" }}
+{{ $resize_options := .Get `resize_options` | default "x190" }}
+{{ $classDiv := .Get `classDiv` | default "col-xs-12 text-center" }}
+
+<link      rel="stylesheet"      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"    />
+
+<div class="{{$classDiv}}">
+    {{ range (sort $images "Name" $sort_order) }}
+      {{ $image := .Resize $resize_options }}
+      {{/* Check if the user set a caption for this image */}}
+      {{ $filename := path.Base .Name }}
+      {{ $caption := "" }}
+      {{ if $.Page.Params.gallery_item }}
+        {{ range (where (where $.Page.Params.gallery_item "album" $album) "image" $filename) }}
+          {{ $caption = .caption }}
+        {{ end }}
+      {{ end }}
+      <a data-fancybox="gallery-{{$album}}" href="{{ .RelPermalink }}"
+      {{ with $caption }}data-fancybox-title="{{.|markdownify|emojify|safeHTMLAttr}}"{{ end }}
+      {{ with $caption }}data-caption="{{.|markdownify|emojify|safeHTMLAttr}}"{{ end }}
+      ><img src="{{ $image.RelPermalink }}" loading="lazy" 
+        alt="{{ plainify $filename }}" 
+        width="{{ $image.Width }}" height="{{ $image.Height }}"
+        style="margin:0px; padding:3px;"
+      >{{/* Width & height (or low res src) required for lazy loading. */}}
+      </a>{{end}}
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script>
+  // activate the captions
+  Fancybox.bind('[data-fancybox="gallery-{{$album}}"]', {
+    caption: function (fancybox, carousel, slide) {
+      //console.log("triggered", slide.index, slide.fancyboxTitle, slide);
+      return `${slide.index + 1} / ${carousel.slides.length} <br />` + slide.caption ;
+    },
+  });
+</script>

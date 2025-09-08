@@ -1,0 +1,89 @@
+{{ define "main" }}
+
+<!-- Page title -->
+{{ if .Params.title_image }}
+{{ $image := .Page.Resources.GetMatch .Params.title_image }}
+{{ $image := $image.Resize "500x webp" }}
+<section class="page-title bg-2" style="background-image: url( {{ $image.RelPermalink  }} );">
+  <div class="container">
+    <div class="row" >
+      <div class="col-md-5 text-center">
+        <img src="{{ $image.RelPermalink  }}" style="padding: 1em 0" alt="&copy; {{.Params.title_image_credit | plainify }}" title="&copy; {{.Params.title_image_credit | plainify }}" />
+      </div>
+      <div class="col-md-7">
+        <div class="block">
+          <h1 style="text-transform:none;">{{ .Title }}</h1>
+          <p >{{ .Params.description | markdownify | safeHTML }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ else }}
+<section class="page-title bg-2" style="background-image: url('{{ .Params.bg_image | relURL }}');">
+  <div class="container">
+    <div class="row" >
+      <div class="col-md-12">
+        <div class="block">
+          <h1>{{ .Title }}</h1>
+          <p style="text-align: left;">{{ .Params.description | markdownify | safeHTML }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ $data := index site.Data site.Language.Lang }}
+
+<!-- Portfolio Start -->
+<section class="portfolio-work">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div class="portfolio-menu">
+            <div class="btn-group btn-group-toggle justify-content-center" data-toggle="buttons">
+              <label class="btn btn-sm btn-primary active">
+                <input type="radio" name="shuffle-filter" value="all" checked="checked">{{ i18n "all" }}
+              </label>
+              {{ $categories := slice -}}
+              {{ range .Data.Pages -}}
+              {{ $categories = $categories | append .Params.category -}}
+              {{ end -}}
+              {{ range sort ( $categories | uniq ) "value" "asc" -}}
+              <label class="btn btn-sm btn-primary">
+                <input type="radio" name="shuffle-filter" value="{{ . | urlize }}">{{ . }}
+              </label>
+              {{- end }}
+            </div>
+          </div>
+          <div class="row shuffle-wrapper">
+            {{ range sort .Data.Pages -}}
+            {{ $cats := .Params.category -}}
+            {{ if not (reflect.IsSlice $cats) }}{{ $cats = slice ($cats) }}{{ end -}}
+            {{ $cats = apply $cats "urlize" "." | jsonify -}}
+
+            <div class="col-md-4 portfolio-item shuffle-item" data-groups="{{ $cats }}">
+              {{ if isset .Params "image" -}}
+              <img src="{{ .Params.image | relURL }}" class="img-responsive" width="90%" style="object-fit: cover; width: 100%; height: 250px;" alt="{{ .Title }}">
+              {{- end }}
+              <div class="portfolio-hover">
+                <div class="portfolio-content">
+                  {{ with .Params.image -}}
+                  <a href="{{ . | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
+                  {{- end }}
+                  <a class="h3 portfolio-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                  <!-- <p>{{ .Params.description }}</p> -->
+                </div>
+              </div>
+            </div>
+            {{- end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

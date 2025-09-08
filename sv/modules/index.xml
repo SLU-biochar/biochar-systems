@@ -4,80 +4,65 @@
     <title>Biokolssystemanalys on Biokolsystem</title>
     <link>https://biochar.systems/sv/modules/</link>
     <description>Recent content in Biokolssystemanalys on Biokolsystem</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>se-se</language>
-    <copyright>&amp;#169; Elias S. Azzi, Cecilia Sundberg, KTH, SLU</copyright><atom:link href="https://biochar.systems/sv/modules/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;#169; Elias S. Azzi, Cecilia Sundberg, KTH, SLU</copyright>
+    <atom:link href="https://biochar.systems/sv/modules/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1 - Tillförsel av biomassa</title>
       <link>https://biochar.systems/sv/modules/1-biomass/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://biochar.systems/sv/modules/1-biomass/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>2 - Pyrolys</title>
       <link>https://biochar.systems/sv/modules/2-pyrolysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://biochar.systems/sv/modules/2-pyrolysis/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>3 - Användning av pyrolysbiprodukter</title>
       <link>https://biochar.systems/sv/modules/3-co-product-use/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://biochar.systems/sv/modules/3-co-product-use/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>4 - Tillverkning av biokolsprodukter</title>
       <link>https://biochar.systems/sv/modules/4-product-manufacturing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://biochar.systems/sv/modules/4-product-manufacturing/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>5 - Användning av biokolsprodukter</title>
       <link>https://biochar.systems/sv/modules/5-product-use/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://biochar.systems/sv/modules/5-product-use/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>6 - Avfallshantering av biokolprodukter</title>
       <link>https://biochar.systems/sv/modules/6-product-eol/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://biochar.systems/sv/modules/6-product-eol/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>7 - Referens- och bakgrundssystem</title>
       <link>https://biochar.systems/sv/modules/7-ref-bg-systems/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://biochar.systems/sv/modules/7-ref-bg-systems/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>8 - Tillförsel av annat material</title>
       <link>https://biochar.systems/sv/modules/8-other-materials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://biochar.systems/sv/modules/8-other-materials/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

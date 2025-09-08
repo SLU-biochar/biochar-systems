@@ -4,8 +4,9 @@
     <title>Tags on Biokolsystem</title>
     <link>https://biochar.systems/sv/tags/</link>
     <description>Recent content in Tags on Biokolsystem</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>se-se</language>
-    <copyright>&amp;#169; Elias S. Azzi, Cecilia Sundberg, KTH, SLU</copyright><atom:link href="https://biochar.systems/sv/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;#169; Elias S. Azzi, Cecilia Sundberg, KTH, SLU</copyright>
+    <atom:link href="https://biochar.systems/sv/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

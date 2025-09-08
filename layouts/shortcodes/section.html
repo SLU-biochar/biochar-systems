@@ -1,0 +1,4 @@
+{{/* ESA : wrap over boostrap classes for having div using the Boostrap 3 grid */}}
+<div class="{{ .Get `class` }}">
+{{ .Inner | markdownify | emojify | htmlUnescape | safeHTML }}
+</div>

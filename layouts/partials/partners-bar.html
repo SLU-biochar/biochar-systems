@@ -1,0 +1,47 @@
+<style>
+  .partners-bar {
+    padding: 1rem 0;
+    border-top: 1px solid #e5e7eb;
+    background: #fafafa;
+    text-align: center;
+    --logo-h: 60px; /* tweak global logo size here */
+  }
+
+  /* Spread logos across the width */
+  .partners-bar__wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .partners-bar__item { display: flex; align-items: center; justify-content: center; }
+  .partners-bar__item img {
+    max-height: var(--logo-h);
+    width: auto;
+    max-width: 100%;
+  }
+
+  /* Slight boost for SLU if its PNG has extra whitespace */
+  .partners-bar__item.is-slu img { max-height: calc(var(--logo-h) * 1.25); }
+
+  @media (max-width: 640px){
+    .partners-bar { --logo-h: 44px; }
+    .partners-bar__wrap {
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    }
+  }
+</style>
+
+<section class="partners-bar">
+  <div class="partners-bar__wrap">
+    {{ range site.Params.partners }}
+      {{ $isSLU := eq (lower .name) "slu" }}
+      <a class="partners-bar__item{{ if $isSLU }} is-slu{{ end }}" href="{{ .url }}" target="_blank" rel="noopener">
+        <img src="{{ .logo | relURL }}" alt="{{ .alt | default .name }}" loading="lazy" decoding="async" />
+      </a>
+    {{ end }}
+  </div>
+</section>
