@@ -10,7 +10,7 @@ This first dashboard allows to explore the biochar incubation data and the assoc
 
 "
 bg_image: "/img/lin-field.JPG"
-draft: false
+draft: true
 
 type : dashboard
 layout : dashbord
