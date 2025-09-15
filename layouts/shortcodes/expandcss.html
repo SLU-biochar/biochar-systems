@@ -1,8 +1,0 @@
-{{/* An expand/collapse shortcode purely based on CSS, no javascript */}}
-<section class="accordion">
-    <input type="checkbox" name="collapse" id="handle_{{.Get `idLabel`}}" {{ if .Get `collpased` }} checked {{ end }} >
-    <h5 class="handle"> 
-        <label for="handle_{{.Get `idLabel`}}"> {{.Get `title` | markdownify | safeHTML }} </label>
-    </h5>
-    <div class="content">{{ .Inner | markdownify | safeHTML }}</div>
-</section>
