@@ -11,7 +11,11 @@ This first dashboard allows to explore the biochar incubation data and the assoc
 "
 bg_image: "/img/lin-field.JPG"
 draft: true
+_build:
+  list: never # do not show in menus/lists
+  render: never # do not generate the page
 
+  
 type : dashboard
 layout : dashbord
 
